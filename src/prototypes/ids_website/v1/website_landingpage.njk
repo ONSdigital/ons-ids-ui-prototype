@@ -1,7 +1,7 @@
 ---
 group: Examples
 title: IDS Prototype
-layout: ids_website/v1/views/_master_for_website
+layout: ids_website/v1/views/_master_for_website_landingpage
 theme: ids
 ---
 
@@ -80,8 +80,6 @@ theme: ids
 
         <br>
 
-        Bananas
-
         {% from "components/footer/_macro.njk" import onsFooter %}
             {{
                 onsFooter({
@@ -95,7 +93,7 @@ theme: ids
                             "itemsList": [
                                 {
                                     "text": 'Cookies',
-                                    "url": '#0'
+                                    "url": 'cookies.html'
                                 },
                                 {
                                     "text": 'Accessibility statement',
