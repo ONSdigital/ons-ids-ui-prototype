@@ -29,47 +29,6 @@
 
 {% block header %}
 
-    {% from "components/header/_macro.njk" import onsHeader %}
-
-    {{
-        onsHeader({
-            "title": 'ONS Service',
-            "variants": 'neutral',
-            "noMasthead": true,
-            "orgLogoHref": '#0',
-            "titleLogo": 'ids-logo-en',
-            "titleLogoMobile": 'ids-logo-en-mobile',
-            "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
-            "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
-            "titleLogoHref": '/',
-            "titleLogoAlt": 'Integrated Data Service',
-            "navigation": {
-                "id": 'main-nav',
-                "ariaLabel": 'Main menu',
-                "currentPath": 'website_landingpage.html',
-                "currentPageTitle": 'Design system',
-                "itemsList": [
-                    {
-                        "title": 'Home',
-                        "url": 'website_landingpage.html'
-                    },
-                    {
-                        "title": 'About the IDS',
-                        "url": 'about.html'
-                    },
-                    {
-                        "title": 'Keeping data secure',
-                        "url": 'secure.html'
-                    }
-                ],
-                "toggleNavigationButton": {
-                    "text": 'Menu',
-                    "ariaLabel": 'Toggle main menu'
-                }
-            }
-        })
-    }}
-
 {% endblock %}
 
 {% block main %}
