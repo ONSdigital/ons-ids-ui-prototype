@@ -1,0 +1,105 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/v1/views/_master_for_dashboard_pages
+
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 30px;">
+
+        <!-- Notification -->
+
+        <div class="ons-panel ons-panel--branded ons-panel--no-title" style="background: #fde8dd; border-color: #e77023;">
+          <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+          <div class="ons-panel__body">
+            Miles Coward, you have been invited to join project <strong>Yellow Bananas</strong> to collaborate with 6 accredited researchers.<br>You can <a href="#0">accept the invitation to join project Yellow Bananas</a> and participate in the team activities as Collaborator.
+          </div>
+        </div>
+
+        <br>
+
+        <div class="ons-panel ons-panel--info ons-panel--no-title">
+            <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+            <div class="ons-panel__body">
+                <p>Miles Coward, you have been invited to join project <strong>Yellow Bananas</strong> to collaborate with 6 accredited researchers.<br>You can <a href="#0">accept the invitation to join project Yellow Bananas</a> and participate in the team activities as Collaborator.</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="ons-grid">
+
+            <!-- Main column -->
+
+            <div class="ons-grid__col ons-col-8@m">
+                <main id="main-content" class="ons-page__main">
+
+                <!-- Projects -->
+
+                Column 1
+
+                </main>
+            </div>
+
+            <!-- Side column -->
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l">
+
+                Column 2
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Project -->
+
+        <div class="ons-container ons-container--wide" style="padding-right: 0px;padding-left: 0px;">
+            <div class="ons-grid ons-grid--column@xxs@s ons-u-mt-l ons-u-mb-l@m">
+                <div class="ons-grid__col ons-col-4@m">
+                    <div class="ons-card" style="padding: 20px;background: #f5f5f6;">
+                        <h2 class="ons-card__title ons-u-fs-m" id="title1"><a class="ons-card__link" href="#0">About the census</a></h2>
+                        <p id="text1">The census is a survey that gives us information about all the households in England and Wales.</p>
+                    </div>
+                </div>
+                <div class="ons-grid__col ons-col-4@m">
+                    <div class="ons-card" aria-describedBy="text2" style="padding: 20px;background: #f5f5f6;">
+                        <h2 class="ons-card__title ons-u-fs-m" id="title1"><a class="ons-card__link" href="#0">About the census</a></h2>
+                        <p id="text1">The census is a survey that gives us information about all the households in England and Wales.</p>
+                    </div>
+                </div>
+                <div class="ons-grid__col ons-col-4@m">
+                    <div class="ons-card" aria-describedBy="text3" style="padding: 20px;background: #f5f5f6;">
+                        <h2 class="ons-card__title ons-u-fs-m" id="title1"><a class="ons-card__link" href="#0">About the census</a></h2>
+                        <p id="text1">The census is a survey that gives us information about all the households in England and Wales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Body finish here -->
+
+{% include "../../../includes/footer_wide.html" %}
+
+{% endblock %}
