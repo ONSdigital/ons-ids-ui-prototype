@@ -92,36 +92,7 @@ theme: ids
     <br>
 
 
-    {% from "components/footer/_macro.njk" import onsFooter %}
-        {{
-            onsFooter({
-                "poweredBy": {
-                    "logo": 'hm-gov-logo-en',
-                    "alt": 'Her Majesty’s Government',
-                    "partnership": 'In partnership with'
-                },
-                "legal": [
-                    {
-                        "itemsList": [
-                            {
-                                "text": 'Cookies',
-                                "url": 'cookies.html'
-                            },
-                            {
-                                "text": 'Accessibility statement',
-                                "url": 'accessibility.html'
-                            },
-                            {
-                                "text": 'Privacy and data protection',
-                                "url": 'privacy.html'
-                            }
-                        ]
-                    }
-                ],
-                "OGLLink": true
-            })
-        }}
-
+{% include "../../../includes/footer_website.html" %}
             
  
 {% endblock %}
