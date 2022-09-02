@@ -4,54 +4,51 @@ title: IDS Prototype
 layout: ids_website/v1/views/_master_for_website_pages
 theme: ids
 ---
-
+{% from "components/header/_macro.njk" import onsHeader %}
 
 {% block pageContent %} 
-
-    {% from "components/header/_macro.njk" import onsHeader %}
-
-    {{
-        onsHeader({
-            "title": 'ONS Service',
-            "variants": 'neutral',
-            "classes": "ons-u-bb",
-            "noMasthead": true,
-            "orgLogoHref": '#0',
-            "titleLogo": 'ids-logo-en',
-            "titleLogoMobile": 'ids-logo-en-mobile',
-            "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
-            "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
-            "titleLogoHref": '/',
-            "titleLogoAlt": 'Integrated Data Service',
-            "navigation": {
-                "id": 'main-nav',
-                "ariaLabel": 'Main menu',
-                "currentPath": 'none',
-                "currentPageTitle": 'Design system',
-                "itemsList": [
-                     {
-                        "title": 'Home',
-                        "url": 'website_landingpage.html'
-                    },
-                    {
-                        "title": 'About the IDS',
-                        "url": 'about_overview.html'
-                    },
-                    {
-                        "title": 'Keeping data secure',
-                        "url": 'secure_overview.html'
-                    },
-                    { "title": 'Current data in IDS',
-                        "url": 'data.html'
-                    }
-                ],
-                "toggleNavigationButton": {
-                    "text": 'Menu',
-                    "ariaLabel": 'Toggle main menu'
+  {{
+    onsHeader({
+        "title": 'ONS Service',
+        "variants": 'neutral',
+        "classes": "ons-u-bb",
+        "noMasthead": true,
+        "orgLogoHref": '#0',
+        "titleLogo": 'ids-logo-en',
+        "titleLogoMobile": 'ids-logo-en-mobile',
+        "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
+        "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
+        "titleLogoHref": '/',
+        "titleLogoAlt": 'Integrated Data Service',
+        "navigation": {
+            "id": 'main-nav',
+            "ariaLabel": 'Main menu',
+            "currentPath": 'none',
+            "currentPageTitle": 'Design system',
+            "itemsList": [
+                  {
+                    "title": 'Home',
+                    "url": 'website_landingpage.html'
+                },
+                {
+                    "title": 'About the IDS',
+                    "url": 'about_overview.html'
+                },
+                {
+                    "title": 'Keeping data secure',
+                    "url": 'secure_overview.html'
+                },
+                { "title": 'Current data in IDS',
+                    "url": 'data.html'
                 }
+            ],
+            "toggleNavigationButton": {
+                "text": 'Menu',
+                "ariaLabel": 'Toggle main menu'
             }
-        })
-    }}
+        }
+    })
+  }}
     
 <!--
     <div class="ons-page__container ons-container">
@@ -92,12 +89,6 @@ theme: ids
                     </div>
 
                     -->
-
-
-
-  <body>
-
-        
         <div class="ons-page__container ons-container ">
           <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
             <ol class="ons-breadcrumb__items ons-u-fs-s">
@@ -139,7 +130,7 @@ theme: ids
                     </div>
                   </span>
                 </div>
-                <!-- end searcg -->
+                <!-- end search -->
                 <br>
                 <br>
                 <div class="ons-js-adv-filter">
@@ -483,7 +474,6 @@ theme: ids
                           </div>
                         </li>
                          <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="2">
-                          
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
                               <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
@@ -504,9 +494,11 @@ theme: ids
                             <div class="ons-document-list__item-description">BBC News Regional Text Analysis January 2019 to October 2021.</div>
                           </div>
                         </li>
-                  
                       </ul>
-
+                      <div class="ons-adv-filter__no-results" data-fallback-gallery-id="adv-filter-gallery">
+                        <h2>No results found</h2>
+                        <p>Try selecting different filters to get results.</p>
+                      </div>
                      <!-- 
                      <ul id="adv-filter-gallery" class="ons-document-list ons-adv-filter__gallery ons-js-adv-filter__gallery" data-filter-animation="off">
                         <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
@@ -772,10 +764,6 @@ theme: ids
                         </nav>
                         <!-- end of pagination -->
 
-                      <div class="ons-adv-filter__no-results" data-fallback-gallery-id="adv-filter-gallery">
-                        <h2>No results found</h2>
-                        <p>Try selecting different filters to get results.</p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -785,32 +773,7 @@ theme: ids
         </div>
       </div>
     </div>
-    <script>
-      (function() {
-        var s = '/scripts/main.js,/scripts/patternlib.js'.split(','),
-          c = document.createElement('script');
-        if (!('noModule' in c)) {
-          for (var i = 0; i < s.length; i++) {
-            s[i] = s[i].replace('.js', '.es5.js');
-          }
-        }
-        for (var i = 0; i < s.length; i++) {
-          var e = document.createElement('script');
-          e.src = s[i];
-          document.body.appendChild(e);
-        }
-      })();
-    </script>
-  </body>
-</html>
-                </main>
-            </div>
-        </div>
-    </div>
 
-    <br>
-            
- 
 {% include "../../../includes/footer_website.html" %}
 
 {% endblock %}
