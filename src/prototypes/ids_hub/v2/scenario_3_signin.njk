@@ -1,0 +1,55 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/v2/views/_master_for_signin_pages
+
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <br>
+
+        <h2>Sign in </h2>
+
+        <div class="ons-grid ons-grid--gutterless ons-grid--flex ons-grid--between ons-grid--vertical-center ons-grid--no-wrap">
+            <div class="ons-grid__col ons-col-auto ons-u-flex-shrink">
+                <div id="address" class="ons-field ons-address-input">
+                <div class="ons-field">
+                    <label class="ons-label" for="address-town" style="font-weight: 400;">Username</label>
+                    <input type="text" id="address-town" class="ons-input ons-input--text ons-input-type__input ons-js-address-town" name="address-town" />
+                </div>
+                <div class="ons-field" style="margin-top: 15px;">
+                    <label class="ons-label" for="address-town" style="font-weight: 400;">Password</label>
+                    <input type="password" id="address-town" class="ons-input ons-input--text ons-input-type__input ons-js-address-town" name="address-town" for="telephone" />
+                </div>
+                <input type="hidden" id="address-uprn" class="ons-input ons-input--text ons-input-type__input ons-js-hidden-uprn ons-u-d-no" name="address-uprn" />
+                </div>
+                <br>
+                <a href="scenario_3_dashboard.html">
+                <button type="button" class="ons-btn ons-btn--small">
+                    <span class="ons-btn__inner"><span class="ons-btn__text">Sign in</span>
+                    </span>
+                </button>
+                </a>
+                <p class="ons-label" style="margin-top: 30px;"><a href='#0' style="font-weight: 400;">I have forgotten my Password</a></p>
+                <!--<p class="ons-label"><a href='#0' style="font-weight: 400;">Get help with this page</a></p>-->
+            </div>
+        </div>
+
+        <br>
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+{% include "../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
