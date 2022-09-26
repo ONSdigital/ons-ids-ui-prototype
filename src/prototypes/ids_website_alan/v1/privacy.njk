@@ -1,0 +1,127 @@
+---
+group: Examples
+title: IDS Prototype
+layout: ids_website/v1/views/_master_for_website_pages
+theme: ids
+---
+
+
+{% block pageContent %} 
+
+    {% from "components/header/_macro.njk" import onsHeader %}
+
+    {{
+        onsHeader({
+            "title": 'ONS Service',
+            "variants": 'neutral',
+            "classes": "ons-u-bb",
+            "noMasthead": true,
+            "orgLogoHref": '#0',
+            "titleLogo": 'ids-logo-en',
+            "titleLogoMobile": 'ids-logo-en-mobile',
+            "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
+            "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
+            "titleLogoHref": '/',
+            "titleLogoAlt": 'Integrated Data Service',
+            "navigation": {
+                "id": 'main-nav',
+                "ariaLabel": 'Main menu',
+                "currentPath": 'none',
+                "currentPageTitle": 'Design system',
+                "itemsList": [
+                     {
+                        "title": 'Home',
+                        "url": 'website_landingpage.html'
+                    },
+                    {
+                        "title": 'About the IDS',
+                        "url": 'about_overview.html'
+                    },
+                    {
+                        "title": 'Keeping data secure',
+                        "url": 'secure_overview.html'
+                    }
+                ],
+                "toggleNavigationButton": {
+                    "text": 'Menu',
+                    "ariaLabel": 'Toggle main menu'
+                }
+            }
+        })
+    }}
+    
+
+    <div class="ons-page__container ons-container">
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
+            <ol class="ons-breadcrumb__items ons-u-fs-s">
+                <li class="ons-breadcrumb__item" id="breadcrumb-1">
+                    <a class="ons-breadcrumb__link" href="/">Home</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+            </ol>
+        </nav>
+        <div class="ons-grid">
+            <div class="ons-grid__col ons-col-8@m">
+                <main id="main-content" class="ons-page__main">
+                    <h1 class="ons-u-mb-l ons-u-fs-xxl">Privacy and Data Protection</h1>
+                    <div class="ons-page__body">
+                        <p>This information is for visitors to the Integrated Data Service website.</p>
+                        <p>If you would like to find out more about how ONS collect and use your personal data, please visit our <a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/dataprotection">data protection page</a>.</p>
+                        <p></p>
+                        <h2>Links to other websites<br></h2>
+                        <p>This site contains links to other sites. The ONS is not responsible for the privacy practices or the content of such websites.</p>
+                        <h3>Following a link to another website</h3>
+                        <p>If you go to another website from this one, read the privacy policy on that website to find out what it does with your information.</p>
+                        <h3>Following a link to integreateddataservice.gov.uk from another website</h3>
+                        <p>If you come to integrateddataservice.gov.uk from another website, we may receive personal information from the other website.</p>
+                        <p>You should read the privacy policy of the website you came from to find out more about this.</p>
+                        <h2>Contact us</h2>
+                        <p><em>have a question about the processing of personal data within the Integrated Data Service</em></p>
+                        <p>●	have a question about the processing of personal data within the Integrated Data Service</p>
+                        <p>●	think that your personal data have been misused or mishandled</p>
+                        <p><a href="mailto:DPO@statistics.gov.uk">DPO@statistics.gov.uk</a></p>
+                        <p>Telephone: 0345 601 3034</p>
+                        <p>Data Protection Officer<br>Office for National Statistics<br>Segensworth Road<br>Titchfield<br>Fareham<br>Hampshire<br>PO15 5RR</p><h2>Report a security vulnerability<br></h2>
+                        <p>Please see our <a href="https://www.ons.gov.uk/help/vulnerabilitydisclosurepolicy">vulnerability disclosure policy</a> for information on how to report a vulnerability at HackerOne.</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+    {% from "components/footer/_macro.njk" import onsFooter %}
+        {{
+            onsFooter({
+                "poweredBy": {
+                    "logo": 'hm-gov-logo-en',
+                    "alt": 'Her Majesty’s Government',
+                    "partnership": 'In partnership with'
+                },
+                "legal": [
+                    {
+                        "itemsList": [
+                            {
+                                "text": 'Cookies',
+                                "url": 'cookies.html'
+                            },
+                            {
+                                "text": 'Accessibility statement',
+                                "url": 'accessibility.html'
+                            },
+                            {
+                                "text": 'Privacy and data protection',
+                                "url": '#'
+                            }
+                        ]
+                    }
+                ],
+                "OGLLink": true
+            })
+        }}
+
+            
+ 
+{% endblock %}

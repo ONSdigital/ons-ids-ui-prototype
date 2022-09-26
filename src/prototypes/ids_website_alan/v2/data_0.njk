@@ -1,0 +1,111 @@
+---
+group: Examples
+title: IDS Prototype
+layout: ids_website/v1/views/_master_for_website_pages
+theme: ids
+---
+
+
+{% block pageContent %} 
+
+    {% from "components/header/_macro.njk" import onsHeader %}
+
+    {{
+        onsHeader({
+            "title": 'ONS Service',
+            "variants": 'neutral',
+            "classes": "ons-u-bb",
+            "noMasthead": true,
+            "orgLogoHref": '#0',
+            "titleLogo": 'ids-logo-en',
+            "titleLogoMobile": 'ids-logo-en-mobile',
+            "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
+            "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
+            "titleLogoHref": '/',
+            "titleLogoAlt": 'Integrated Data Service',
+            "navigation": {
+                "id": 'main-nav',
+                "ariaLabel": 'Main menu',
+                "currentPath": 'none',
+                "currentPageTitle": 'Design system',
+                "itemsList": [
+                     {
+                        "title": 'Home',
+                        "url": 'website_landingpage.html'
+                    },
+                    {
+                        "title": 'About the IDS',
+                        "url": 'about_overview.html'
+                    },
+                    {
+                        "title": 'Keeping data secure',
+                        "url": 'secure_overview.html'
+                    },
+                    { "title": 'Current data available',
+                        "url": 'data_0.html'
+                    }
+                ],
+                "toggleNavigationButton": {
+                    "text": 'Menu',
+                    "ariaLabel": 'Toggle main menu'
+                }
+            }
+        })
+    }}
+    
+
+    <div class="ons-page__container ons-container">
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
+            <ol class="ons-breadcrumb__items ons-u-fs-s">
+                <li class="ons-breadcrumb__item" id="breadcrumb-1">
+                    <a class="ons-breadcrumb__link" href="website_landingpage.html">Home</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+                    <li class="ons-breadcrumb__item" id="breadcrumb-2">
+                    <a class="ons-breadcrumb__link" href="#0">Current data available</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+            </ol>
+        </nav>
+        <div class="ons-grid">
+            <div class="ons-grid__col ons-col-8@m">
+                <main id="main-content" class="ons-page__main">
+                    <h1 class="ons-u-mb-l ons-u-fs-xxl">Current data available</h1>
+                    <div class="ons-page__body"><h2>
+                        <strong>Annual Survey of Hours and Earnings (ASHE)</strong></h2>
+                        <p>De-identified data on hours worked and earnings foremployees by sex, full-time and part-time, and postcode level geography, 1990 to 2020.</p>
+                        <h2><strong>BBC News Sentiment Analysis</strong></h2>
+                        <p>BBC News regional text analysis, January 2019 to October 2021.</p>
+                        <h2><strong>Energy Performance Certificates for Domestic Buildings</strong></h2>
+                        <p>Department for Levelling Up, Housing and Communities
+                        (DLUHC) Open Data Energy Performance Certificates (EPC) issued 
+                        for domestic buildings constructed, sold or let since 2008. This data 
+                        has been matched to the Office for National Statistics (ONS)’s 
+                        address index matching service.</p>
+                        <h2><strong>Mid-year population estimates</strong></h2>
+                        <p>Mid-year population estimates by age, sex and local authority, 20 June 2012 to 30 June 2020.</p>
+                        <h2><strong>Birth estimates</strong></h2>
+                        <p>Births registered in England and Wales by age, sex, and local 
+                        authority, with disclosure control applied, 2012 to 2020. Includes 
+                        sex of child and age of mother at time of birth.</p>
+                        <h2><strong>Death estimates</strong></h2>
+                        <p>Deaths registered in England and Wales by age, sex, and local 
+                        authority, with  disclosure control applied, 2012 to 2020. Includes age at
+                        death, sex coded to  male and female and count within each group.</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+{% include "../../../includes/footer_website.html" %}
+            
+ 
+{% endblock %}
