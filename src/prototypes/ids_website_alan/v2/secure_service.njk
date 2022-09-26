@@ -1,0 +1,152 @@
+---
+group: Examples
+title: IDS Prototype
+layout: ids_website/v1/views/_master_for_website_pages
+theme: ids
+---
+
+
+{% block pageContent %} 
+
+    {% from "components/header/_macro.njk" import onsHeader %}
+
+    {{
+        onsHeader({
+            "title": 'ONS Service',
+            "variants": 'neutral',
+            "classes": "ons-u-bb",
+            "noMasthead": true,
+            "orgLogoHref": '#0',
+            "titleLogo": 'ids-logo-en',
+            "titleLogoMobile": 'ids-logo-en-mobile',
+            "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
+            "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
+            "titleLogoHref": '/',
+            "titleLogoAlt": 'Integrated Data Service',
+            "navigation": {
+                "id": 'main-nav',
+                "ariaLabel": 'Main menu',
+                "currentPath": 'secure_overview.html',
+                "currentPageTitle": 'Design system',
+                "itemsList": [
+                     {
+                        "title": 'Home',
+                        "url": 'website_landingpage.html'
+                    },
+                    {
+                        "title": 'About the IDS',
+                        "url": 'about_overview.html'
+                    },
+                    {
+                        "title": 'Keeping data secure',
+                        "url": 'secure_overview.html'
+                    },
+                    { "title": 'Current data available',
+                        "url": 'data_1.html'
+                    }
+                ],
+                "toggleNavigationButton": {
+                    "text": 'Menu',
+                    "ariaLabel": 'Toggle main menu'
+                }
+            }
+        })
+    }}
+    
+
+    <div class="ons-page__container ons-container">
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
+            <ol class="ons-breadcrumb__items ons-u-fs-s">
+                <li class="ons-breadcrumb__item" id="breadcrumb-1">
+                    <a class="ons-breadcrumb__link" href="website_landingpage.html">Home</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+                <li class="ons-breadcrumb__item" id="breadcrumb-2">
+                    <a class="ons-breadcrumb__link" href="secure_overview.html">Keeping data secure</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+            </ol>
+        </nav>
+        <div class="ons-grid">
+            <div class="ons-grid__col ons-col-8@m">
+                <main id="main-content" class="ons-page__main">
+                    <h1 class="ons-u-mb-l">
+                       <!-- <span class="ons-u-fs-m ons-u-db ons-u-mb-xs ons-u-lighter">Keeping data secure</span> -->
+                        <span class="ons-u-vh">: </span>
+                        <span class="ons-u-fs-xxl ons-u-db">The IDS and the Secure Research Service</span>
+                    </h1>
+                    <aside class="ons-toc-container" role="complementary">
+                        <a class="ons-skip-link" href="#section-content">Skip to guide content</a>
+                        <nav class="ons-toc" aria-label="Table of contents">
+                            <h2 class="ons-toc__title ons-u-fs-r--b ons-u-mb-s">Contents</h2>
+                            <ol class="ons-list ons-u-mb-m ons-list--dashed">
+                                <li class="ons-list__item">
+                                    <a href="secure_overview.html" class="ons-list__link">Overview</a>
+                                </li>
+                                <li class="ons-list__item">
+                                    <a href="secure_environment.html" class="ons-list__link">Trusted Research Environment</a>
+                                </li>
+                                <li class="ons-list__item" aria-current="true">
+                                    The IDS and the Secure Research Service
+                                </li>
+                            </ol>
+                        </nav>
+                    </aside>
+                    <div id="section-content">
+                        <div class="ons-page__body">
+                            <p>The Office for National Statistics’ Secure Research Service (SRS) has been providing secure access to de-identified, unpublished data for accredited researchers for over 15 years, and it is one of the largest Trusted Research Environments in the UK. The Integrated Data Service (IDS) will build on the foundation provided by the SRS but will represent a significantly enhanced service. </p>
+                            <p>The IDS will be able to exploit state of the art cloud-based infrastructure and technologies that are not available in the existing SRS.</p>
+                            <p>It will be more scalable and offer greatly improved processing power. IDS will provide more streamlined arrangements to give quicker access to data, especially for government analysts seeking to use government data. It will transform the ways in which data owners are able to share data assets and lead to an increased range of integrated datasets that are built, linked and maintained for richer analysis. </p>
+                            <p>We will undertake a phased transition from the SRS to the IDS.</p>
+                            <p>Further information about the transition from the SRS to the IDS will be made available at a later date.</p>
+                            <p>For more information in the meantime please contact 
+                                <a href="mailto:IDS.customer.support@ons.gov.uk"> IDS.customer.support@ons.gov.uk</a>
+                            </p>
+                            <p>You can find out 
+                            <a href="https://www.ons.gov.uk/aboutus/whatwedo/statistics/requestingstatistics/secureresearchservice" target="_blank" class="ons-external-link" rel="noopener">
+                             <span class="ons-external-link__text">more about the SRS and how to access its wealth of data on the ONS website</span>
+                             <span class="ons-external-link__icon">&nbsp;
+                                        <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                            <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                            <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                                        </svg>
+                                    </span>
+                                    <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>  
+                             </a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ons-u-mt-xl">
+                        <nav class="ons-content-pagination" aria-label="Guide pagination">
+                            <ul class="ons-content-pagination__list">
+                                <li class="ons-content-pagination__item">
+                                    <a href="secure_environment.html" class="ons-content-pagination__link" rel="prev">
+                                        <span class="ons-content-pagination__link-title">
+                                            <svg class="ons-svg-icon ons-svg-icon--m" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                                                <path d="M6.4.2.3 6.4c-.2.2-.2.4 0 .6l6.2 5.8c.2.2.4.1.6 0l.8-.9c.2-.2.1-.4 0-.6l-4-3.7h12.5c.2 0 .4-.2.4-.4V6c0-.2-.2-.4-.4-.4H3.8l4-4c.2-.1.2-.4.1-.5L7 .2c-.1-.1-.4-.1-.6 0z"></path>
+                                            </svg> 
+                                            <span class="ons-content-pagination__link-text">Previous </span>
+                                        </span>
+                                        <span class="ons-content-pagination__link-divider ons-u-vh">page in this guide is:</span> 
+                                        <span class="ons-content-pagination__link-label">Overview</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+{% include "../../../includes/footer_website.html" %}
+            
+ 
+{% endblock %}

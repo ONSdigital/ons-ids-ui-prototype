@@ -1,0 +1,178 @@
+---
+group: Examples
+title: IDS Prototype
+layout: ids_website/v1/views/_master_for_website_pages
+theme: ids
+---
+
+
+{% block pageContent %} 
+
+    {% from "components/header/_macro.njk" import onsHeader %}
+
+    {{
+        onsHeader({
+            "title": 'ONS Service',
+            "variants": 'neutral',
+            "classes": "ons-u-bb",
+            "noMasthead": true,
+            "orgLogoHref": '#0',
+            "titleLogo": 'ids-logo-en',
+            "titleLogoMobile": 'ids-logo-en-mobile',
+            "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
+            "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
+            "titleLogoHref": '/',
+            "titleLogoAlt": 'Integrated Data Service',
+            "navigation": {
+                "id": 'main-nav',
+                "ariaLabel": 'Main menu',
+                "currentPath": 'about_overview.html',
+                "currentPageTitle": 'Design system',
+                "itemsList": [
+                     {
+                        "title": 'Home',
+                        "url": 'website_landingpage.html'
+                    },
+                    {
+                        "title": 'About the IDS',
+                        "url": 'about_overview.html'
+                    },
+                    {
+                        "title": 'Keeping data secure',
+                        "url": 'secure_overview.html'
+                    },
+                    { "title": 'Current data available',
+                        "url": 'data_1.html'
+                    }
+                ],
+                "toggleNavigationButton": {
+                    "text": 'Menu',
+                    "ariaLabel": 'Toggle main menu'
+                }
+            }
+        })
+    }}
+    
+
+    <div class="ons-page__container ons-container">
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
+            <ol class="ons-breadcrumb__items ons-u-fs-s">
+                <li class="ons-breadcrumb__item" id="breadcrumb-1">
+                    <a class="ons-breadcrumb__link" href="website_landingpage.html">Home</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+                <li class="ons-breadcrumb__item" id="breadcrumb-2">
+                    <a class="ons-breadcrumb__link" href="#0">About the IDS</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+            </ol>
+        </nav>
+        <div class="ons-grid">
+            <div class="ons-grid__col ons-col-8@m">
+                <main id="main-content" class="ons-page__main">
+                    <h1 class="ons-u-mb-l">
+                        <span class="ons-u-fs-xxl ons-u-db">Overview </span>
+                        <span class="ons-u-vh">: Overview</span>
+                    </h1>
+                    <aside class="ons-toc-container" role="complementary">
+                        <a class="ons-skip-link" href="#section-content">Skip to guide content</a>
+                        <nav class="ons-toc" aria-label="Table of contents">
+                            <h2 class="ons-toc__title ons-u-fs-r--b ons-u-mb-s">Contents</h2>
+                            <ol class="ons-list ons-u-mb-m ons-list--dashed">
+                                <li class="ons-list__item" aria-current="true">Overview</li>
+                                <li class="ons-list__item">
+                                    <a href="about_who.html" class="ons-list__link">Who can access</a>
+                                </li>
+                                <li class="ons-list__item">
+                                    <a href="about_how.html" class="ons-list__link">How to access</a>
+                                </li>
+                                <li class="ons-list__item">
+                                    <a href="about_benefits.html" class="ons-list__link">Benefits</a>
+                                </li>
+                                 <li class="ons-list__item">
+                                    <a href="about_partnerships.html" class="ons-list__link">Our partnerships</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </aside>
+                    <div id="section-content">
+                        <div class="ons-page__body">
+                            <p>The Integrated Data Service (IDS) is a new cross-government initiative which has been designed to transform the way de-identified data about our society and economy is made available for vital research and decision making in the UK. The service is open to analysts within government, the Devolved Administrations and external accredited researchers, allowing them to carry out analysis that addresses major societal challenges.<br></p>
+                            <p>Currently operating in a beta phase, the IDS provides co-ordinated access to high quality data - critical for driving efficiency and improving public services.</p>
+                            <p>The service is a key enabler of the Government’s 
+                                <a href="https://www.gov.uk/government/publications/uk-national-data-strategy/national-data-strategy" class="ons-external-link" target="_blank" rel="noreferrer noopener">
+                                  <span class="ons-external-link__text">National Data Strategy
+                                  </span>
+                                   <span class="ons-external-link__icon">&nbsp;
+                                        <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                            <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                            <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                                        </svg>
+                                    </span>
+                                    <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)
+                                    </span>   
+                                </a>and 
+                                 <a href="https://www.gov.uk/government/organisations/modernisation-and-reform" target="_blank" class="ons-external-link" rel="noreferrer noopener">
+                                 <span class="ons-external-link__text">Modernisation agenda
+                                 </span>
+                                 <span class="ons-external-link__icon">&nbsp;
+                                        <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                            <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                            <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                                        </svg>
+                                    </span>
+                                    <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)
+                                    </span>   
+                                 </a>, and will provide improved forms of data, alongside analytical and visualisation tools, in a secure multi-cloud infrastructure. The service also supports the governments ambition of 
+                                 <a href="https://www.gov.uk/government/publications/roadmap-for-digital-and-data-2022-to-2025/transforming-for-a-digital-future-2022-to-2025-roadmap-for-digital-and-data" target="_blank" class="ons-external-link" rel="noreferrer noopener">
+                                 <span class="ons-external-link__text">transforming for a digital future from 2022 and beyond
+                                 </span>
+                                    <span class="ons-external-link__icon">&nbsp;
+                                        <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                            <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                            <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                                        </svg>
+                                    </span>
+                                    <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)
+                                    </span> 
+                                 </a>.
+                            </p>
+
+                            <h2>The role of the Office for National Statistics</h2>
+                            <p>The Office for National Statistics (ONS) is leading the delivery of the Integrated Data Service in collaboration with partners across government, the Devolved Administrations and the external research community.<br></p>
+                        </div>
+                    </div>
+                    <div class="ons-u-mt-xl">
+                        <nav class="ons-content-pagination" aria-label="Guide pagination">
+                            <ul class="ons-content-pagination__list">
+                                <li class="ons-content-pagination__item">
+                                    <a href="about_who.html" class="ons-content-pagination__link" rel="next">
+                                        <span class="ons-content-pagination__link-title">
+                                            <svg class="ons-svg-icon ons-svg-icon--m" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                                                <path d="m10 .2-.9.9c-.1.1-.1.4 0 .5l4 4H.6c-.2 0-.4.2-.4.4v1.2c0 .2.2.4.4.4h12.5l-3.9 3.7c-.2.2-.2.4 0 .6l.8.9c.2.2.4.2.6 0L16.8 7c.2-.2.2-.4 0-.6L10.7.3c-.3-.2-.5-.2-.7-.1z"></path>
+                                            </svg> 
+                                            <span class="ons-content-pagination__link-text">Next </span>
+                                        </span>
+                                        <span class="ons-content-pagination__link-divider ons-u-vh">page in this guide is:</span> 
+                                        <span class="ons-content-pagination__link-label">Who can access</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+{% include "../../../includes/footer_website.html" %}
+            
+ 
+{% endblock %}
