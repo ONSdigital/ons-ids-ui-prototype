@@ -160,38 +160,29 @@ theme: ids
                             <br>
                          <p>We do not allow Google to use or share the data about how you use this site.</p>
                             <!-- Radio Button -->
-                           {% from "components/radios/_macro.njk" import onsRadios %}
-                            {% from "components/question/_macro.njk" import onsQuestion %}
-
-                            {% call onsQuestion({
-                                "title": "",
-                                "classes": "ons-u-mt-no",
-                                "legendIsQuestionTitle": true
-                            }) %}
-                                {{
-                                    onsRadios({
-                                        "name": "property-type",
-                                        "dontWrap": true,
-                                        "radios": [
-                                            {
-                                                "id": "On",
-                                                "checked": true,
-                                                "label": {
-                                                    "text": "On"
-                                                },
-                                                "value": "On"
-                                            },
-                                            {
-                                                "id": "Off",
-                                                "label": {
-                                                    "text": "Off"
-                                                },
-                                                "value": "Off"
-                                            }
-                                        ]
-                                    })
-                                }}
-                            {% endcall %}
+                            <div class="ons-question ons-u-mb-l ons-u-mt-no">
+                            <div class="ons-question__answer ons-u-mb-m">
+                                <fieldset class="ons-fieldset">
+                                <div class="ons-input-items">
+                                    <div class="ons-radios__items">
+                                    <span class="ons-radios__item">
+                                        <span class="ons-radio">
+                                        <input type="radio" id="on" class="ons-radio__input ons-js-radio" value="on" name="property-type" checked="checked">
+                                        <label class=" ons-radio__label " for="on" id="on-label">On</label>
+                                        </span>
+                                    </span>
+                                    <br>
+                                    <span class="ons-radios__item">
+                                        <span class="ons-radio">
+                                        <input type="radio" id="off" class="ons-radio__input ons-js-radio" value="off" name="property-type">
+                                        <label class=" ons-radio__label " for="off" id="flat-label">Off</label>
+                                        </span>
+                                    </span>
+                                    </div>
+                                </div>
+                                </fieldset>
+                            </div>
+                            </div>
                              <!-- Radio Button end --> 
 
                         <h3>Cookies that help with our communications</h3>
@@ -263,77 +254,57 @@ theme: ids
                               <!-- end of Collapsible -->
                             <br>
                             <!-- Radio button begin -->
-                             {% from "components/radios/_macro.njk" import onsRadios %}
-                            {% from "components/question/_macro.njk" import onsQuestion %}
-
-                            {% call onsQuestion({
-                                "title": "",
-                                "classes": "ons-u-mt-no",
-                                "legendIsQuestionTitle": true
-                            }) %}
-                                {{
-                                    onsRadios({
-                                        "name": "property-type",
-                                        "dontWrap": true,
-                                        "radios": [
-                                            {
-                                                "id": "On",
-                                                "checked": true,
-                                                "label": {
-                                                    "text": "On"
-                                                },
-                                                "value": "On"
-                                            },
-                                            {
-                                                "id": "Off",
-                                                "label": {
-                                                    "text": "Off"
-                                                },
-                                                "value": "Off"
-                                            }
-                                        ]
-                                    })
-                                }}
-                            {% endcall %}
+                                  <div class="ons-question ons-u-mb-l ons-u-mt-no">
+                            <div class="ons-question__answer ons-u-mb-m">
+                                <fieldset class="ons-fieldset">
+                                <div class="ons-input-items">
+                                    <div class="ons-radios__items">
+                                    <span class="ons-radios__item">
+                                        <span class="ons-radio">
+                                        <input type="radio" id="on" class="ons-radio__input ons-js-radio" value="on" name="property-type" checked="checked">
+                                        <label class=" ons-radio__label " for="on" id="on-label">On</label>
+                                        </span>
+                                    </span>
+                                    <br>
+                                    <span class="ons-radios__item">
+                                        <span class="ons-radio">
+                                        <input type="radio" id="off" class="ons-radio__input ons-js-radio" value="off" name="property-type">
+                                        <label class=" ons-radio__label " for="off" id="flat-label">Off</label>
+                                        </span>
+                                    </span>
+                                    </div>
+                                </div>
+                                </fieldset>
+                            </div>
+                            </div>
                              <!-- Radio button end --> 
-
                          <h3>Cookies that remember your settings</h3>
                         <p>These cookies do things like remember your preferences and the choices you make, to personalise your experience of using the site.</p>
                             <!-- Radio begin -->
-                             {% from "components/radios/_macro.njk" import onsRadios %}
-                            {% from "components/question/_macro.njk" import onsQuestion %}
-
-                            {% call onsQuestion({
-                                "title": "",
-                                "classes": "ons-u-mt-no",
-                                "legendIsQuestionTitle": true
-                            }) %}
-                                {{
-                                    onsRadios({
-                                        "name": "property-type",
-                                        "dontWrap": true,
-                                        "radios": [
-                                            {
-                                                "id": "On",
-                                                "checked": true,
-                                                "label": {
-                                                    "text": "On"
-                                                },
-                                                "value": "On"
-                                            },
-                                            {
-                                                "id": "Off",
-                                                "label": {
-                                                    "text": "Off"
-                                                },
-                                                "value": "Off"
-                                            }
-                                        ]
-                                    })
-                                }}
-                            {% endcall %}
-                             <!-- Radio end -->      
-                        
+                                  <div class="ons-question ons-u-mb-l ons-u-mt-no">
+                            <div class="ons-question__answer ons-u-mb-m">
+                                <fieldset class="ons-fieldset">
+                                <div class="ons-input-items">
+                                    <div class="ons-radios__items">
+                                    <span class="ons-radios__item">
+                                        <span class="ons-radio">
+                                        <input type="radio" id="on" class="ons-radio__input ons-js-radio" value="on" name="property-type" checked="checked">
+                                        <label class=" ons-radio__label " for="on" id="on-label">On</label>
+                                        </span>
+                                    </span>
+                                    <br>
+                                    <span class="ons-radios__item">
+                                        <span class="ons-radio">
+                                        <input type="radio" id="off" class="ons-radio__input ons-js-radio" value="off" name="property-type">
+                                        <label class=" ons-radio__label " for="off" id="flat-label">Off</label>
+                                        </span>
+                                    </span>
+                                    </div>
+                                </div>
+                                </fieldset>
+                            </div>
+                            </div> 
+                           <!-- Radio end -->      
                         <h3>Strictly necessary cookies</h3>
                         <p class="ons-u-fs-s--b">These essential cookies do things like:</p>
                        <ul>
@@ -396,12 +367,14 @@ theme: ids
                             </details>
                             <br>
                     </div>
+                    <!-- Save button -->
                     {% from "components/button/_macro.njk" import onsButton %}
                     {{
                         onsButton({
                             "text": "Save changes "
                         })
                     }}
+                    <!-- button end -->
                 </main>
             </div>
         </div>
