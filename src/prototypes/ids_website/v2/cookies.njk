@@ -159,21 +159,40 @@ theme: ids
                               <!-- end of Collapsible -->
                             <br>
                          <p>We do not allow Google to use or share the data about how you use this site.</p>
-                            <!-- Checkboxes begin -->
-                            <span class="ons-checkboxes__item">
-                                <span class="ons-checkbox">
-                                <input type="checkbox" id="on" class="ons-checkbox__input ons-js-checkbox" value="on" checked>
-                                <label class=" ons-checkbox__label " for="on" id="on-label">On</label>
-                                </span>
-                            </span>
-                            <br>
-                            <span class="ons-checkboxes__item">
-                                <span class="ons-checkbox">
-                                <input type="checkbox" id="off" class="ons-checkbox__input ons-js-checkbox" value="off">
-                                <label class=" ons-checkbox__label " for="off" id="off-label">Off</label>
-                                </span>
-                            </span>
-                             <!-- Checkboxes end --> 
+                            <!-- Radio Button -->
+                           {% from "components/radios/_macro.njk" import onsRadios %}
+                            {% from "components/question/_macro.njk" import onsQuestion %}
+
+                            {% call onsQuestion({
+                                "title": "",
+                                "classes": "ons-u-mt-no",
+                                "legendIsQuestionTitle": true
+                            }) %}
+                                {{
+                                    onsRadios({
+                                        "name": "property-type",
+                                        "dontWrap": true,
+                                        "radios": [
+                                            {
+                                                "id": "On",
+                                                "checked": true,
+                                                "label": {
+                                                    "text": "On"
+                                                },
+                                                "value": "On"
+                                            },
+                                            {
+                                                "id": "Off",
+                                                "label": {
+                                                    "text": "Off"
+                                                },
+                                                "value": "Off"
+                                            }
+                                        ]
+                                    })
+                                }}
+                            {% endcall %}
+                             <!-- Radio Button end --> 
 
                         <h3>Cookies that help with our communications</h3>
                         <p>Some of our pages may contain content from other sites, like YouTube, which may set their own cookies. These sites are sometimes called “third party” services. This tells us how many people are seeing the content and whether it’s useful.</p>
@@ -243,39 +262,77 @@ theme: ids
                             </details>
                               <!-- end of Collapsible -->
                             <br>
-                            <!-- Checkboxes begin -->
-                            <span class="ons-checkboxes__item">
-                                <span class="ons-checkbox">
-                                <input type="checkbox" id="on" class="ons-checkbox__input ons-js-checkbox" value="on" checked>
-                                <label class=" ons-checkbox__label " for="on" id="on-label">On</label>
-                                </span>
-                            </span>
-                            <br>
-                            <span class="ons-checkboxes__item">
-                                <span class="ons-checkbox">
-                                <input type="checkbox" id="off" class="ons-checkbox__input ons-js-checkbox" value="off">
-                                <label class=" ons-checkbox__label " for="off" id="off-label">Off</label>
-                                </span>
-                            </span>
-                             <!-- Checkboxes end --> 
+                            <!-- Radio button begin -->
+                             {% from "components/radios/_macro.njk" import onsRadios %}
+                            {% from "components/question/_macro.njk" import onsQuestion %}
+
+                            {% call onsQuestion({
+                                "title": "",
+                                "classes": "ons-u-mt-no",
+                                "legendIsQuestionTitle": true
+                            }) %}
+                                {{
+                                    onsRadios({
+                                        "name": "property-type",
+                                        "dontWrap": true,
+                                        "radios": [
+                                            {
+                                                "id": "On",
+                                                "checked": true,
+                                                "label": {
+                                                    "text": "On"
+                                                },
+                                                "value": "On"
+                                            },
+                                            {
+                                                "id": "Off",
+                                                "label": {
+                                                    "text": "Off"
+                                                },
+                                                "value": "Off"
+                                            }
+                                        ]
+                                    })
+                                }}
+                            {% endcall %}
+                             <!-- Radio button end --> 
 
                          <h3>Cookies that remember your settings</h3>
                         <p>These cookies do things like remember your preferences and the choices you make, to personalise your experience of using the site.</p>
-                            <!-- Checkboxes begin -->
-                            <span class="ons-checkboxes__item">
-                                <span class="ons-checkbox">
-                                <input type="checkbox" id="on" class="ons-checkbox__input ons-js-checkbox" value="on" checked>
-                                <label class=" ons-checkbox__label " for="on" id="on-label">On</label>
-                                </span>
-                            </span>
-                            <br>
-                            <span class="ons-checkboxes__item">
-                                <span class="ons-checkbox">
-                                <input type="checkbox" id="off" class="ons-checkbox__input ons-js-checkbox" value="off">
-                                <label class=" ons-checkbox__label " for="off" id="off-label">Off</label>
-                                </span>
-                            </span>
-                             <!-- Checkboxes end -->      
+                            <!-- Radio begin -->
+                             {% from "components/radios/_macro.njk" import onsRadios %}
+                            {% from "components/question/_macro.njk" import onsQuestion %}
+
+                            {% call onsQuestion({
+                                "title": "",
+                                "classes": "ons-u-mt-no",
+                                "legendIsQuestionTitle": true
+                            }) %}
+                                {{
+                                    onsRadios({
+                                        "name": "property-type",
+                                        "dontWrap": true,
+                                        "radios": [
+                                            {
+                                                "id": "On",
+                                                "checked": true,
+                                                "label": {
+                                                    "text": "On"
+                                                },
+                                                "value": "On"
+                                            },
+                                            {
+                                                "id": "Off",
+                                                "label": {
+                                                    "text": "Off"
+                                                },
+                                                "value": "Off"
+                                            }
+                                        ]
+                                    })
+                                }}
+                            {% endcall %}
+                             <!-- Radio end -->      
                         
                         <h3>Strictly necessary cookies</h3>
                         <p class="ons-u-fs-s--b">These essential cookies do things like:</p>
