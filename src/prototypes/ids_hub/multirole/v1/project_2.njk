@@ -1,0 +1,758 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/multirole/v1/views/_master_for_projects_pages
+
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 0px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">IDS Projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">My IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">DWP Workplace Pension</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+        
+        <!-- Notifications -->
+
+        <div class="ons-panel ons-panel--branded ons-panel--no-title" style="background: #fde8dd; border-color: #e77023;padding-top:20px;padding-bottom:20px;margin-top: 30px;">
+          <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+          <div class="ons-panel__body">
+            Project 'DWP Workplace Pension' <strong>data product request has been rejected</strong>. <br><a href="#0">View details</a> or request other data products.
+          </div>
+        </div>
+
+        <div class="ons-panel ons-panel--info ons-panel--no-title" style="margin-top: 20px;">
+            <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+            <div class="ons-panel__body">
+            Project <a href="#0">'DWP Pensions'</a> <strong>responded a project inquiry</strong> to support project 'DWP Workplace Pension' analysing <a href="#0">Pension C</a> data product.
+          </div>
+        </div>
+
+        <!-- Project title -->
+
+        <h1 style="margin-bottom: 0px; padding-top: 30px;">
+          DWP Workplace Pension 
+          &nbsp;
+          <span style="color: #ffffff; font-size: 14px; background-color: #0f8243; vertical-align: middle; padding:2px;">&nbsp;ANALYST&nbsp;</span>
+        </h1>
+        
+
+        <h4 style="margin-bottom: 10px; padding-top: 10px;">Statitical reporting about early pension</h4>
+
+        <!-- Tabs -->
+
+          <div style="padding-top: 20px;margin-bottom: 0px;">
+            <section class="ons-tabs" class="ons-tabs" style="margin-bottom: 0px;">
+              <h2 class="ons-tabs__title">Tabs</h2>
+              <ul class="ons-tabs__list">
+                <li id="tabId1Item" class="ons-tab__list-item"><a href="#tabId1" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project overview" data-ga-label="Show: Project overview">Project overview</a></li>
+                <li id="tabId2Item" class="ons-tab__list-item"><a href="#tabId2" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project workspaces" data-ga-label="Show: Project workspaces">Project workspaces</a></li>
+                <li id="tabId3Item" class="ons-tab__list-item"><a href="#tabId3" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project data products" data-ga-label="Show: Project data products">Project data products</a></li>
+                <li id="tabId4Item" class="ons-tab__list-item"><a href="#tabId4" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project forums" data-ga-label="Show: Project forums">Project forums</a></li>
+                <li id="tabId5Item" class="ons-tab__list-item"><a href="#tabId5" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project activity" data-ga-label="Show: Project activity">Project activity</a></li>
+                <!--<li id="tabId6Item" class="ons-tab__list-item"><a href="#tabId6" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Manage project" data-ga-label="Show: Manage project">Manage project</a></li>-->
+              </ul>
+              <section id="tabId1" class="ons-tabs__panel"></section>
+              <section id="tabId2" class="ons-tabs__panel"></section>
+              <section id="tabId3" class="ons-tabs__panel"></section>
+              <section id="tabId4" class="ons-tabs__panel"></section>
+              <section id="tabId5" class="ons-tabs__panel"></section>
+              <!--<section id="tabId6" class="ons-tabs__panel"></section>-->
+            </section>
+          </div>
+
+        <!-- Full column finish here -->
+
+        <!-- Main starts here -->
+
+        <div class="ons-grid">
+
+            <!-- 2/3 column starts here -->
+
+            <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+                <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                  <!-- Project details -->
+
+                  <div class="ons-pl-grid-col" style="margin-top:0px!important;">
+                    <div class="ons-card" aria-describedBy="text1" style="background: #f5f5f6;padding: 20px;">
+                      <h3 style="margin-bottom: 10px;">
+                        <a href="#0" style="text-decoration: none;color: #000000;">Project details</a>
+                      </h3>
+                      <div style="padding-top:0px;">
+                        <span><strong>Description:</strong></span>
+                      </div>
+                      <div style="padding-top: 0px;">
+                        <span>
+                          We will look at people from different regions, gender, ethnicity, urban and rural areas, educational background, marital status to observe how much contribution they...
+                        </span>
+                      </div>
+                      <div style="padding-top: 10px;">
+                        <span><strong>Project tags:</strong> Pension, DWP, Scheme, and Contributions.</span>
+
+                        <!--
+                        <span class="ons-radios__item" style="width:150">
+                          <span class="ons-radio" style="width:90px;height:30px;">
+                            <label class=" ons-radio__label  ons-label--with-description" for="mixed" id="mixed-label" style="padding: 5px 0px 0px 10px;text-align: center;">
+                              <span id="mixed-label-description-hint" class="ons-label__description ons-radio__label--with-description">PENSION</span>
+                            </label>
+                          </span>
+                        </span>
+                        <span class="ons-radios__item" style="width:100px;">
+                          <span class="ons-radio" style="width:90px;height:30px;">
+                            <label class=" ons-radio__label  ons-label--with-description" for="mixed" id="mixed-label" style="padding: 5px 0px 0px 10px;text-align: center;">
+                              <span id="mixed-label-description-hint" class="ons-label__description ons-radio__label--with-description">PENSION</span>
+                            </label>
+                          </span>
+                        </span>
+                        <span class="ons-radios__item" style="width:100px;">
+                          <span class="ons-radio" style="width:90px;height:30px;">
+                            <label class=" ons-radio__label  ons-label--with-description" for="mixed" id="mixed-label" style="padding: 5px 0px 0px 10px;text-align: center;">
+                              <span id="mixed-label-description-hint" class="ons-label__description ons-radio__label--with-description">PENSION</span>
+                            </label>
+                          </span>
+                        </span>
+                        -->
+
+                      </div>
+                      <!--
+                      <div style="padding-top: 10px;">
+                        <span><strong>Project start and end dates: </strong>22 January 2022 - 16 October 2022</span>
+                      </div>
+                      -->
+                      <div style="padding-top: 10px;">
+                        <span><strong>Project summary:</strong></span>
+                      </div>
+                      <div class="row" style="padding-top:0px;">
+                          <div class="column" style="float: left;width: 50%;margin-right: 30px;">
+                            <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;margin-bottom: 0px;">
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project status:</strong> Active
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                 <strong>Project ownership:</strong> Cross government (DWP, HMRC and DHSC)
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Project Lead:</strong> <a href="#0">Susan Hopkins</a>
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Deputy Project Lead:</strong> <a href="#0">Arthur Muller</a>
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Project members:</strong> 11
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="column">
+                            <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;">
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Project start date:</strong> 14 March 2022
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Project end date:</strong> 25 February 2023
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Data products in project:</strong> 3
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Pre-published work:</strong> 1
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Published reports:</strong> 0
+                              </li>
+                            </ul>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Project inquiries to Service desk -->
+
+                    <div class="ons-panel ons-panel--branded" style="background: #f5f5f6; margin-top:20px;">
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <h3 style="padding-left: 20px;padding-top: 20px;margin-bottom: 5px;">Project inquiries to Service desk</h3>
+                        <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                            <table class="ons-table ons-table--responsive" style="margin-bottom:10px;">
+                                <thead class="ons-table__head">
+                                <tr class="ons-table__row">
+                                    <th scope="col" class="ons-table__header">
+                                        <span>Ticket</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="120">
+                                        <span>Type</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header">
+                                        <span>Enquiry</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="180">
+                                        <span>Status</span>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody class="ons-table__body">
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">23806143</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Enquiries
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        How can we check other projects resolved enquiries related to our project?
+                                    </td>
+                                    <td class="ons-table__cell" data-sort-value="3">
+                                        <span class='ons-status ons-status--info'>In progress</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">65723401</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Project 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        How can we change the project public description?
+                                    </td>
+                                    <td class="ons-table__cell" data-sort-value="0">
+                                        <span class='ons-status ons-status--success'>Resolved</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">28633564</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Data 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Can we have access to data from other accredited projects?
+                                    </td>
+                                    <td class="ons-table__cell" data-sort-value="1">
+                                        <span class='ons-status ons-status--info'>In progress</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">27560886</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Collaboration 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Why we cannot copy/paste code in chats with other related projects?
+                                    </td>
+                                    <td class="ons-table__cell" data-sort-value="3">
+                                        <span class='ons-status ons-status--error'>Waiting action</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">90623462</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Collaboration 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        How can we invite non-accredited external collaboartors to review narrative?
+                                    </td>
+                                    <td class="ons-table__cell" data-sort-value="3">
+                                        <span class='ons-status ons-status--info'>In progress</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Project project chats with IDS projects -->
+
+                    <div class="ons-pl-grid-col" style="margin-top:20px!important;">
+                      <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;">
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <h3 style="padding-left: 20px;padding-top: 20px;margin-bottom: 10px;">Project chats with other IDS projects</h3>
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                          <table class="ons-table ons-table--responsive" style="margin-bottom:10px;">
+                            <thead class="ons-table__head">
+                              <tr class="ons-table__row">
+                                <th scope="col" class="ons-table__header"  width="160">
+                                  <span>Channel</span>
+                                </th>
+                                <th scope="col" class="ons-table__header">
+                                  <span>Channel description</span>
+                                </th>
+                                <th scope="col" class="ons-table__header">
+                                  <span>Projects</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="100">
+                                  <span>Chats</span>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody class="ons-table__body">
+                              <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                  <a href="#0" style="text-decoration: none;">#pension</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                  Pension schemes across government
+                                </td>
+                                <td class="ons-table__cell">
+                                  2
+                                </td>
+                                <td class="ons-table__cell">
+                                  19
+                                </td>
+                              </tr>
+                              <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                  <a href="#0" style="text-decoration: none;">#pensioners</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                  Pension schemes for pensioners
+                                </td>
+                                <td class="ons-table__cell">
+                                  1
+                                </td>
+                                <td class="ons-table__cell">
+                                  15
+                                </td>
+                              </tr>
+                              <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                  <a href="#0" style="text-decoration: none;">#pension-plans</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                  Government pension plans for civil servants...
+                                </td>
+                                <td class="ons-table__cell">
+                                  3
+                                </td>
+                                <td class="ons-table__cell">
+                                  24
+                                </td>
+                              </tr>
+                              <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                  <a href="#0" style="text-decoration: none;">#pensions</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                  Type of pensions cross government
+                                </td>
+                                <td class="ons-table__cell">
+                                  1
+                                </td>
+                                <td class="ons-table__cell">
+                                  7
+                                </td>
+                              </tr>
+                              <tr class="ons-table__row"></tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Project project chats with IDS researchers -->
+
+                    <div class="ons-pl-grid-col" style="margin-top:20px!important;">
+                      <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;">
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <h3 style="padding-left: 20px;padding-top: 20px;margin-bottom: 10px;">Project messages with IDS researchers</h3>
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                          <table class="ons-table ons-table--responsive" style="margin-bottom:10px;">
+                            <thead class="ons-table__head">
+                              <tr class="ons-table__row">
+                                <th scope="col" class="ons-table__header" width="160">
+                                  <span>Researcher</span>
+                                </th>
+                                <th scope="col" class="ons-table__header">
+                                  <span>Initial message</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="100">
+                                  <span>Responses</span>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody class="ons-table__body">
+                              <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                  <a href="#0" style="text-decoration: none;">Peter Valls</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                  <a href="#0" style="text-decoration: none;">What about collaborate in our pension research project?</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                  11
+                                </td>
+                              </tr>
+                              <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                  <a href="#0" style="text-decoration: none;">Maria Sabatini</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                  <a href="#0" style="text-decoration: none;">We would like to use your pension research</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                  6
+                                </td>
+                              </tr>
+                              <tr class="ons-table__row"></tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- No more sections -->
+
+                </main>
+            </div>
+
+            <!-- 2/3 column finish here -->
+
+            <!-- Side column -->
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+
+                <!-- Side content start here -->
+
+                <!-- Analytical tools -->
+
+                <!--
+                <div class="ons-pl-grid-col" style="padding-top:20px;">
+                  <div class="ons-panel ons-panel--branded" style="background: #f8f0fd;padding-bottom: 20px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 style="padding-left: 18px;padding-top: 20px;margin-bottom: 10px;">Analytical tools</h3>
+                    <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px; padding-bottom: 10px;">
+                      <ul class="ons-list ons-list--bare">
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" target="_blank" rel="noopener">
+                            <span class="ons-external-link__text">Project Code Repositiory</span>
+                            <span class="ons-external-link__icon">&nbsp;
+                              <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="#0" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>
+                          </a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" target="_blank" rel="noopener">
+                            <span class="ons-external-link__text">Methods Library</span>
+                            <span class="ons-external-link__icon">&nbsp;
+                              <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="#0" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>
+                          </a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" target="_blank" rel="noopener">
+                            <span class="ons-external-link__text">Project Report Storage</span>
+                            <span class="ons-external-link__icon">&nbsp;
+                              <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="#0" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>
+                          </a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" target="_blank" rel="noopener">
+                            <span class="ons-external-link__text">Allocated Notebooks</span>
+                            <span class="ons-external-link__icon">&nbsp;
+                              <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="#0" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>
+                          </a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" target="_blank" rel="noopener">
+                            <span class="ons-external-link__text">Looker (visualisation)</span>
+                            <span class="ons-external-link__icon">&nbsp;
+                              <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="#0" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>
+                          </a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" target="_blank" rel="noopener">
+                            <span class="ons-external-link__text">Work Station</span>
+                            <span class="ons-external-link__icon">&nbsp;
+                              <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="#0" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                -->
+
+                <!-- Project change requests -->
+
+                <div class="ons-pl-grid-col" style="margin-top:0px!important;">
+                  <div class="ons-panel ons-panel--branded" style="background: #f8f0fd;padding-bottom: 0px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 style="padding-left: 17px;padding-top: 20px;padding-bottom: 0px;margin-bottom: 10px;">Project change requests</h3>
+                    
+                    <div class="ons-panel__body" style="padding-top: 0px; padding-bottom: 10px;">
+                      <div style="padding-bottom: 5px;">
+                        <table class="ons-table">
+                          <thead class="ons-table__head">
+                            <tr class="ons-table__row">
+                              <th scope="col" class="ons-table__header" style="padding-top:0px;"></th>
+                              <th scope="col" class="ons-table__header ons-table__header--numeric" width="50" style="padding-top:0px;margin-left:0px;padding-left:0px;"></th>
+                            </tr>
+                            <!--
+                            <tr class="ons-table__row">
+                              <th scope="col" class="ons-table__header">
+                                <span>Change</span>
+                              </th>
+                              <th scope="col" class="ons-table__header ons-table__header--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <span>Requests</span>
+                              </th>
+                            </tr>
+                            -->
+                          </thead>
+                          <tbody class="ons-table__body">
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell" width="266">
+                                Add data products
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>1</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Change variables of data products
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Remove data products
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Add project team members
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Remove project team members
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Change the role of project members
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Change the project purpose
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Request additional analytical tools
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Extend the project end date
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Change project contacts
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                              <td class="ons-table__cell">
+                                Close the project
+                              </td>
+                              <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                <strong>0</strong>
+                              </td>
+                            </tr>
+                            <tr class="ons-table__row"></tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!--
+                    <div class="ons-panel__body" style="padding-top: 0px; padding-bottom: 30px;">
+                      <a href="#0"><span>Manage change requests</span></a>
+                    </div>
+                    -->
+
+                  </div>
+                </div>
+
+                <!-- Project members  -->
+
+                <div class="ons-pl-grid-col" style="margin-top:20px!important;">
+                  <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 style="padding-left: 20px;padding-top: 20px;margin-bottom: 10px;">Project members</h3>
+                    <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                      <table class="ons-table ons-table--responsive" style:"padding-bottom: 20px;">
+                        <thead class="ons-table__head">
+                          <tr class="ons-table__row">
+                            <th scope="col" class="ons-table__header" width="200">
+                              <span>Name and role in project</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="ons-table__body">
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Miles Coward</a><br>Project Lead
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Sonia Turkey</a><br>Deputy Project Lead
+                            </td>
+                          </tr>
+                          <!--
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Miles Coward</a><br>Contributor
+                            </td>
+                          </tr>
+                          -->
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Clair Johnson</a><br>Analyst
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Tom Ellis</a><br>Analyst
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">William Willets</a><br>Enhance Analyst
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Tara Long</a><br>Peer Reviewer
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Steve Everton</a><br>Peer Reviewer
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row"></tr>
+                        </tbody>
+                      </table>
+                      <a href="#0">Roles description</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- No more sections -->
+
+            </div>
+
+            <!-- Side column finish here -->
+
+        </div>
+
+        <!-- Main finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+{% include "../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
