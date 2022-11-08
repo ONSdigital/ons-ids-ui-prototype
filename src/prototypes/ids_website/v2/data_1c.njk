@@ -293,6 +293,7 @@ theme: ids
                         <div class="ons-adv-filter__results-count">
                           <span class="ons-js-adv-filter__results-count">9</span> results of 207
                         </div>
+                        <!--
                         <div class="ons-adv-filter__results-sort">
                           <label class="ons-label" for="sort">Sort by</label>
                           <select class="ons-input ons-input--select" id="sort" name="sort" aria-controls="adv-filter-gallery" data-sort="true">
@@ -300,6 +301,7 @@ theme: ids
                             <option value="index" data-sort-order="desc" data-sort-number="true">Oldest</option>
                           </select>
                         </div>
+                        -->
                       </div>
 
                       <ul id="adv-filter-gallery" class="ons-document-list ons-adv-filter__gallery ons-js-adv-filter__gallery" data-filter-animation="off">
@@ -308,7 +310,7 @@ theme: ids
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
                               <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
-                                <a href= "#0">Annual Survey of Hours and Earnings (ASHE)
+                                <a href="data_ext_0.html">Annual Survey of Hours and Earnings (ASHE)
                                   <span class="ons-u-vh">  
                                   </span>
                                 </a>
@@ -759,37 +761,24 @@ theme: ids
                       </div>
                       <br>
                       <!--pagination -->
-                      <nav class="ons-pagination " aria-label="Pagination (Page 1 of 21)">
-                       <div class="ons-pagination__position">Page 1 of 21</div>
-                          <ul class="ons-pagination__items" style="margin: 0 0 0 0">
-                           <li class="ons-pagination__item ons-pagination__item--current">
-                              <a href="#0" class="ons-pagination__link" aria-current="true" aria-label="Current page (Page 1 of 21)">1</a>
-                           </li>
-                          
-                            <li class="ons-pagination__item">
-                              <a href="#0" class="ons-pagination__link" aria-label="Go to page 2">2</a>
-                            </li>
-                            <li class="ons-pagination__item" >
-                              <a href="#0" class="ons-pagination__link" aria-label="Go to page 3" rel="prev">3</a>
-                            </li>
-                            <li class="ons-pagination__item">
-                              <a href="#0" class="ons-pagination__link" aria-label="Go to page 4" rel="prev">4</a>
-                            </li>
-                            <li class="ons-pagination__item">
-                              <a href="#0" class="ons-pagination__link" aria-label="Go to page 5" rel="next">5</a>
-                            </li>
-                            <li class="ons-pagination__item">
-                              <a href="#0" class="ons-pagination__link" aria-label="Go to page 6">6</a>
-                            </li>
-                            <li class="ons-pagination__item ons-pagination__item--gap">&hellip;</li>
-                            <li class="ons-pagination__item">
-                              <a href="#0" class="ons-pagination__link" aria-label="Go to the last page (Page 35)">21</a>
-                            </li>
-                            <li class="ons-pagination__item ons-pagination__item--next">
-                              <a href="#0" class="ons-pagination__link" rel="next" aria-label="Go to the next page (Page 6)">Next</a>
-                            </li>
-                          </ul>
-                        </nav>
+                      <nav class="ons-content-pagination" aria-label="Guide pagination">
+                        <ul class="ons-content-pagination__list">
+                          <li class="ons-content-pagination__item">
+                            <a href="#0" class="ons-content-pagination__link" rel="next">
+                              <span class="ons-content-pagination__link-title">
+                                <svg class="ons-svg-icon ons-svg-icon--m" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                                  <path d="m10 .2-.9.9c-.1.1-.1.4 0 .5l4 4H.6c-.2 0-.4.2-.4.4v1.2c0 .2.2.4.4.4h12.5l-3.9 3.7c-.2.2-.2.4 0 .6l.8.9c.2.2.4.2.6 0L16.8 7c.2-.2.2-.4 0-.6L10.7.3c-.3-.2-.5-.2-.7-.1z" />
+                                </svg>
+                                <span class="ons-content-pagination__link-text">
+                                  Next
+                                </span>
+                              </span>
+                              <span class="ons-content-pagination__link-divider ons-u-vh">page in this guide is:</span>
+                              <span class="ons-content-pagination__link-label">View more data available</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
                         <!-- end of pagination -->
 
                       <div class="ons-adv-filter__no-results" data-fallback-gallery-id="adv-filter-gallery">
