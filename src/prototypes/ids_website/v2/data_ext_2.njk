@@ -52,6 +52,49 @@ theme: ids
             }
         })
     }}
+    
+<!--
+    <div class="ons-page__container ons-container">
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
+            <ol class="ons-breadcrumb__items ons-u-fs-s">
+                <li class="ons-breadcrumb__item" id="breadcrumb-1">
+                    <a class="ons-breadcrumb__link" href="website_landingpage.html">Home</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+                
+            </ol>
+        </nav>
+        <div class="ons-grid">
+            <div class="ons-grid__col ons-col-8@m">
+                <main id="main-content" class="ons-page__main">
+                    <div class="ons-grid__col ons-col-6@m"><h1>Current data in the Integrated Data Service</h1>
+                    </div>
+                    <p>Find data available in the Integrated data servicesto help you build products and services</p>
+               
+
+                    <div class="ons-page__body"><h2>
+                        
+                        <strong>Annual Survey of Hours and Earnings (ASHE)</strong></h2>
+                        <p>The Annual Survey of Hours and Earnings, de-identified, provides information about the levels, distribution and make-up of earnings and hours paid for employees within the UK by sex, and full-time and part-time working from 1990 to 2020 down to postcode level geography.</p>
+                        <h2><strong>BBC News Sentiment Analysis</strong></h2>
+                        <p>BBC News Regional Text Analysis January 2019 to October 2021.</p>
+                        <h2><strong>Energy Performance Certificates for Domestic Buildings</strong></h2>
+                        <p>DLUHC Open Data Energy Performance Certificates (EPC) issued for domestic buildings constructed, sold or let since 2008. This data has been matched to the ONS Address index Matching Service.</p>
+                        <h2><strong>Mid Year Population Estimates</strong></h2>
+                        <p>Mid-year population estimates as 30 June, by age, sex and local authority for 20th June 2012 to 30th June 2020.</p>
+                        <h2><strong>Birth Estimates</strong></h2>
+                        <p>Birth's data that has been aggregated by age/sex to local authority (2021 definition) with disclosure control applied in England and Wales for 2012 to 2020 including sex of child, age of mother at time of birth, disclosure controlled through aggregation into 18 and below and 40 and above and count of birth within group.</p>
+                        <h2><strong>Death Estimates</strong></h2>
+                        <p>Death's data that has been aggregated by age/sex to local authority with disclosure control applied in England and Wales for 2012 to 2020 including age at death, sex coded to M=Male or F=Female and count within group.</p>
+                   
+                    </div>
+
+                    -->
+
+
+
   <body>
         <div class="ons-page__container ons-container ">
           <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
@@ -76,18 +119,15 @@ theme: ids
                 </li>
             </ol>
           </nav>
-
-        <!--Begging Grid --> 
-        <div class="ons-grid">
-          <!-- begging of main -->
-          <main id="main-content" class="ons-page__main">  
-            <!--Begging of first column --> 
-          <div class="ons-grid__col ons-col-8@m ">    
-             <div class="ons-pl-grid-col">
-               <div class="ons-pl-grid-col">
-                  <h1 class="ons-u-fs-xxl">Annual Survey of Hours and Earnings (ASHE)</h1>
+          <div class="ons-grid">
+            <div class="ons-grid__col ons-col-8@m">
+              <main id="main-content" class="ons-page__main">
+                <div class="ons-grid_col ons-col-12@m ">
+                  <div class="ons-pl-grid-col">
+                <h1 class="ons-u-fs-xxl">Annual Survey of Hours and Earnings (ASHE)</h1>
                   </div>
-                  <!-- start summary in grey square -->
+                </div>
+              <!--  start grey s  -->
               <ul class="ons-document-list">
                 <li class="ons-document-list__item ons-document-list__item--featured">
                   <div class="ons-document-list__item-content">
@@ -97,7 +137,7 @@ theme: ids
                   </div>
                 </li>
               </ul>
-              <!-- and summary -->
+              <!-- and grey s-->
               <br>
               <div>
                 <P>The Annual Survey of Hours and Earnings (ASHE) provides de-
@@ -133,8 +173,9 @@ theme: ids
                    </a>
                   itself from the Office of National Statistics.
                   </P>
-                  <br>
-                     <!--pagination -->
+                  </div>
+                      <br>
+                      <!--pagination -->
                     <nav class="ons-content-pagination" aria-label="Guide pagination">
                     <ul class="ons-content-pagination__list">
                           <li class="ons-content-pagination__item">
@@ -155,90 +196,20 @@ theme: ids
                   </nav>
                         <!-- end of pagination --> 
                   </div>
-               </div>
-          </div>
-          
-                   
-
-
-<!--Begging of second column -->
-          <div class="ons-grid__col ons-col-4@m ">
-          
-            
-
-            <div class="ons-pl-grid-col">
-                <div class="ons-pl-grid-col">
-                  <br>
-                  <br>
-                  <br>
-                 
-                <div class="ons-pl-grid-col">
-                <div class="ons-pl-grid-col">
-
-<!-- Start column 2 content -->
-                  {% from "components/related-content/_macro.njk" import onsRelatedContent %}
-
-{{ onsRelatedContent({
-    "ariaLabel": 'Related content',
-    "rows": [
-        {
-            "id": 'details',
-            "title": 'Details',
-            "itemsList": [
-                {
-                    "text": 'Dates',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                }
-            ]
-        },
-        {
-            "id": 'related-content',
-            "title": 'Related content',
-            "itemsList": [
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                }
-            ]
-        }
-    ]
-}) }}
-<!--  column 2 content -->
-                  </div>
+                </div>
+              </main>
             </div>
-          </div>
-          <!-- end of second column -->
+            <div class="ons-grid__col ons-col-2@m ">
+    <div class="ons-pl-grid-col">4 col</div>
+  </div>
+          </div> 
+
 
         </div>
+      </div>
+    </div>
 
-         </main>
-          <!-- end of main -->
-        </div>
-        <!-- end of grid -->
+    
     <script>
       (function() {
         var s = '/scripts/main.js,/scripts/patternlib.js'.split(','),
@@ -261,7 +232,10 @@ theme: ids
             </div>
         </div>
     </div>
-    <br>         
+
+    <br>
+            
+ 
 {% include "../../../includes/footer_website.html" %}
 
 {% endblock %}

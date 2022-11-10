@@ -160,9 +160,9 @@ theme: ids
           
                    
 
-
 <!--Begging of second column -->
-          <div class="ons-grid__col ons-col-4@m ">
+
+ <div class="ons-grid__col ons-col-3@m ">
           
             
 
@@ -174,59 +174,15 @@ theme: ids
                  
                 <div class="ons-pl-grid-col">
                 <div class="ons-pl-grid-col">
+{% from "components/collapsible/_macro.njk" import onsCollapsible %}
 
-<!-- Start column 2 content -->
-                  {% from "components/related-content/_macro.njk" import onsRelatedContent %}
-
-{{ onsRelatedContent({
-    "ariaLabel": 'Related content',
-    "rows": [
-        {
-            "id": 'details',
-            "title": 'Details',
-            "itemsList": [
-                {
-                    "text": 'Dates',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                }
-            ]
-        },
-        {
-            "id": 'related-content',
-            "title": 'Related content',
-            "itemsList": [
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                },
-                {
-                    "text": 'Loren ipsus',
-                    "url": '#0'
-                }
-            ]
-        }
-    ]
-}) }}
+{{
+    onsCollapsible({
+        "id": "collapsible",
+        "title": "What is a photovoltaic system?",
+        "content": "<p>A typical photovoltaic system employs solar panels, each comprising a number of solar cells, which generate electrical power. PV installations may be ground-mounted, rooftop mounted or wall mounted. The mount may be fixed, or use a solar tracker to follow the sun across the sky.</p>"
+    })
+}}
 <!--  column 2 content -->
                   </div>
             </div>
