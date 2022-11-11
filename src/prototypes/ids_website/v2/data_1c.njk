@@ -76,20 +76,19 @@ theme: ids
             </ol>
           </nav>
           <div class="ons-grid">
-            <div class="ons-grid__col ons-col-12@m">
+            <div class="ons-grid__col ons-col-8@m">
               <main id="main-content" class="ons-page__main">
-                <div class="ons-grid_col ons-col-6@m ">
-                  <div class="ons-pl-grid-col">
+              {# <div class="ons-grid__col ons-col-6@m ">
+                  <div class="ons-pl-grid-col">  #}
                 <h1 class="ons-u-fs-xxl">Current data available</h1>
-                  </div>
-                </div>
-               <div>
+                  {# </div>
+                </div> #}
+               {# <div> #}
                  <p>Datasets currently available in the Integrated Data Service (IDS).</p>
-               </div>   
-            </div>
-                    <div class="ons-grid__col ons-col-8@m">
-                      
-
+                 <br>
+               {# </div>    #}
+            
+                    {# <div class="ons-grid__col ons-col-8@m"> #}
                       <ul id="adv-filter-gallery" class="ons-document-list ons-adv-filter__gallery ons-js-adv-filter__gallery" data-filter-animation="off">
                         <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                          
@@ -106,14 +105,15 @@ theme: ids
                                  <ul class="ons-document-list__item-metadata ons-u-mb-xs">
                         
                                   <li class="ons-document-list__item-attribute">
-                                    <span class="ons-u-fw-b">From</span>
+                                    <span class="ons-u-fw-b">From:</span>
                                   </li>
                                   <span>ONS</span>
                                 </li>
-
-                                
+                                &nbsp;    &nbsp;            
                                 <li class="ons-document-list__item-attribute" aria-hidden="true">
-                      
+                                      <span class="ons-u-fw-b">And:</span>
+                                  </li>
+                                  <span>ONS</span>
                                 </li>
                               </ul>
                             </div>
@@ -126,18 +126,13 @@ theme: ids
                             <div class="ons-document-list__item-header">
                               <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="#0">BBC News Sentiment Analysis
-                                  <span class="ons-u-vh">
-                                  BBC, Sentiment Analysis
-                                  </span></a>
+                                  </a>
                               </h2>
-                              <ul class="ons-document-list__item-metadata ons-u-mb-xs">
-                                <li class="ons-document-list__item-attribute ons-u-mr-no">
-                                  <span>BBC,</span>
-                                </li>
-                                <li class="ons-document-list__item-attribute" aria-hidden="true"> 
-                                   Sentiment Analysis
-                                </li>
-                              </ul>
+                             
+                                  <p class="ons-u-fs-s">From IDS and BBC</p>
+                               
+                                
+                             
                             </div>
                             <div class="ons-document-list__item-description">BBC News regional text analysis, January 2019 to October 2021.</div>
                           </div>
@@ -352,7 +347,7 @@ theme: ids
                         <h2>No results found</h2>
                         <p>Try selecting different filters to get results.</p>
                       </div>
-                    </div>
+                    {# </div> #}
                   </div>
                 </div>
               </main>
