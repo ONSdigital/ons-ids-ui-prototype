@@ -1,0 +1,177 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/developers/sprint_7/v1/views/_master_for_project_pages
+
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 0px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="my_projects.html">My IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">Office of National Statistics Pension Scheme</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Project title -->
+
+        <h1 style="margin-bottom: 0px; padding-top: 30px;">
+          Office of National Statistics Pension Scheme
+          &nbsp;
+          <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PEER REVIEWER&nbsp;</span>
+        </h1>
+        
+
+        <h4 style="margin-bottom: 10px; padding-top: 10px;">Statitical reporting about pension scheme</h4>
+
+        <!-- Tabs -->
+
+          <div style="padding-top: 20px;margin-bottom: 0px;">
+            <section class="ons-tabs" class="ons-tabs" style="margin-bottom: 0px;">
+              <h2 class="ons-tabs__title">Tabs</h2>
+              <ul class="ons-tabs__list">
+                <li id="tabId1Item" class="ons-tab__list-item"><a href="#tabId1" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project overview" data-ga-label="Show: Project overview">Project overview</a></li>
+                <li id="tabId6Item" class="ons-tab__list-item"><a href="#tabId6" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Manage project" data-ga-label="Show: Manage project">Review outputs</a></li>
+              </ul>
+              <section id="tabId1" class="ons-tabs__panel"></section>
+              <section id="tabId6" class="ons-tabs__panel"></section>
+            </section>
+          </div>
+
+        <!-- Full column finish here -->
+
+        <!-- Main starts here -->
+
+        <div class="ons-grid">
+
+            <!-- 2/3 column starts here -->
+
+            <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+                <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                  <!-- Project details -->
+
+                  <div class="ons-pl-grid-col" style="margin-top:0px!important;">
+                    <div class="ons-card" aria-describedBy="text1" style="background: #f5f5f6;padding: 20px;">
+                      <h3 style="margin-bottom: 10px;">
+                        <a href="#0" style="text-decoration: none;color: #000000;">Project details</a>
+                      </h3>
+                      <div style="padding-top:0px;">
+                        <span><strong>Description:</strong></span>
+                      </div>
+                      <div style="padding-top: 0px;">
+                        <span>
+                          The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.
+                          <br>
+                          In this research project, using several linked data assets of pension, health, labour market and survey data, we are going to be comparing how the retirement life outcomes of those people who accumulated pension savings in their ONS Pension Scheme pots for at least 5 years in their working career compare with the outcomes of those who never been employed by the ONS.
+                          <br>
+                          We are going to undertake a range of comparisons, selecting subgroups, depending on how long for they saved up money in their pension pots, if they made voluntary contributions to it, if they also had savings in other pension schemes via the private or public sector, if they retired early. We will look at full time and part time workers. We will compare their health and life outcomes to various cross sectional population samples of those who never had access to an ONS pension account. We will analyse the outcomes and potential correlations with their life expectancy, health outcomes, housing circumstances and level of economic activity before and after their retirement age.
+                          <br>
+                          Based on the findings we will create publications that will aim to help people to make better choices, to help the ONS adjusting their pension policy and to generally inform policy decision makers on this field.
+                        </span>
+                      </div>
+                      <div style="padding-top: 10px;">
+                        <span><strong>Project tags:</strong> Pension, Office of National Statistics, ONS, Scheme, and Contributions.</span>
+                      </div>
+                      <div style="padding-top: 10px;">
+                        <span><strong>Project summary:</strong></span>
+                      </div>
+                      <div class="row" style="padding-top:0px;">
+                          <div class="column" style="float: left;width: 50%;margin-right: 30px;">
+                            <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;margin-bottom: 0px;">
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project status:</strong> Active
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                 <strong>Project ownership:</strong> Cross government (Cabinet Office)
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Project Lead:</strong> James Watts
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Deputy Project Lead:</strong> Sophia Sterling
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Project members:</strong> 8
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="column">
+                            <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;">
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Project start date:</strong> 08 September 2022 
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                  <strong>Project end date:</strong> 15 December 2023
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Data products in project:</strong> 1
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Pre-published work:</strong> 2
+                              </li>
+                              <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Published reports:</strong> 0
+                              </li>
+                              <br>
+                            </ul>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                </main>
+            </div>
+
+            <!-- 2/3 column finish here -->
+
+            <!-- Side column -->
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+
+                <!-- No more sections -->
+
+            </div>
+
+            <!-- Side column finish here -->
+
+        </div>
+
+        <!-- Main finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
