@@ -1,0 +1,550 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/search/v4/views/_master_for_dashboard_pages
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Main starts here -->
+
+        <!-- Notifications -->
+
+        <div class="ons-panel ons-panel--branded ons-panel--no-title" style="background: #fde8dd; border-color: #e77023;padding-top:20px;padding-bottom:20px;margin-top: 20px;">
+          <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+          <div class="ons-panel__body">
+            Miles, <strong>your accredited researcher status will expire in 90 days</strong>. <br><a href="#0">Renew your research accreditation</a> to continue using the IDS Hub and participate in research projects.
+          </div>
+        </div>
+
+        <div class="ons-panel ons-panel--info ons-panel--no-title" style="margin-top: 20px;">
+            <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+            <div class="ons-panel__body">
+                <p>Miles, <strong>you have been invited to join the DPW Contribution Pension Scheme project</strong> and collaborate with four accredited researchers.
+                <br><a href="#0">View project details</a> or <a href="#0">accept the invitation to join project</a> as an Analyst.</p>
+            </div>
+        </div>
+
+        <div class="ons-grid">
+
+            <!-- 2/3 column starts here -->
+
+            <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 20px!important;">
+                <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                    <!-- Projects and Boards -->
+                    
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;">
+                        <span style="font-size:14px;">ACTIVE PROJECT </span>
+                        <br>
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="project_1.html" style="text-decoration: none;color: #000000;">HMRC Pension Scheme</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PROJECT LEAD&nbsp;</span>
+                        </h3>
+                        <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                            The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.
+                            In this research project, using...</span>
+                        <br>
+                        <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project start and end dates:</strong> 22 January 2022 - 16 December 2022
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project Lead:</strong> Miles Coward
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project ownership:</strong> Government (HMRC)
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project members:</strong> 7
+                            </li>
+                        </ul>
+                        <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_1.html" class="ons-list__link">View project details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                        <span style="font-size:14px;">ACTIVE PROJECT </span>
+                        <br>
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="project_2.html" style="text-decoration: none;color: #000000;">DWP Workplace Pension</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ANALYST&nbsp;</span>
+                        </h3>
+                        <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                            The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                        <br>
+                        <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project dates:</strong> 14 March 2022 - 25 February 2023
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project Lead:</strong> Susan Hopkins
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project ownership:</strong> Cross government (DWP, HMRC and DHSC)
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project members:</strong> 11
+                            </li>
+                        </ul>
+                        <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_2.html" class="ons-list__link">View project details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                        <span style="font-size:14px;">ACTIVE PROJECT </span>
+                        <br>
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="project_3.html" style="text-decoration: none;color: #000000;">Cabinet Office Pension Plans</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ANALYST&nbsp;</span>
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PEER REVIEWER&nbsp;</span>
+                        </h3>
+                        <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                           The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                        <br>
+                        <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project dates:</strong> 22 June 2022 - 30 October 2023
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project Lead:</strong> Alison Drinkwater
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project ownership:</strong> Government (Cabinet Office)
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project members:</strong> 5
+                            </li>
+                        </ul>
+                        <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_3.html" class="ons-list__link">View project details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                        <span style="font-size:14px;">ACTIVE PROJECT </span>
+                        <br>
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="project_4.html" style="text-decoration: none;color: #000000;">Office of National Statistics Pension Scheme</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PEER REVIEWER&nbsp;</span>
+                        </h3>
+                        <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                           The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                        <br>
+                        <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project dates:</strong> 08 September 2022 - 15 December 2023
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project Lead:</strong> James Watts
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project ownership:</strong> Government (ONS)
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project members:</strong> 8
+                            </li>
+                        </ul>
+                        <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_4.html" class="ons-list__link">View project details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                        <span style="font-size:14px;">ACTIVE PROJECT </span>
+                        <br>
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="project_5.html" style="text-decoration: none;color: #000000;">HMRC Multi-Pension Programme</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ENHANCE ANALYST&nbsp;</span>
+                        </h3>
+                        <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                           The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                        <br>
+                        <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project dates:</strong> 14 October 2022 - 22 November 2023
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project Lead:</strong> Jeremy Drinkwater
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project ownership:</strong> Government (HMRC)
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project members:</strong> 4
+                            </li>
+                        </ul>
+                        <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_5.html" class="ons-list__link">View project details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- My inquiries -->
+
+                    <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;margin-top: 20px;">
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 5px;">My active enquiries</h3>
+                        <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                            <table class="ons-table ons-table--responsive">
+                                <thead class="ons-table__head">
+                                <tr class="ons-table__row">
+                                    <th scope="col" class="ons-table__header">
+                                        <span>Ticket</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="120">
+                                        <span>Type</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header">
+                                        <span>Enquiry</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="180">
+                                        <span>Status</span>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody class="ons-table__body">
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">35246148</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Account 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        How can I change my researcher profile?
+                                    </td>
+                                    <td class="ons-table__cell" data-sort-value="0">
+                                        <span class='ons-status ons-status--success'>Resolved</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">85626753</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Data 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Can I have access to data without a project?
+                                    </td>
+                                    <td class="ons-table__cell" data-sort-value="1">
+                                        <span class='ons-status ons-status--info'>In progress</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">63502647</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Project 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        How can I join an existing project?
+                                    </td>
+                                    <td class="ons-table__cell" data-sort-value="3">
+                                        <span class='ons-status ons-status--error'>Waiting action</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row"></tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                                <span class="ons-btn__inner">
+                                    <span class="ons-btn__text">Make an enquiry</span>
+                                </span>
+                            </button>
+                            <button type="button" class="ons-btn ons-btn--secondary ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                                <span class="ons-btn__inner">
+                                    <span class="ons-btn__text">View all my enquiries</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Incoming data events -->
+
+                    <div class="ons-panel ons-panel--branded" style="background: #f5f5f6; margin-top: 20px;">
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 0px;">Upcoming events</h3>
+                        <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;">
+                            <table class="ons-table ons-table--responsive">
+                                <thead class="ons-table__head">
+                                <tr class="ons-table__row">
+                                    <th scope="col" class="ons-table__header" width="200">
+                                    <span>Event</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header">
+                                    <span>Host</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header">
+                                    <span>Location</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header">
+                                    <span>Date</span>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody class="ons-table__body">
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" data-th="Country" width="200">
+                                    <a href="#0" style="text-decoration: none;">Using satellite images to predict crop yields</a>
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Highest mountain">
+                                    ONS Data Campus
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Highest mountain">
+                                    Webinar
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Height">
+                                    14 August 22
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" data-th="Country">
+                                    <a href="#0" style="text-decoration: none;">Data Show & Tell</a>
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Highest mountain">
+                                    HMRC Data Lab
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Highest mountain">
+                                    Webinar
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Height">
+                                    26 September 22
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" data-th="Country">
+                                    <a href="#0" style="text-decoration: none;">Flood warning service</a>
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Highest mountain">
+                                    DEFRA Data Team
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Highest mountain">
+                                    Manchester
+                                    </td>
+                                    <td class="ons-table__cell" data-th="Height">
+                                    11 November 22
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                                <span class="ons-btn__inner"><span class="ons-btn__text">Register</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                </main>
+            </div>
+            
+            <!-- 2/3 column finish here -->
+
+            <!-- Side column -->
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 20px!important;">
+
+                <!-- Side content start here -->
+
+                <!-- Useful links -->
+
+                <div class="ons-panel ons-panel--branded" style="background: #f8f0fd;padding-bottom: 20px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 17px;padding-top: 20px;margin-bottom: 10px;">Useful links</h3>
+                    <div class="ons-panel__body" style="padding-top: 0px;">
+                      <ul class="ons-list ons-list--bare">
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" rel="noopener">
+                            <span class="ons-external-link__text">Data catalogue</span><span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" rel="noopener">
+                            <span class="ons-external-link__text">Methods library</span><span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" rel="noopener">
+                            <span class="ons-external-link__text">Projects published outputs</span><span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" rel="noopener">
+                            <span class="ons-external-link__text">Reporting</span><span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>
+                        </li>
+                        <!--
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link" rel="noopener">
+                            <span class="ons-external-link__text">Make an enquiry</span><span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>
+                        </li>
+                        -->
+                        <li class="ons-list__item">
+                          <a href="https://researchaccreditationservice.ons.gov.uk/ons/ONS_homepage.ofml" target="_blank" class="ons-external-link" rel="noopener">
+                            <span class="ons-external-link__text">Research Accreditation Service (RAS)</span><span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="http://www.integrateddataservice.gov.uk" target="_blank" class="ons-external-link" rel="noopener">
+                            <span class="ons-external-link__text">Public IDS website</span><span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+
+                <!-- My activity -->
+
+                <aside class="ons-page__aside" style="padding-top:28px;">
+                  <aside class="ons-related-content" aria-label="Related content" style="margin-top:0px!important;">
+                    <div class="ons-related-content__body">
+                      <div class="ons-related-content__section">
+                        <h3 class="ons-u-fs-l">My activity</h3>
+                        <div class="ons-related-content__content">
+                          <div class="ons-timeline">
+                            <div class="ons-timeline__item">
+                              <h2 class="ons-timeline__heading">07 November 22</h2>
+                              <ul class="ons-list ons-list--bare">
+                                <li class="ons-list__item ons-u-fs-s" style="font-size:16px;margin-bottom: 0px;color: #707071;">
+                                  Project ONS Pension Scheme
+                                </li>
+                                <li class="ons-list__item">
+                                  You joined project <a href="#0">ONS Pension Scheme</a>.
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="ons-timeline__item">
+                              <h2 class="ons-timeline__heading">03 November 22</h2>
+                              <ul class="ons-list ons-list--bare">
+                                <li class="ons-list__item ons-u-fs-s" style="font-size:16px;margin-bottom: 0px;color: #707071;">
+                                  Project HMRC Pension Scheme
+                                </li>
+                                <li class="ons-list__item">
+                                  RAS gained to project <a href="#0">HMRC Pension Scheme</a> to access to additional data product.
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="ons-timeline__item">
+                              <h2 class="ons-timeline__heading">02 November 22</h2>
+                              <ul class="ons-list ons-list--bare">
+                                <li class="ons-list__item ons-u-fs-s" style="font-size:16px;margin-bottom: 0px;color: #707071;">
+                                  Research forum
+                                </li>
+                                <li class="ons-list__item">
+                                  You participated in the forum <a href="#0">Pension & more</a>.
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="ons-timeline__item">
+                              <h2 class="ons-timeline__heading">25 October 22</h2>
+                              <ul class="ons-list ons-list--bare">
+                                <li class="ons-list__item ons-u-fs-s" style="font-size:16px;margin-bottom: 0px;color: #707071;">
+                                  HMRC Pension Scheme
+                                </li>
+                                <li class="ons-list__item">
+                                  Project Manager requested to RAS access to additional data product.
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="ons-timeline__item">
+                              <h2 class="ons-timeline__heading">24 October 22</h2>
+                              <ul class="ons-list ons-list--bare">
+                                <li class="ons-list__item ons-u-fs-s" style="font-size:16px;margin-bottom: 0px;color: #707071;">
+                                  Project DWP Workplace Pension
+                                </li>
+                                <li class="ons-list__item">
+                                  You requested access to additional data products.
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="ons-timeline__item">
+                              <h2 class="ons-timeline__heading">17 October 22</h2>
+                              <ul class="ons-list ons-list--bare">
+                                <li class="ons-list__item ons-u-fs-s" style="font-size:16px;margin-bottom: 0px;color: #707071;">
+                                  Project DWP Workplace Pension
+                                </li>
+                                <li class="ons-list__item">
+                                  Project Manager ask you to review narrative in project <a href="#0">DWP Workplace Pension</a>.
+                                </li>
+                              </ul>
+                            </div>
+                            <p><a href="#0">View my full activity (59)</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                </aside>
+
+                <!-- No more sections -->
+
+            </div>
+
+            <!-- Side column finish here -->
+
+        </div>
+
+        <!-- Main finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}

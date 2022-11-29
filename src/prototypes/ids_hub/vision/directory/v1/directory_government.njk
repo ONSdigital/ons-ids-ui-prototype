@@ -1,0 +1,206 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/directory/v1/views/_master_for_directory_accredited_page
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 20px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="directory.html">IDS Directory</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+               <a class="ons-breadcrumb__link" href="#0">Accredited Researchers</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+         <!-- Lorum -->
+
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 0px; padding-top: 10px;">
+         Accredited Researchers (2674 people)
+        </h1>
+
+        <!--
+        <h4 style="margin-bottom: 10px; padding-top: 10px;">2674 people</h4>
+        -->
+
+        <!-- Search -->
+
+        <!--
+        <div class="ons-panel ons-panel--branded" style="padding: 0px;background: #f5f5f6;margin-top: 20px;">
+          <div class="ons-panel__body">
+            <div style="margin-top: 0px;margin-bottom: 10px;">
+                <label class="ons-u-fs-m" for="search-field">Search people</label>
+            </div>
+            <div class="ons-search-component" style="margin-bottom: 10px;">
+                <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input ons-input--placeholder" value="Enter researcher name, department name or project name" style="background: #ffffff; width: 930px;">
+                <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
+                    <span class="ons-btn__inner">
+                        <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-btn__text">Search</span>
+                    </span>
+                </button>
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#0" style="vertical-align:middle;">Advance search</a></span>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <div class="ons-grid">
+
+            <!-- 2/3 column starts here -->
+
+            <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 20px!important;">
+                <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                    <!-- Projects and Boards -->
+                    
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;">
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="directory_profile.html" style="text-decoration: none;color: #000000;">Miles Smith</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;5 PROJECTS&nbsp;</span>
+                        </h3>
+                        <ul class="ons-list" style=";padding-top: 0px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Job description:</strong> Senior Data Analyst
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Government department:</strong> HMRC
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Research expertice:</strong> Pension, Lorum, Cumbrias, Aliquam, Corsa, Colabra, Supra, Dolore...
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Participation in IDS projects:</strong> 12
+                            </li>
+                        </ul>
+                        <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="directory_profile.html" class="ons-list__link">View profile</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top:20px;"> 
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 5px;">
+                            <a href="directory_profile.html" style="text-decoration: none;color: #000000;">Miles Smith</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;5 PROJECTS&nbsp;</span>
+                        </h3>
+                        <span><strong>Senior Data Analyst, HMRC</strong></span>
+                        <!--<span style="padding-top:10px;">Lorum ipsum est colabra tentare sempre...</span>-->
+                        <div style="padding-top: 5px;margin-bottom: 5px;">
+                            <span>Pension, Lorum, Cumbrias, Aliquam, Corsa, Colabra, Supra, Dolore, Teculas, Amicas, Est...</span>
+                        </div>
+                    </div>                        
+
+                </main>
+            </div>
+            
+            <!-- 2/3 column finish here -->
+
+            <!-- Side column -->
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 20px!important;">
+
+                <!-- Side content start here -->
+
+                <!-- Search -->
+
+                <!--
+                <div class="ons-panel ons-panel--branded" style="background: #f8f0fd;padding-bottom: 20px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 17px;padding-top: 20px;margin-bottom: 10px;">Search people</h3>
+                    <div class="ons-panel__body" style="padding-top: 0px;">
+                        <div class="ons-field" style="padding-top: 10px;">
+                            <span class="ons-grid--flex ons-search">
+                                <div class="ons-search-component">
+                                <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input" style="width: 320px;">
+                                <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
+                                    <span class="ons-btn__inner">
+                                    <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
+                                        <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0 0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z" />
+                                    </svg>
+                                    <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-u-vh">Search</span></span>
+                                    </span>
+                                </button>
+                                </div>
+                            </span>
+                            <label class="ons-list__link" for="search-field" style="padding-top: 20px;"><a href="#0">Advance search</a></label>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <!-- Search -->
+
+                <!--
+                <div class="ons-panel ons-panel--branded" style="background: #f8f0fd;padding-bottom: 20px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 17px;padding-top: 20px;margin-bottom: 10px;">Filter list</h3>
+                    <div class="ons-panel__body" style="padding-top: 0px;">
+                        <div class="ons-field" style="padding-top: 10px;">
+                            <span class="ons-grid--flex ons-search">
+                                <div class="ons-search-component">
+                                <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input" style="width: 320px;">
+                                <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
+                                    <span class="ons-btn__inner">
+                                    <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
+                                        <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0 0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z" />
+                                    </svg>
+                                    <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-u-vh">Search</span></span>
+                                    </span>
+                                </button>
+                                </div>
+                            </span>
+                            <label class="ons-list__link" for="search-field" style="padding-top: 20px;"><a href="#0">Advance search</a></label>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+            </div>
+
+            <!-- Side column finish here -->
+
+        </div>
+
+        <!-- Main finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
