@@ -301,6 +301,22 @@
 
           <div class="ons-navigation-wrapper" style="background: #4d076b;">
             <div class="ons-container ons-container--gutterless@xxs@l ons-container--wide">
+
+              <div class="ons-navigation-search ons-js-navigation-search">
+                <div id="ons-site-search-container" class="ons-js-autosuggest ons-autosuggest-input--header ons-autosuggest-input ons-autosuggest-input--initialised" data-instructions="Use up and down keys to navigate results once you've typed more than two characters. Use the enter key to select a result. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for results." data-aria-one-result="There is one result available." data-aria-n-results="There are {n} results available." data-aria-limited-results="Results have been limited to 10 results. Type more characters to improve your search" data-more-results="Continue entering to improve results" data-results-title="Search results" data-no-results="No results found" data-type-more="Continue entering to get results" data-autosuggest-data="/search-index.json">
+                    <div class="ons-field">
+                      <label class="ons-label ons-u-pl-m ons-label--white ons-label--placeholder" for="ons-site-search" id="ons-site-search-label">Search all of IDS Hub</label>
+                      <input type="text" id="ons-site-search" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input ons-input-search ons-input-search--icon ons-input--placeholder" autocomplete="off" placeholder="Search the design system" aria-autocomplete="list" aria-controls="ons-site-search-listbox" aria-describedby="ons-site-search-instructions" aria-haspopup="true" aria-owns="ons-site-search-listbox" aria-expanded="false" role="combobox">
+                    </div>
+                    <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
+                      <header id="" class="ons-autosuggest-input__results-title ons-u-fs-s">Search results</header>
+                      <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Search results" role="listbox" id="ons-site-search-listbox" tabindex="-1"></ul>
+                    </div>
+                    <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="ons-site-search-instructions" tabindex="-1">Use up and down keys to navigate results once you've typed more than two characters. Use the enter key to select a result. Touch device users, explore by touch or with swipe gestures.</div>
+                    <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1">Enter 3 or more characters for results.</div>
+                </div>
+              </div>
+
               <nav class="ons-navigation ons-navigation--main ons-js-navigation" id="main-nav" aria-label="Main menu" data-analytics="header-navigation">
                 <ul class="ons-navigation__list">
                   <li class="ons-navigation__item">
@@ -313,7 +329,7 @@
                     <a class="ons-navigation__link" href="#0">Knowledge library</a>
                   </li>
                   <li class="ons-navigation__item">
-                    <a class="ons-navigation__link" href="directory.html">IDS Directory</a>
+                    <a class="ons-navigation__link" href="directory.html">People directory</a>
                   </li>
                   <li class="ons-navigation__item">
                     <a class="ons-navigation__link" href="#0">Research forums</a>
@@ -323,6 +339,7 @@
                   </li>
                 </ul>
               </nav>
+
             </div>
           </div>
 
