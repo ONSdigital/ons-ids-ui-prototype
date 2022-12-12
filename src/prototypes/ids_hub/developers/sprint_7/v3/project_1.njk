@@ -1,0 +1,336 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/developers/sprint_7/v3/views/_master_for_project_pages
+
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 0px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="my_projects.html">My IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">HMRC Pension Scheme</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Project title -->
+
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 0px; padding-top: 30px;">
+          HMRC Pension Scheme 
+          &nbsp;
+          <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PROJECT LEAD&nbsp;</span>
+        </h1>
+
+        <!-- Tabs -->
+
+        <div style="padding-top: 20px;margin-bottom: 0px;">
+          <section class="ons-tabs" class="ons-tabs" style="margin-bottom: 0px;">
+            <h2 class="ons-tabs__title">Tabs</h2>
+            <ul class="ons-tabs__list">
+              <li id="tabId1Item" class="ons-tab__list-item"><a href="#tabId1" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project overview" data-ga-label="Show: Project overview">Project overview</a></li>
+              <li id="tabId2Item" class="ons-tab__list-item"><a href="#tabId2" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project workspaces" data-ga-label="Show: Project workspaces">Project workspaces</a></li>
+              <li id="tabId3Item" class="ons-tab__list-item"><a href="#tabId3" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project workspaces" data-ga-label="Show: Manage project">Manage project</a></li>
+            </ul>
+
+            <!-- Tab 1 -->
+
+            <section id="tabId1" class="ons-tabs__panel">
+              
+              <div class="ons-grid">
+
+                  <!-- 2/3 column starts here -->
+
+                  <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 20px!important;">
+                      <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                      <!-- Project details -->
+
+                      <div class="ons-pl-grid-col" style="margin-top:0px!important;">
+                        <div class="ons-card" aria-describedBy="text1" style="background: #f5f5f6;padding: 20px;">
+                          <h3 class="ons-u-fs-l" style="margin-bottom: 20px;">
+                            <a href="#0" style="text-decoration: none;color: #000000;">Project details</a>
+                          </h3>
+                          <div style="padding-top:0px;">
+                            <span><strong>Description:</strong></span>
+                          </div>
+                          <div style="padding-top: 5px;">
+                            <span>
+                              The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.<br>
+                              In this research project, using longitudinal data, we are going to look at how various groups in the UK population accumulate and structure their pension over time. We will look at people from different regions, gender, ethnicity, urban and rural areas, educational background, marital status to observe how much contribution they accumulate in state pension, private pension pots as well as in the HMRC Pension Scheme. We will analyse the outcomes  and potential correlations with their life expectancy, health outcomes, housing circumstances and level of economic activity before and after their retirement age. Based on the findings we will create publications that will aim to help people to make better choices and to inform policy decision makers on this field.
+                            </span>
+                          </div>
+                          <!--
+                          <div style="padding-top: 10px;">
+                            <span><strong>Project tags:</strong> Pension, HMRC, Scheme, Contributions and workplace.</span>
+                          </div>
+                          -->
+                          <div style="padding-top: 20px;">
+                            <span><strong>Project summary:</strong></span>
+                          </div>
+                          <div class="row" style="padding-top:0px;">
+                              <div class="column" style="float: left;width: 50%;margin-right: 30px;">
+                                <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;margin-bottom: 0px;">
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project status:</strong> Active
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Government (HMRC)
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Project Lead:</strong> Miles Coward
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Deputy Project Lead:</strong> Sonia Turkey
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Project members:</strong> 7
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="column">
+                                <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;">
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Project start date:</strong> 22 January 2022 
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Project end date:</strong> 16 December 2022
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Data products in project:</strong> 4
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Pre-published work:</strong> 2
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Published reports:</strong> 0
+                                  </li>
+                                </ul>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- No more widgets -->
+
+                      </main>
+                  </div>
+
+                  <!-- 2/3 column finish here -->
+
+                  <!-- Side column start here-->
+
+                  <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+
+                      <!-- Project members  -->
+
+                      <div class="ons-pl-grid-col" style="margin-top:20px!important;">
+                        <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;padding-bottom:10px;">
+                          <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                          <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 10px;">Project members</h3>
+                          <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                            <table class="ons-table ons-table--responsive">
+                              <thead class="ons-table__head">
+                                <tr class="ons-table__row">
+                                  <th scope="col" class="ons-table__header" width="200">
+                                    <span>Name</span>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody class="ons-table__body">
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell" width="200">
+                                    Miles Coward
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell" width="200">
+                                  Sonia Turkey
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell" width="200">
+                                    Clair Johnson
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell" width="200">
+                                    Tom Ellis
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell" width="200">
+                                    William Willets
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell" width="200">
+                                    Tara Long
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell" width="200">
+                                    Steve Everton
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row"></tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- No more widgets -->
+
+                  </div>
+
+                  <!-- Side column finish here -->
+
+              </div>
+
+            </section>
+
+            <!-- Tab 2 -->
+
+            <section id="tabId2" class="ons-tabs__panel">
+
+                <!-- Widget 1 -->
+
+                <!--
+                <h1 style="margin-bottom: 30px; padding-top: 20px;">
+                    Project workspaces 
+                </h1>
+                -->
+
+                <!-- WIDGET: Workspace -->
+
+                <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;margin-top: 20px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 15px;">Workspaces access </h3>
+                    <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;padding-bottom:40px;font-size: 18px;font-weight: 400;">
+                        <table class="ons-table ons-table--responsive">
+                            <thead class="ons-table__head">
+                            <tr class="ons-table__row">
+                                <th scope="col" class="ons-table__header" width="400">
+                                <span>Workspace</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="200">
+                                <span>Project</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="150">
+                                <span>Members</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="300">
+                                <span>Data</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="150">
+                                <span>Cost</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="ons-table__body">
+                            <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                <a href="#0" class="ons-external-link" rel="noopener" style="text-decoration: none;">
+                                    <span class="ons-external-link__text">bbc-romanus-senatus-pycpu-notebook</span>
+                                    <span class="ons-external-link__icon">
+                                    <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                        <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                        <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                                    </svg>
+                                    </span>
+                                    <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>
+                                </a>
+                                </td>
+                                <td class="ons-table__cell">
+                                BBC News Text
+                                </td>
+                                <td class="ons-table__cell">
+                                17
+                                </td>
+                                <td class="ons-table__cell">
+                                Archived BBC News Articles
+                                </td>
+                                <td class="ons-table__cell">
+                                £4,854.99
+                                </td>
+                            </tr>
+                            <tr class="ons-table__row"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <!-- No more widgets -->
+
+            </section>
+
+            <!-- Tab 3 -->
+
+            <section id="tabId3" class="ons-tabs__panel">
+
+                <!-- Widget 1 -->
+
+                <h3 class="ons-u-fs-l" style="margin-bottom: 20px; padding-top: 20px;">
+                    Manage project 
+                </h3>
+
+                Lorum ipsum colabra senatus romano pensare dolori sempre et olicuas contare.
+
+                <br>
+                <br>
+
+                <a href:"#0">Link</a>
+
+                <br>
+                <br>
+                <br>
+
+                <!-- No more widgets -->
+
+            </section>
+
+          </section>
+        </div>
+
+        <!-- Tabs finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
