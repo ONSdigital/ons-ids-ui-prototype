@@ -1,0 +1,348 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 0px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="my_projects.html">My IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="project_1.html">HMRC Pension Scheme</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">Invite a new member</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Notifications -->
+
+        <div class="ons-panel ons-panel--info ons-panel--no-title" style="margin-top: 30px;">
+            <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+            <div class="ons-panel__body">
+                You are about to request to RAS to add a new team member to project <strong>HMRC Pension Scheme</strong>. <a href="#0">View details for add members</a>
+            </div>
+        </div>
+
+         <!-- Lorum -->
+
+        <!--
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 0px; padding-top: 10px;">
+         Miles Smith
+        </h1>
+        -->
+
+        <div class="ons-grid">
+
+            <!-- 2/3 column starts here -->
+
+            <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 20px!important;">
+                <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                    <!-- Profile -->
+
+                    <!--
+                    <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;HMRC Pension Scheme&nbsp;</span>
+                    -->
+
+                    <h3 class="ons-u-fs-m" style="margin-bottom: 0px; padding-top: 5px;color:#777777; font-weight: 400;">
+                        HMRC Pension Scheme
+                    </h3>
+
+                    <h3 class="ons-u-fs-l" style="margin-bottom: 20px; padding-top: 0px;">
+                        Request add a new team member 
+                    </h3>
+
+                    <span><label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">1. Select person</label></span>
+
+                    <div class="ons-grid ons-grid--gutterless">
+                        <div class="ons-grid__col ons-col-8@m">
+                            <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" 
+                            data-autosuggest-data="https://gist.githubusercontent.com/Delorenzo1000/eaab32af1392180a97e013524e8adca9/raw/ad5ca12796b7298a6b384d058fe928d1c3e010e7/name.json">
+                            <div class="ons-field">
+                                <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Current name of country</label>
+                                <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">Enter your own answer or select from suggestions</span>
+                                <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" />
+                            </div>
+                            <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
+                                <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
+                                <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
+                            </div>
+                            <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
+                            <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   
+
+
+
+
+                    <div class="ons-field">
+                        <label class="ons-label ons-label--placeholder" for="search-field">Piort Kawoski, Academia researcher</label>
+                        <span class="ons-grid--flex ons-search">
+                            <div class="ons-search-component">
+                                <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input ons-input--placeholder" placeholder="Search this service" style="width: 400px;">
+                                <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
+                                    <!--
+                                    <span class="ons-btn__inner">
+                                        <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
+                                            <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0 0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z" />
+                                        </svg>
+                                    <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-u-vh">Search</span></span>
+                                    -->
+                                    <span class="ons-btn__inner"><span class="ons-btn__text">Select</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </span>
+                    </div>
+
+                    <!--
+                    <br>
+
+                    <table class="ons-table ons-table--responsive">
+                        <thead class="ons-table__head">
+                        <tr class="ons-table__row">
+                            <th scope="col" class="ons-table__header" width="500">
+                                <span>Name</span>
+                            </th>
+                            <th scope="col" class="ons-table__header" width="500">
+                                <span>Lorum</span>
+                            </th>
+                            <th scope="col" class="ons-table__header" width="500">
+                                <span>Organisation</span>
+                            </th>
+                            <th scope="col" class="ons-table__header" width="150">
+                                <span>Sector</span>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody class="ons-table__body">
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;" target="blank">Piort Kawoski</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Academia researcher
+                            </td>
+                            <td class="ons-table__cell">
+                                University of Croydon
+                            </td>
+                            <td class="ons-table__cell">
+                                Academia
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row"></tr>
+                        </tbody>
+                    </table>
+                    -->
+
+                    <br>
+
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;">
+                        <span style="font-size:14px;">SELECTED PERSON </span>
+                        <br>
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="project_1.html" style="text-decoration: none;color: #000000;">Piort Kawoski</a>
+                        </h3>
+                        <dl class="ons-metadata ons-metadata__list ons-grid ons-grid--gutterless ons-u-cf ons-u-mb-no" title="Information about this business and its survey requirements" aria-label="Information about this business and its survey requirements">
+                            <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Name:</dt>
+                            <dd class="ons-metadata__value ons-grid__col ons-col-10@m">Piort</dd>
+                            <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Last name:</dt>
+                            <dd class="ons-metadata__value ons-grid__col ons-col-10@m">Kawoski</dd>
+                            <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Accreditation:</dt>
+                            <dd class="ons-metadata__value ons-grid__col ons-col-10@m">Academia researcher</dd>
+                            <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Organisation:</dt>
+                            <dd class="ons-metadata__value ons-grid__col ons-col-10@m">University of Croydon</dd>
+                            <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Sector:</dt>
+                            <dd class="ons-metadata__value ons-grid__col ons-col-10@m">Academia</dd>
+                            <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Other:</dt>
+                            <dd class="ons-metadata__value ons-grid__col ons-col-10@m">Lorum</dd>
+                        </dl>
+                    </div>
+
+                    <br>
+
+                    <span><label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">2. Select role in project</label></span>
+                    <fieldset class="ons-fieldset">
+                        <div class="ons-radios__items">
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="post" class="ons-radio__input ons-js-radio" value="post" name="contact" disabled>
+                                    <label class=" ons-radio__label " for="post" id="post-label">Project Lead</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="email" class="ons-radio__input ons-js-radio" value="email" name="contact" disabled>
+                                    <label class=" ons-radio__label " for="email" id="email-label">Deputy Project Lead</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="email" class="ons-radio__input ons-js-radio" value="email" name="contact">
+                                    <label class=" ons-radio__label " for="email" id="email-label">Analyst</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="email" class="ons-radio__input ons-js-radio" value="email" name="contact" disabled>
+                                    <label class=" ons-radio__label " for="email" id="email-label">Enhanced Analyst</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="email" class="ons-radio__input ons-js-radio" value="email" name="contact">
+                                    <label class=" ons-radio__label " for="email" id="email-label">Peer Reviewer</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="phone" class="ons-radio__input ons-js-radio ons-js-other" value="phone" name="contact" aria-controls="phone-other-wrap" aria-haspopup="true">
+                                    <label class=" ons-radio__label " for="phone" id="phone-label">Other</label>
+                                    <span class="ons-radio__other" id="phone-other-wrap">
+                                    <fieldset id="phone-time" class="ons-fieldset ons-js-other-fieldset-radio">
+                                        <legend class="ons-fieldset__legend  ons-u-mb-xs"><span class="ons-fieldset__legend-title ons-u-pb-no">Enter role</span></legend>
+                                        <div class="ons-radios__items">
+                                        <span class="ons-radios__item ons-radios__item--no-border">
+                                            <span class="ons-radio ons-radio--no-border">
+                                            <input type="text" id="text" class="ons-input ons-input--text ons-input-type__input" />
+                                            </span>
+                                        </span>
+                                        </div>
+                                    </fieldset>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </fieldset>
+
+                    <br>
+
+                    <span><label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">3. Explain why you want to add this person to the project</label></span>
+                    <div class="ons-field">
+                        <!--<label class="ons-label ons-label--with-description" aria-describedby="description-hint" for="textarea">Please provide some feedback</label>-->
+                        <span id="description-hint" class="ons-label__description  ons-input--with-description" style="font-size: 18px;">Enter as many details as possible to allow RAS to assess and approve your request. </span>
+                        <textarea id="textarea" class="ons-input ons-input--textarea   " name="feedback" rows="8"></textarea>
+                    </div>
+
+                    <br>
+
+                    <span><label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">4. Confirmation</label></span>
+                    <div class="ons-field">
+                        <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
+                            <span class="ons-checkbox  ons-checkbox--no-border">
+                                <input type="checkbox" id="publications" class="ons-checkbox__input ons-js-checkbox" value="publications">
+                                <label class=" ons-checkbox__label " for="publications" id="publications-label">I confirm I want to request to RAS to add this person to the project </label>
+                            </span>
+                        </span>
+                    </div>
+
+                    <br>
+                    
+                    <a href="project_1_notification.html">
+                        <button type="button" class="ons-btn ons-btn--small" style="margin-top:10px;">
+                            <span class="ons-btn__inner"><span class="ons-btn__text">Send request</span>
+                            </span>
+                        </button>
+                    </a>
+                    
+                    
+                </main>
+            </div>
+            
+            <!-- 2/3 column finish here -->
+
+            <!-- Side column -->
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 30px!important;">
+
+                <!-- Side content start here -->
+
+                <!-- Contact details -->
+
+                <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;padding-bottom: 10px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Useful information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 17px;padding-top: 20px;margin-bottom: 10px;">Useful information</h3>
+                    <div class="ons-panel__body" style="padding-top: 0px;">
+                      <ul class="ons-list ons-list--bare">
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link">Lorum ipsum est</a>
+                        </li>
+                        <li class="ons-list__item">
+                         <a href="#0" class="ons-external-link">Colabra pensare et dolori supra</a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link">Vinculas sentara senatus</a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link">Bervenas stimulas</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div> 
+
+            </div>
+
+            <!-- Side column finish here -->
+
+        </div>
+
+        <!-- Main finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
