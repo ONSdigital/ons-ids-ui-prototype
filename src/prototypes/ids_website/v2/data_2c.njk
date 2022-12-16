@@ -1,57 +1,13 @@
 ---
 group: Examples
 title: IDS Prototype
-layout: ids_website/v1/views/_master_for_website_pages
+layout: ids_website/v2/views/_master
 theme: ids
 ---
 
 
 {% block pageContent %} 
-
-    {% from "components/header/_macro.njk" import onsHeader %}
-
-    {{
-        onsHeader({
-            "title": 'ONS Service',
-            "variants": 'neutral',
-            "classes": "ons-u-bb",
-            "noMasthead": true,
-            "orgLogoHref": '#0',
-            "titleLogo": 'ids-logo-en',
-            "titleLogoMobile": 'ids-logo-en-mobile',
-            "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
-            "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
-            "titleLogoHref": '/',
-            "titleLogoAlt": 'Integrated Data Service',
-            "navigation": {
-                "id": 'main-nav',
-                "ariaLabel": 'Main menu',
-                "currentPath": 'none',
-                "currentPageTitle": 'Design system',
-                "itemsList": [
-                     {
-                        "title": 'Home',
-                        "url": 'website_landingpage.html'
-                    },
-                    {
-                        "title": 'About the IDS',
-                        "url": 'about_overview.html'
-                    },
-                    {
-                        "title": 'Keeping data secure',
-                        "url": 'secure_overview.html'
-                    },
-                    { "title": 'Current data available',
-                        "url": 'data_2c.html'
-                    }
-                     ],
-                "toggleNavigationButton": {
-                    "text": 'Menu',
-                    "ariaLabel": 'Toggle main menu'
-                }
-            }
-        })
-    }}
+ 
   <body>
         <div class="ons-page__container ons-container ">
           <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
