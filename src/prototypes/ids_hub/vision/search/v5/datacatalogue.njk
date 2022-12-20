@@ -18,35 +18,87 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
 
         <div class="ons-grid">
             Customised page template
-
             <div class="ons-grid__col ons-col-8@m">           
 <!--Customised page template start --> 
-            <div>
-                <h1>Data catalogue</h1>
-        </div>   
-        <!-- Search -->
+            <!-- <div><h1>Data catalogue</h1> </div> -->  
+        <!-- Search 
+
         <div class="ons-field">
-  <label class="ons-label ons-label--placeholder" for="search-field">Search this service</label>
-  <span class="ons-grid--flex ons-search">
-    <div class="ons-search-component">
-      <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input ons-input--placeholder" placeholder="Search this service" />
-      <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
-        <span class="ons-btn__inner">
-          <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
-            <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0 0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z" />
-          </svg>
-          <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-u-vh">Search</span></span>
-        </span>
-      </button>
-    </div>
-  </span>
-</div>
-        <!-- search end -->
+          <label class="ons-label ons-label--placeholder" for="search-field">Search this service</label>
+          <span class="ons-grid--flex ons-search">
+            <div class="ons-search-component">
+              <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input ons-input--placeholder" placeholder="Search this service" />
+              <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
+                <span class="ons-btn__inner">
+                  <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
+                    <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0 0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z" />
+                  </svg>
+                  <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-u-vh">Search</span></span>
+                </span>
+              </button>
+            </div>
+          </span>
+        </div>
 
+         search end -->
+         <!-- Autosuggest 
+
+         <div class="ons-grid ons-grid--gutterless">
+          <div class="ons-grid__col ons-col-8@m">
+            <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
+              <div class="ons-field"> 
+
+         -->
+              <!-- <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Current name of country</label> -->
+                   <!-- <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">Enter your own answer or select from suggestions</span> -->
+        <!-- 
+
+                <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" />
+              </div>
+              <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
+                <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
+                <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
+              </div>
+              <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
+              <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
+            </div>
+          </div>
+        </div>
+
+        -->
             <!-- data catalogue start // Ons DS at [News: https://ons-design-system.netlify.app/patterns/news/] -->          
-            
 
-            <!-- -->
+        <!--Multiple suggestions Nunjucks -->
+        {% from "components/autosuggest/_macro.njk" import onsAutosuggest %}
+
+<div class="ons-grid ons-grid--gutterless">
+    <div class="ons-grid__col ons-col-8@m">
+
+        {{ onsAutosuggest({
+            "id": "country-of-birth",
+            "label": {
+                "text": "Data Catalogue",
+                "id": "country-of-birth-label",
+                "description": "Enter a specific data or select from suggestions. You can enter data."
+            },
+            "autocomplete": "off",
+            "instructions": "Use up and down keys to navigate suggestions once you\'ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.",
+            "ariaYouHaveSelected": "You have selected",
+            "ariaMinChars": "Enter 3 or more characters for suggestions.",
+            "ariaOneResult": "There is one suggestion available.",
+            "ariaNResults": "There are {n} suggestions available.",
+            "ariaLimitedResults": "Results have been limited to 10 suggestions. Type more characters to improve your search",
+            "moreResults": "Continue entering to improve suggestions",
+            "resultsTitle": "Suggestions",
+            "resultsTitleId": "country-of-birth-suggestions",
+            "allowMultiple": true,
+            "autosuggestData": "/examples/data/country-of-birth.json",
+            "noResults": "No suggestions found. You can enter your own answer",
+            "typeMore": "Continue entering to get suggestions"
+        }) }}
+    </div>
+</div>
+        <!-- Multiple suggestions Nunjucks -->
             </div>
 
             <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l">
