@@ -1,0 +1,1578 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 0px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="my_projects.html">My IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">HMRC Pension Scheme</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Notifications -->
+
+         <div class="ons-panel ons-panel--info ons-panel--no-title" style="margin-top: 30px;">
+            <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+            <div class="ons-panel__body">
+             You requested to RAS to add a new team member to project <strong>HMRC Pension Scheme</strong>.  
+            <br>
+            RAS will assess now <a href="#0">your request</a> and return to you with a decision. 
+          </div>
+        </div>
+
+        <div class="ons-panel ons-panel--info ons-panel--no-title" style="margin-top: 20px;">
+            <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+            <div class="ons-panel__body">
+            New data products 'HMRC VAT Estimates 2022' and 'Annual Population Survey 2022 final' are <strong>available via IDS</strong>. 
+            <br>
+            For the full selection of data please visit our <a href="#0">IDS Metadata Catalogue</a>. 
+          </div>
+        </div>
+
+        <!-- Project title -->
+
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 0px; padding-top: 30px;">
+          HMRC Pension Scheme 
+          &nbsp;
+          <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PROJECT LEAD&nbsp;</span>
+        </h1>
+
+        <h4 style="margin-bottom: 10px; padding-top: 10px;">Examining the long term outcomes of pension choices</h4>
+
+        <!-- Tabs -->
+
+        <div style="padding-top: 20px;margin-bottom: 0px;">
+          <section class="ons-tabs" class="ons-tabs" style="margin-bottom: 0px;">
+
+            <h2 class="ons-tabs__title">Tabs</h2>
+            <ul class="ons-tabs__list">
+              <li id="tabId1Item" class="ons-tab__list-item"><a href="#tabId1" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project overview" data-ga-label="Show: Project overview">Project overview</a></li>
+              <li id="tabId2Item" class="ons-tab__list-item"><a href="#tabId2" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project workspaces" data-ga-label="Show: Project workspaces">Project workspaces</a></li>
+              <li id="tabId3Item" class="ons-tab__list-item"><a href="#tabId3" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project data products" data-ga-label="Show: Project data products">Project data products</a></li>
+              <li id="tabId4Item" class="ons-tab__list-item"><a href="#tabId4" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project forums" data-ga-label="Show: Project forums">Project forums</a></li>
+              <li id="tabId5Item" class="ons-tab__list-item"><a href="#tabId5" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Project activity" data-ga-label="Show: Project activity">Project activity</a></li>
+              <li id="tabId6Item" class="ons-tab__list-item"><a href="#tabId6" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: Manage project" data-ga-label="Show: Manage project">Manage project</a></li>
+            </ul>
+
+            <!-- Tab 1 -->
+
+            <section id="tabId1" class="ons-tabs__panel">
+              
+              <div class="ons-grid">
+
+                  <!-- 2/3 column starts here -->
+
+                  <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 20px!important;">
+                      <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                      <!-- Project details -->
+
+                      <div class="ons-pl-grid-col" style="margin-top:0px!important;">
+                        <div class="ons-card" aria-describedBy="text1" style="background: #f5f5f6;padding: 20px;">
+                          <h3 class="ons-u-fs-l" style="margin-bottom: 20px;">
+                            <a href="#0" style="text-decoration: none;color: #000000;">Project details</a>
+                          </h3>
+                          <div style="padding-top:0px;">
+                            <span><strong>Description:</strong></span>
+                          </div>
+                          <div style="padding-top: 5px;">
+                            <span>
+                              The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.<br>
+                              In this research project, using longitudinal data, we are going to look at how various groups in the UK population accumulate and structure their pension over time. We will look at people from different regions, gender, ethnicity, urban and rural areas, educational background, marital status to observe how much contribution they accumulate in state pension, private pension pots as well as in the HMRC Pension Scheme. We will analyse the outcomes  and potential correlations with their life expectancy, health outcomes, housing circumstances and level of economic activity before and after their retirement age. Based on the findings we will create publications that will aim to help people to make better choices and to inform policy decision makers on this field.
+                            </span>
+                          </div>
+                          <div style="padding-top: 20px;">
+                            <span><strong>Project tags:</strong> Pension, HMRC, Scheme, Contributions and workplace.</span>
+                          </div>
+                          <div style="padding-top: 20px;">
+                            <span><strong>Project summary:</strong></span>
+                          </div>
+                          <div class="row" style="padding-top:0px;">
+                              <div class="column" style="float: left;width: 50%;margin-right: 30px;">
+                                <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;margin-bottom: 0px;">
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project status:</strong> Active
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Government (HMRC)
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Project Lead:</strong> <a href="directory_profile_miles.html" style="color: #206095;">Miles Coward</a>
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Deputy Project Lead:</strong> <a href="directory_profile_sonia.html" style="color: #206095;">Sonia Turkey</a>
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Project members:</strong> 7
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="column">
+                                <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;">
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Project start date:</strong> 22 January 2022 
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                      <strong>Project end date:</strong> 16 December 2022
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Data products in project:</strong> 4
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Pre-published work:</strong> 2
+                                  </li>
+                                  <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Published reports:</strong> 0
+                                  </li>
+                                </ul>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Project Enquiries to Service desk -->
+
+                      <div class="ons-panel ons-panel--branded" style="background: #f5f5f6; margin-top:20px;">
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 5px;">Project Enquiries to Service desk</h3>
+                        <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                          <table class="ons-table ons-table--responsive">
+                            <thead class="ons-table__head">
+                              <tr class="ons-table__row">
+                                  <th scope="col" class="ons-table__header">
+                                      <span>Ticket</span>
+                                  </th>
+                                  <th scope="col" class="ons-table__header" width="120">
+                                      <span>Type</span>
+                                  </th>
+                                  <th scope="col" class="ons-table__header">
+                                      <span>Enquiry</span>
+                                  </th>
+                                  <th scope="col" class="ons-table__header" width="180">
+                                      <span>Status</span>
+                                  </th>
+                              </tr>
+                            </thead>
+                            <tbody class="ons-table__body">
+                              <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                      <a href="#0" style="color: #206095;">23806143</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      Enquiries
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      How can we check other projects resolved enquiries related to our project?
+                                  </td>
+                                  <td class="ons-table__cell" data-sort-value="3">
+                                      <span class='ons-status ons-status--info'>In progress</span>
+                                  </td>
+                              </tr>
+                              <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                      <a href="#0" style="color: #206095;">65723401</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      Project 
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      How can we change the project public description?
+                                  </td>
+                                  <td class="ons-table__cell" data-sort-value="0">
+                                      <span class='ons-status ons-status--success'>Resolved</span>
+                                  </td>
+                              </tr>
+                              <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                      <a href="#0" style="color: #206095;">28633564</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      Data 
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      Can we have access to data from other accredited projects?
+                                  </td>
+                                  <td class="ons-table__cell" data-sort-value="1">
+                                      <span class='ons-status ons-status--info'>In progress</span>
+                                  </td>
+                              </tr>
+                              <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                      <a href="#0" style="color: #206095;">27560886</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      Collaboration 
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      Why we cannot copy/paste code in chats with other related projects?
+                                  </td>
+                                  <td class="ons-table__cell" data-sort-value="3">
+                                      <span class='ons-status ons-status--error'>Waiting action</span>
+                                  </td>
+                              </tr>
+                              <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                      <a href="#0" style="color: #206095;">90623462</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      Collaboration 
+                                  </td>
+                                  <td class="ons-table__cell">
+                                      How can we invite non-accredited external collaboartors to review narrative?
+                                  </td>
+                                  <td class="ons-table__cell" data-sort-value="3">
+                                      <span class='ons-status ons-status--info'>In progress</span>
+                                  </td>
+                              </tr>
+                              <tr class="ons-table__row"></tr>
+                            </tbody>
+                          </table>
+                          <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                              <span class="ons-btn__inner">
+                                  <span class="ons-btn__text">Make an enquiry</span>
+                              </span>
+                          </button>
+                          <button type="button" class="ons-btn ons-btn--secondary ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                              <span class="ons-btn__inner">
+                                  <span class="ons-btn__text">View all project enquiries</span>
+                              </span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <!-- Project project chats with IDS projects -->
+
+                      <div class="ons-pl-grid-col" style="margin-top:20px!important;">
+                        <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;">
+                          <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                          <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 10px;">Project chats with other IDS projects</h3>
+                          <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                          <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                            <table class="ons-table ons-table--responsive">
+                              <thead class="ons-table__head">
+                                <tr class="ons-table__row">
+                                  <th scope="col" class="ons-table__header"  width="160">
+                                    <span>Channel</span>
+                                  </th>
+                                  <th scope="col" class="ons-table__header">
+                                    <span>Channel description</span>
+                                  </th>
+                                  <th scope="col" class="ons-table__header">
+                                    <span>Projects</span>
+                                  </th>
+                                  <th scope="col" class="ons-table__header" width="100">
+                                    <span>Chats</span>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody class="ons-table__body">
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    <a href="#0" style="text-decoration: none;">#pension</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    Pension schemes across government
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    2
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    19
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    <a href="#0" style="text-decoration: none;">#pensioners</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    Pension schemes for pensioners
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    1
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    15
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    <a href="#0" style="text-decoration: none;">#pension-plans</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    Government pension plans for civil servants...
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    3
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    24
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    <a href="#0" style="text-decoration: none;">#pensions</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    Type of pensions cross government
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    1
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    7
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row"></tr>
+                              </tbody>
+                            </table>
+                            <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                              <span class="ons-btn__inner"><span class="ons-btn__text">Add new channel</span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Project project chats with IDS researchers -->
+
+                      <div class="ons-pl-grid-col" style="margin-top:20px!important;">
+                        <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;">
+                          <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                          <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 10px;">Project messages with IDS researchers</h3>
+                          <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                          <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                            <table class="ons-table ons-table--responsive">
+                              <thead class="ons-table__head">
+                                <tr class="ons-table__row">
+                                  <th scope="col" class="ons-table__header" width="160">
+                                    <span>Researcher</span>
+                                  </th>
+                                  <th scope="col" class="ons-table__header">
+                                    <span>Initial message</span>
+                                  </th>
+                                  <th scope="col" class="ons-table__header" width="100">
+                                    <span>Responses</span>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody class="ons-table__body">
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    <a href="#0" style="text-decoration: none;">Peter Valls</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    <a href="#0" style="text-decoration: none;">What about collaborate in our pension research project?</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    11
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    <a href="#0" style="text-decoration: none;">Maria Sabatini</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    <a href="#0" style="text-decoration: none;">We would like to use your pension research</a>
+                                  </td>
+                                  <td class="ons-table__cell">
+                                    6
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row"></tr>
+                              </tbody>
+                            </table>
+                            <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                              <span class="ons-btn__inner"><span class="ons-btn__text">Create new message</span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- No more widgets -->
+
+                      </main>
+                  </div>
+
+                  <!-- 2/3 column finish here -->
+
+                  <!-- Side column start here-->
+
+                  <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+
+                    <!-- Project change requests -->
+
+                    <div class="ons-pl-grid-col" style="margin-top: 20px!important;">
+                      <div class="ons-panel ons-panel--branded" style="background: #f8f0fd;padding-bottom: 0px;">
+                        <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                        <h3 class="ons-u-fs-l" style="padding-left: 17px;padding-top: 20px;padding-bottom: 0px;margin-bottom: 10px;">Project change requests</h3>
+                        <div class="ons-panel__body" style="padding-top: 0px; padding-bottom: 0px;">
+                          <div style="padding-bottom: 5px;">
+                            <table class="ons-table">
+                              <thead class="ons-table__head">
+                                <tr class="ons-table__row">
+                                  <th scope="col" class="ons-table__header" style="padding-top:0px;"></th>
+                                  <th scope="col" class="ons-table__header ons-table__header--numeric" width="50" style="padding-top:0px;margin-left:0px;padding-left:0px;"></th>
+                                </tr>
+                              </thead>
+                              <tbody class="ons-table__body">
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell" width="266">
+                                    Add data products
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>2</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Change variables of data products
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>1</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Remove data products
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>0</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Add project team members
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>2</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Remove project team members
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>0</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Change the role of project members
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>0</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Change the project purpose
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>0</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Request additional analytical tools
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>0</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Extend the project end date
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>0</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Change project contacts
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>0</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                  <td class="ons-table__cell">
+                                    Close the project
+                                  </td>
+                                  <td class="ons-table__cell ons-table__cell--numeric" width="50" style="margin-left:0px;padding-left:0px;">
+                                    <strong>0</strong>
+                                  </td>
+                                </tr>
+                                <tr class="ons-table__row"></tr>
+                              </tbody>
+                            </table>
+                            <a href="#0" window.location.hash>View change requests details</a>
+                          </div>
+                        </div>
+                        <div class="ons-panel__body" style="padding-top: 10px; padding-bottom: 30px;">
+                          <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:0px;margin-top: 10px;padding-left:0px;">
+                            <span class="ons-btn__inner">
+                              <span class="ons-btn__text">Make new change request</span>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Project members  -->
+
+                    <div class="ons-pl-grid-col" style="margin-top:20px!important;">
+                  <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 10px;">Project members</h3>
+                    <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;font-weight: 400;">
+                      <table class="ons-table ons-table--responsive">
+                        <thead class="ons-table__head">
+                          <tr class="ons-table__row">
+                            <th scope="col" class="ons-table__header" width="200">
+                              <span>Name and role in project</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="ons-table__body">
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="directory_profile_miles.html" style="text-decoration: none;">Miles Coward</a><br>Project Lead
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="directory_profile_sonia.html" style="text-decoration: none;">Sonia Turkey</a><br>Deputy Project Lead
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Clair Johnson</a><br>Analyst
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Tom Ellis</a><br>Analyst
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">William Willets</a><br>Enhanced Analyst
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Tara Long</a><br>Peer Reviewer
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row">
+                            <td class="ons-table__cell" width="200">
+                              <a href="#0" style="text-decoration: none;">Steve Everton</a><br>Peer Reviewer
+                            </td>
+                          </tr>
+                          <tr class="ons-table__row"></tr>
+                        </tbody>
+                      </table>
+                      <a href="#0">Roles description</a>
+                      <br>
+                      <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 20px;">
+                        <span class="ons-btn__inner"><span class="ons-btn__text">Invite a new member</span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                    <!-- No more widgets -->
+
+                  </div>
+
+                  <!-- Side column finish here -->
+
+              </div>
+
+            </section>
+
+
+
+            <!-- Tab 2 -->
+
+            <section id="tabId2" class="ons-tabs__panel">
+
+                <!-- Widget 1 -->
+
+                <!--
+                <h1 style="margin-bottom: 30px; padding-top: 20px;">
+                    Project workspaces 
+                </h1>
+                -->
+
+                <!-- WIDGET: Workspace -->
+
+                <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;margin-top: 20px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 20px;padding-top: 20px;margin-bottom: 15px;">Workspaces access </h3>
+                    <div class="ons-panel__body" style="padding-left: 20px;padding-top: 0px;padding-bottom:40px;font-size: 18px;font-weight: 400;">
+                        <table class="ons-table ons-table--responsive">
+                            <thead class="ons-table__head">
+                            <tr class="ons-table__row">
+                                <th scope="col" class="ons-table__header" width="400">
+                                <span>Workspace</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="200">
+                                <span>Project</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="150">
+                                <span>Members</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="300">
+                                <span>Data</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="150">
+                                <span>Cost</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="ons-table__body">
+                            <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                <a href="#0" class="ons-external-link" rel="noopener" style="text-decoration: none;">
+                                    <span class="ons-external-link__text">bbc-romanus-senatus-pycpu-notebook</span>
+                                    <span class="ons-external-link__icon">
+                                    <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                        <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)" />
+                                        <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)" />
+                                    </svg>
+                                    </span>
+                                    <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span>
+                                </a>
+                                </td>
+                                <td class="ons-table__cell">
+                                BBC News Text
+                                </td>
+                                <td class="ons-table__cell">
+                                17
+                                </td>
+                                <td class="ons-table__cell">
+                                Archived BBC News Articles
+                                </td>
+                                <td class="ons-table__cell">
+                                £4,854.99
+                                </td>
+                            </tr>
+                            <tr class="ons-table__row"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <!-- No more widgets -->
+
+            </section>
+
+
+
+            <!-- Tab 3 -->
+
+            <section id="tabId3" class="ons-tabs__panel">
+
+               <!-- Widget 1 -->
+
+              <h3 class="ons-u-fs-l" style="margin-bottom: 20px; padding-top: 20px;">
+                  Project data products 
+              </h3>
+
+              Lorum ipsum colabra senatus romano pensare dolori sempre et olicuas contare.
+
+              <br>
+              <br>
+
+              <a href:"#0">Link</a>
+
+              <br>
+              <br>
+              <br>
+
+              <!-- No more widgets -->
+
+            </section>
+
+
+            
+            <!-- Tab 4 -->
+
+            <section id="tabId4" class="ons-tabs__panel">
+
+               <!-- Widget 1 -->
+
+              <h3 class="ons-u-fs-l" style="margin-bottom: 20px; padding-top: 20px;">
+                  Project forums 
+              </h3>
+
+              Lorum ipsum colabra senatus romano pensare dolori sempre et olicuas contare.
+
+              <br>
+              <br>
+
+              <a href:"#0">Link</a>
+
+              <br>
+              <br>
+              <br>
+
+              <!-- No more widgets -->
+
+            </section>
+
+
+
+            <!-- Tab 5 -->
+
+            <section id="tabId5" class="ons-tabs__panel">
+
+              <!-- Widget 1 -->
+
+              <h3 class="ons-u-fs-l" style="margin-bottom: 20px; padding-top: 20px;">
+                  Project activity 
+              </h3>
+
+              Lorum ipsum colabra senatus romano pensare dolori sempre et olicuas contare.
+
+              <br>
+              <br>
+
+              <a href:"#0">Link</a>
+
+              <br>
+              <br>
+              <br>
+
+              <!-- No more widgets -->
+
+            </section>
+
+
+
+            <!-- Tab 6 -->
+
+            <section id="tabId6" class="ons-tabs__panel">
+
+              <!-- Widget 1 -->
+
+              <!--
+              <h3 class="ons-u-fs-l" style="margin-bottom: 20px; padding-top: 20px;">
+                  Manage project 
+                  <span style="text-align: right;font-size: 18px;font-weight: 400;padding-right: 0px; padding-left: 890px;"><a href="#0">Close the project</a></span>
+              </h3> 
+              -->
+
+              <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                  <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                      <a href="#0" style="text-decoration: none;color: #000000;">Change requests</a>
+                      &nbsp;
+                      <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;5 REQUESTS&nbsp;</span>
+                  </h3>
+                  <table class="ons-table ons-table--responsive">
+                    <thead class="ons-table__head">
+                    <tr class="ons-table__row">
+                        <th scope="col" class="ons-table__header" width="500">
+                            <span>Change request</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="650">
+                            <span>Details</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>Requester</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>Request date</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>Status</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="ons-table__body">
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            Add project team members
+                        </td>
+                        <td class="ons-table__cell">
+                            Add Piort Kowaski to project
+                        </td>
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Miles Coward</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            30/03/22
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--pending'>Pending</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            Add data products
+                        </td>
+                        <td class="ons-table__cell">
+                            Lorum ipsum est
+                        </td>
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Miles Coward</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            29/03/22
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--pending'>Pending</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            Add data products
+                        </td>
+                        <td class="ons-table__cell">
+                            Aliquan at dolore sempre
+                        </td>
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Miles Coward</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            25/03/22
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Approved</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            Change variables of data products	
+                        </td>
+                        <td class="ons-table__cell">
+                            Ceasar romanus dolore
+                        </td>
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Sonia Turkey</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            21/03/22
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--error'>Rejected</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            Add project team members
+                        </td>
+                        <td class="ons-table__cell">
+                            Pendulas sequelas simultaneas
+                        </td>
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Miles Coward</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            16/03/22
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Approved</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row"></tr>
+                    </tbody>
+                </table>
+
+                <a href="#0">
+                  <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner"><span class="ons-btn__text">Request a change</span></span>
+                  </button>
+                </a>
+                
+              </div>        
+
+              <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                  <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                      <a href="#0" style="text-decoration: none;color: #000000;">Team members</a>
+                      &nbsp;
+                      <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;6 ACTIVE MEMBERS&nbsp;</span>
+                  </h3>
+                  <table class="ons-table ons-table--responsive">
+                    <thead class="ons-table__head">
+                    <tr class="ons-table__row">
+                        <th scope="col" class="ons-table__header" width="460">
+                            <span>Name</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>AR number</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="500">
+                            <span>Role</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="700">
+                            <span>Organisation</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>Start date</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>End date</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="330">
+                            <span>Status</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="ons-table__body">
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="members_miles.html" style="color: #206095;">Miles Coward</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            3476
+                        </td>
+                        <td class="ons-table__cell">
+                            Project Lead 
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            14/02/21
+                        </td>
+                        <td class="ons-table__cell">
+                            
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Sonia Turkey</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            8024
+                        </td>
+                        <td class="ons-table__cell">
+                            Deputy Project Lead 
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            14/02/21
+                        </td>
+                        <td class="ons-table__cell">
+                            
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Clair Johnson</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            1183
+                        </td>
+                        <td class="ons-table__cell">
+                            Analyst
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            15/02/21
+                        </td>
+                        <td class="ons-table__cell">
+                            
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Tom Ellis</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            2731
+                        </td>
+                        <td class="ons-table__cell">
+                            Analyst
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            17/02/21
+                        </td>
+                        <td class="ons-table__cell">
+                            
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">William Willet</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            3692
+                        </td>
+                        <td class="ons-table__cell">
+                            Enhanced Analyst
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            18/02/21
+                        </td>
+                        <td class="ons-table__cell">
+                            
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Tara Long</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            3180
+                        </td>
+                        <td class="ons-table__cell">
+                            Peer Reviewer
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            22/03/21
+                        </td>
+                        <td class="ons-table__cell">
+                            
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Steve Everton</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            6205
+                        </td>
+                        <td class="ons-table__cell">
+                            Peer Reviewer
+                        </td>
+                        <td class="ons-table__cell">
+                            Department Work & Pension
+                        </td>
+                        <td class="ons-table__cell">
+                            04/04/21
+                        </td>
+                        <td class="ons-table__cell">
+                           
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--pending'>Inactive</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Piort Kawoski</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            -
+                        </td>
+                        <td class="ons-table__cell">
+                            Analyst
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            
+                        </td>
+                        <td class="ons-table__cell">
+                           
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--info'>Invited</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Sarah Clark</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            2472
+                        </td>
+                        <td class="ons-table__cell">
+                            Analyst
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            22/03/21
+                        </td>
+                        <td class="ons-table__cell">
+                            18/09/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--dead'>Left</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Laura O'connor</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            5023
+                        </td>
+                        <td class="ons-table__cell">
+                            Enhanced Analyst
+                        </td>
+                        <td class="ons-table__cell">
+                            HMRC
+                        </td>
+                        <td class="ons-table__cell">
+                            22/03/21
+                        </td>
+                        <td class="ons-table__cell">
+                            23/10/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--dead'>Left</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row"></tr>
+                    </tbody>
+                </table>
+
+                <a href="#0">
+                  <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner"><span class="ons-btn__text">Request a new team member</span></span>
+                  </button>
+                </a>
+                <!--
+                &nbsp;
+                <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner"><span class="ons-btn__text">Change role of member</span></span>
+                </button>
+                <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner" style="background-color: #d0021b;"><span class="ons-btn__text">Remove team member</span></span>
+                </button>
+                -->
+                
+              </div>
+
+              <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                  <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                      <a href="#0" style="text-decoration: none;color: #000000;">Data products</a>
+                      &nbsp;
+                      <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;4 PRODUCTS&nbsp;</span>
+                  </h3>
+
+                  <table class="ons-table ons-table--responsive">
+                    <thead class="ons-table__head">
+                    <tr class="ons-table__row">
+                        <th scope="col" class="ons-table__header" width="900">
+                            <span>Data product name</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>Acronym</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>ID number</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="500">
+                            <span>Variables</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>Start date</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="230">
+                            <span>Status</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="ons-table__body">
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Annual Survey of Hours and Earnings</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            ASHE
+                        </td>
+                        <td class="ons-table__cell">
+                             12345678
+                        </td>
+                        <td class="ons-table__cell">
+                             Lorum
+                        </td>
+                        <td class="ons-table__cell">
+                            14/02/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--pending'>Requested</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Annual Survey of Hours and Earnings</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            ASHE
+                        </td>
+                        <td class="ons-table__cell">
+                             12345678
+                        </td>
+                        <td class="ons-table__cell">
+                             Lorum
+                        </td>
+                        <td class="ons-table__cell">
+                            25/03/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Annual Survey of Hours and Earnings</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            ASHE
+                        </td>
+                        <td class="ons-table__cell">
+                             12345678
+                        </td>
+                        <td class="ons-table__cell">
+                             Lorum
+                        </td>
+                        <td class="ons-table__cell">
+                            14/02/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Annual Survey of Hours and Earnings</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            ASHE
+                        </td>
+                        <td class="ons-table__cell">
+                             12345678
+                        </td>
+                        <td class="ons-table__cell">
+                             Lorum
+                        </td>
+                        <td class="ons-table__cell">
+                            14/02/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row"></tr>
+                    </tbody>
+                </table>
+
+                <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner"><span class="ons-btn__text">Request add data product</span></span>
+                </button>
+                <!--
+                <button type="button" class="ons-btn ons-btn--secondary ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner"><span class="ons-btn__text">Change variables of data products</span></span>
+                </button>
+                <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner" style="background-color: #d0021b;"><span class="ons-btn__text">Remove data products</span></span>
+                </button>
+                -->
+
+              </div>
+
+              <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                  <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                      <a href="#0" style="text-decoration: none;color: #000000;">Analytical tools</a>
+                      &nbsp;
+                      <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;3 TOOLS&nbsp;</span>
+                  </h3>
+
+                  <table class="ons-table ons-table--responsive">
+                    <thead class="ons-table__head">
+                    <tr class="ons-table__row">
+                        <th scope="col" class="ons-table__header" width="1100">
+                            <span>Analytical tool name</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="380">
+                            <span>Acronym</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="160">
+                            <span>Start date</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="220">
+                            <span>Status</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="ons-table__body">
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Other</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            ABC
+                        </td>
+                        <td class="ons-table__cell">
+                            24/03/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">R</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            ABC
+                        </td>
+                        <td class="ons-table__cell">
+                            14/02/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Phyton</a>
+                        </td>
+                        <td class="ons-table__cell">
+                            ABC
+                        </td>
+                        <td class="ons-table__cell">
+                            14/02/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row"></tr>
+                    </tbody>
+                </table>
+
+                <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner"><span class="ons-btn__text">Request additionl analytical tool</span></span>
+                </button>
+                <!--
+                <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner" style="background-color: #d0021b;"><span class="ons-btn__text">Close forum</span></span>
+                </button>
+                -->
+
+              </div>
+
+              <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                  <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                      <a href="#0" style="text-decoration: none;color: #000000;">Forums</a>
+                      &nbsp;
+                      <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;2 FORUMS&nbsp;</span>
+                  </h3>
+
+                  <table class="ons-table ons-table--responsive">
+                    <thead class="ons-table__head">
+                    <tr class="ons-table__row">
+                        <th scope="col" class="ons-table__header" width="400">
+                            <span>Forum name</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="700">
+                            <span>Description</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>Posts</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="500">
+                            <span>Other</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="200">
+                            <span>Start date</span>
+                        </th>
+                        <th scope="col" class="ons-table__header" width="270">
+                            <span>Status</span>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="ons-table__body">
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Lorum ipsum est</a>
+                        </td>
+                        <td class="ons-table__cell">
+                             Colabra senatus roman delore est
+                        </td>
+                        <td class="ons-table__cell">
+                             17
+                        </td>
+                        <td class="ons-table__cell">
+                             Other
+                        </td>
+                        <td class="ons-table__cell">
+                            15/02/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row">
+                        <td class="ons-table__cell">
+                            <a href="#0" style="color: #206095;">Aliquam sentare</a>
+                        </td>
+                        <td class="ons-table__cell">
+                             Superas et vinculas totalia sempre
+                        </td>
+                        <td class="ons-table__cell">
+                             25
+                        </td>
+                        <td class="ons-table__cell">
+                             Other
+                        </td>
+                        <td class="ons-table__cell">
+                            14/02/21
+                        </td>
+                        <td class="ons-table__cell" data-sort-value="0">
+                            <span class='ons-status ons-status--success'>Active</span>
+                        </td>
+                    </tr>
+                    <tr class="ons-table__row"></tr>
+                    </tbody>
+                </table>
+
+                <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                    <span class="ons-btn__inner"><span class="ons-btn__text">Create new forum</span></span>
+                </button>
+
+              </div>
+
+              <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                  <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                      <a href="#0" style="text-decoration: none;color: #000000;">Changeable project details</a>
+                  </h3>
+
+                  <dl class="ons-metadata ons-metadata__list ons-grid ons-grid--gutterless ons-u-cf ons-u-mb-no" title="Information about this business and its survey requirements" aria-label="Information about this business and its survey requirements">
+                    <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Project title:</dt>
+                    <dd class="ons-metadata__value ons-grid__col ons-col-10@m">HMRC Pension Scheme</dd>
+                    <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Project summary:</dt>
+                    <dd class="ons-metadata__value ons-grid__col ons-col-10@m">Examining the long term outcomes of pension choices</dd>
+                    <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Project description:</dt>
+                    <dd class="ons-metadata__value ons-grid__col ons-col-10@m">The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement. In this research project, using longitudinal data, we are going to look at how various groups in the UK population accumulate and structure their pension over time. We will look at people from different regions, gender, ethnicity, urban and rural areas, educational background, marital status to observe how much contribution they accumulate in state pension, private pension pots as well as in the HMRC Pension Scheme. We will analyse the outcomes and potential correlations with their life expectancy, health outcomes, housing circumstances and level of economic activity before and after their retirement age. Based on the findings we will create publications that will aim to help people to make better choices and to inform policy decision makers on this field.</dd>
+                    <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Project tags:</dt>
+                    <dd class="ons-metadata__value ons-grid__col ons-col-10@m">Pension, HMRC, Scheme, Contributions and workplace</dd>
+                    <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Project ownership:</dt>
+                    <dd class="ons-metadata__value ons-grid__col ons-col-10@m">HMRC</dd>
+                    <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Project start date:</dt>
+                    <dd class="ons-metadata__value ons-grid__col ons-col-10@m">22 January 2022</dd>
+                    <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Project end date:</dt>
+                    <dd class="ons-metadata__value ons-grid__col ons-col-10@m">16 December 2022</dd>
+                    <dt class="ons-metadata__term ons-grid__col ons-col-2@m">Project contacts:</dt>
+                    <dd class="ons-metadata__value ons-grid__col ons-col-10@m">??????</dd>
+                  </dl>
+
+                  <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 30px;">
+                    <span class="ons-btn__inner">
+                      <span class="ons-btn__text">Change project details</span>
+                    </span>
+                  </button>
+
+                  <button type="button" class="ons-btn ons-btn--secondary ons-btn--small" style="margin-bottom:10px;margin-top: 30px;">
+                        <span class="ons-btn__inner"><span class="ons-btn__text">Request close project</span></span>
+                  </button>
+
+                    <!--
+                    <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                        <span class="ons-btn__inner"><span class="ons-btn__text">Change project purpose</span></span>
+                    </button>
+                    <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                        <span class="ons-btn__inner"><span class="ons-btn__text">Extend project end date</span></span>
+                    </button>
+                    <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                        <span class="ons-btn__inner"><span class="ons-btn__text">Change project contacts</span></span>
+                    </button>
+                    <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                        <span class="ons-btn__inner" style="background-color: #d0021b;"><span class="ons-btn__text">Close project</span></span>
+                    </button>
+                    -->
+
+              </div>
+
+              <!-- No more widgets -->
+
+            </section>
+
+          </section>
+        </div>
+
+        <!-- Tabs finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
