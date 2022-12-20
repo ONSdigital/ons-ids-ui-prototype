@@ -21,7 +21,7 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
             <div class="ons-grid__col ons-col-8@m">           
 <!--Customised page template start --> 
             <!-- <div><h1>Data catalogue</h1> </div> -->  
-        <!-- Search 
+        <!-- Search -->
 
         <div class="ons-field">
           <label class="ons-label ons-label--placeholder" for="search-field">Search this service</label>
@@ -40,7 +40,7 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
           </span>
         </div>
 
-         search end -->
+          <!-- search end -->
          <!-- Autosuggest 
 
          <div class="ons-grid ons-grid--gutterless">
@@ -68,7 +68,7 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
         -->
             <!-- data catalogue start // Ons DS at [News: https://ons-design-system.netlify.app/patterns/news/] -->          
 
-        <!--Multiple suggestions Nunjucks -->
+        <!--Multiple suggestions Nunjucks 
         {% from "components/autosuggest/_macro.njk" import onsAutosuggest %}
 
 <div class="ons-grid ons-grid--gutterless">
@@ -98,15 +98,15 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
         }) }}
     </div>
 </div>
-        <!-- Multiple suggestions Nunjucks -->
+        Multiple suggestions Nunjucks end -->
             </div>
 
             <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l">
               <aside class="ons-page__aside">
                
                     
-                       <!-- Accordion start -->
-                       <div id="accordion" class="ons-accordion">
+                       <!-- Accordion start 
+                    <div id="accordion" class="ons-accordion">
   <button type="button" class="ons-btn ons-js-accordion-all ons-u-mb-s ons-u-d-no ons-btn--secondary ons-btn--small" data-close-all="Hide all" data-group="accordion">
     <span class="ons-btn__inner ons-js-accordion-all-inner"><span class="ons-btn__text">Show all</span>
     </span>
@@ -178,11 +178,146 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
     </div>
   </details>
 </div>
-                       <!-- Accordion ends-->
-                      </div>
-                    </div>
-                  </div>
-                </aside>
+
+                       Accordion ends-->
+                         <!--Accordion NJ
+                       {% from "components/accordion/_macro.njk" import onsAccordion %}
+                        {{
+                            onsAccordion({
+                                "id": "accordion",
+                                "allButton": {
+                                    "open": "Show all",
+                                    "close": "Hide all"
+                                },
+                                "itemsList": [
+                                    {
+                                        "title": "Total retail turnover",
+                                        "content": "<h3 class=\"ons-u-fs-r\">Include:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">VAT</li><li class=\"ons-list__item\">internet sales</li><li class=\"ons-list__item\">retail sales from outlets in Great Britain to <a href=\"#\">customers abroad</a></li></ul><h3 class=\"ons-u-fs-r\">Exclude:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">revenue from mobile phone network commission and top-up</li><li class=\"ons-list__item\">sales from catering facilities used by customers</li><li class=\"ons-list__item\">lottery sales and commission from lottery sales</li><li class=\"ons-list__item\">sales of car accessories and motor vehicles</li><li class=\"ons-list__item\">NHS receipts</li><li class=\"ons-list__item\">automotive fuel</li></ul>"
+                                    },
+                                    {
+                                        "title": "Food sales",
+                                        "content": "<h3 class=\"ons-u-fs-r\">Include:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">all fresh food</li><li class=\"ons-list__item\">other food for human consumption (except chocolate and sugar confectionery)</li><li class=\"ons-list__item\">soft drinks</li></ul><h3 class=\"ons-u-fs-r\">Exclude:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">sales from catering facilities used by customers</li></ul>"
+                                    },
+                                    {
+                                        "title": "Alcohol, confectionery, soft drinks and tobacco sales",
+                                        "content": "<h3 class=\"ons-u-fs-r\">Include:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">chocolate and sugar confectionery</li><li class=\"ons-list__item\">tobacco and smokers’ requisites</li></ul>"
+                                    }
+                                ]
+                            })
+                        }}
+                        -->
+         <div id="accordion" class="ons-accordion">
+        
+            
+            
+
+            
+
+            
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+    
+
+    <button type="button" class="ons-btn ons-js-accordion-all ons-u-mb-s ons-btn--secondary ons-btn--small" data-close-all="Hide all" data-group="accordion" data-ga-label="Hide all" aria-expanded="false">
+        <span class="ons-btn__inner ons-js-accordion-all-inner">Show all</span>
+        
+        
+        
+    </button>
+
+        
+        
+            
+    <details id="accordion-1" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
+        <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
+                
+                <h2 class="ons-collapsible__title">Total retail turnover</h2>
+                <span class="ons-collapsible__icon">
+                    
+                    
+
+    
+
+    
+    
+        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+            <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+        </svg>
+    
+</span>
+        </summary>
+        <div id="accordion-1-content" class="ons-collapsible__content ons-js-collapsible-content">
+            <h3 class="ons-u-fs-r">Include:</h3><ul class="ons-list"><li class="ons-list__item">VAT</li><li class="ons-list__item">internet sales</li><li class="ons-list__item">retail sales from outlets in Great Britain to <a href="#">customers abroad</a></li></ul><h3 class="ons-u-fs-r">Exclude:</h3><ul class="ons-list"><li class="ons-list__item">revenue from mobile phone network commission and top-up</li><li class="ons-list__item">sales from catering facilities used by customers</li><li class="ons-list__item">lottery sales and commission from lottery sales</li><li class="ons-list__item">sales of car accessories and motor vehicles</li><li class="ons-list__item">NHS receipts</li><li class="ons-list__item">automotive fuel</li></ul>
+        </div>
+    </details>
+
+        
+            
+    <details id="accordion-2" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
+        <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
+                
+                <h2 class="ons-collapsible__title">Food sales</h2>
+                <span class="ons-collapsible__icon">
+                    
+                    
+
+    
+
+    
+    
+        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+            <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+        </svg>
+    
+</span>
+        </summary>
+        <div id="accordion-2-content" class="ons-collapsible__content ons-js-collapsible-content">
+            <h3 class="ons-u-fs-r">Include:</h3><ul class="ons-list"><li class="ons-list__item">all fresh food</li><li class="ons-list__item">other food for human consumption (except chocolate and sugar confectionery)</li><li class="ons-list__item">soft drinks</li></ul><h3 class="ons-u-fs-r">Exclude:</h3><ul class="ons-list"><li class="ons-list__item">sales from catering facilities used by customers</li></ul>
+        </div>
+    </details>
+
+        
+            
+    <details id="accordion-3" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
+        <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
+                
+                <h2 class="ons-collapsible__title">Alcohol, confectionery, soft drinks and tobacco sales</h2>
+                <span class="ons-collapsible__icon">
+                    
+                    
+
+    
+
+    
+    
+        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+            <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+        </svg>
+    
+</span>
+        </summary>
+        <div id="accordion-3-content" class="ons-collapsible__content ons-js-collapsible-content">
+            <h3 class="ons-u-fs-r">Include:</h3><ul class="ons-list"><li class="ons-list__item">chocolate and sugar confectionery</li><li class="ons-list__item">tobacco and smokers’ requisites</li></ul>
+        </div>
+    </details>
+
+        
+    </div>
+
               </aside>
             </div>
             
@@ -192,7 +327,7 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
 
            
         
-             
+        </div>     
     </main>
 </div>
 <!-- Body finish here -->
