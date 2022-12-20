@@ -1,0 +1,151 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+
+
+
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <div class="ons-grid">
+            Customised page template
+
+            <div class="ons-grid__col ons-col-8@m">           
+<!--Customised page template start --> 
+            <div>
+                <h1>Data catalogue</h1>
+        </div>   
+        <!-- Search -->
+        <div class="ons-field">
+  <label class="ons-label ons-label--placeholder" for="search-field">Search this service</label>
+  <span class="ons-grid--flex ons-search">
+    <div class="ons-search-component">
+      <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input ons-input--placeholder" placeholder="Search this service" />
+      <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
+        <span class="ons-btn__inner">
+          <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
+            <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0 0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z" />
+          </svg>
+          <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-u-vh">Search</span></span>
+        </span>
+      </button>
+    </div>
+  </span>
+</div>
+        <!-- search end -->
+
+            <!-- data catalogue start // Ons DS at [News: https://ons-design-system.netlify.app/patterns/news/] -->          
+            
+
+            <!-- -->
+            </div>
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l">
+              <aside class="ons-page__aside">
+               
+                    
+                       <!-- Accordion start -->
+                       <div id="accordion" class="ons-accordion">
+  <button type="button" class="ons-btn ons-js-accordion-all ons-u-mb-s ons-u-d-no ons-btn--secondary ons-btn--small" data-close-all="Hide all" data-group="accordion">
+    <span class="ons-btn__inner ons-js-accordion-all-inner"><span class="ons-btn__text">Show all</span>
+    </span>
+  </button>
+  <details id="accordion-1" class="ons-details ons-js-details ons-details--accordion" data-group="accordion">
+    <summary class="ons-details__heading ons-js-details-heading">
+      <h2 class="ons-details__title">Total retail turnover</h2>
+      <span class="ons-details__icon">
+        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+        </svg>
+      </span>
+    </summary>
+    <div id="accordion-1-content" class="ons-details__content ons-js-details-content">
+      <h3 class="ons-u-fs-r">Include:</h3>
+      <ul class="ons-list">
+        <li class="ons-list__item">VAT</li>
+        <li class="ons-list__item">internet sales</li>
+        <li class="ons-list__item">retail sales from outlets in Great Britain to <a href="#">customers abroad</a></li>
+      </ul>
+      <h3 class="ons-u-fs-r">Exclude:</h3>
+      <ul class="ons-list">
+        <li class="ons-list__item">revenue from mobile phone network commission and top-up</li>
+        <li class="ons-list__item">sales from catering facilities used by customers</li>
+        <li class="ons-list__item">lottery sales and commission from lottery sales</li>
+        <li class="ons-list__item">sales of car accessories and motor vehicles</li>
+        <li class="ons-list__item">NHS receipts</li>
+        <li class="ons-list__item">automotive fuel</li>
+      </ul>
+    </div>
+  </details>
+  <details id="accordion-2" class="ons-details ons-js-details ons-details--accordion" data-group="accordion">
+    <summary class="ons-details__heading ons-js-details-heading">
+      <h2 class="ons-details__title">Food sales</h2>
+      <span class="ons-details__icon">
+        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+        </svg>
+      </span>
+    </summary>
+    <div id="accordion-2-content" class="ons-details__content ons-js-details-content">
+      <h3 class="ons-u-fs-r">Include:</h3>
+      <ul class="ons-list">
+        <li class="ons-list__item">all fresh food</li>
+        <li class="ons-list__item">other food for human consumption (except chocolate and sugar confectionery)</li>
+        <li class="ons-list__item">soft drinks</li>
+      </ul>
+      <h3 class="ons-u-fs-r">Exclude:</h3>
+      <ul class="ons-list">
+        <li class="ons-list__item">sales from catering facilities used by customers</li>
+      </ul>
+    </div>
+  </details>
+  <details id="accordion-3" class="ons-details ons-js-details ons-details--accordion" data-group="accordion">
+    <summary class="ons-details__heading ons-js-details-heading">
+      <h2 class="ons-details__title">Alcohol, confectionery, soft drinks and tobacco sales</h2>
+      <span class="ons-details__icon">
+        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+        </svg>
+      </span>
+    </summary>
+    <div id="accordion-3-content" class="ons-details__content ons-js-details-content">
+      <h3 class="ons-u-fs-r">Include:</h3>
+      <ul class="ons-list">
+        <li class="ons-list__item">chocolate and sugar confectionery</li>
+        <li class="ons-list__item">tobacco and smokers’ requisites</li>
+      </ul>
+    </div>
+  </details>
+</div>
+                       <!-- Accordion ends-->
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </aside>
+            </div>
+            
+<!--Customised page template end --> 
+
+
+
+           
+        
+             
+    </main>
+</div>
+<!-- Body finish here -->
+
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
