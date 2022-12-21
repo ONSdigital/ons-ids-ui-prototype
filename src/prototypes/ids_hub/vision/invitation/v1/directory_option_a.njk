@@ -1,7 +1,7 @@
 ---
 group: Hub
 title: Hub Prototypes
-layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_2
+layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_option_a
 ---
 
 {% from "components/button/_macro.njk" import onsButton %}
@@ -36,14 +36,20 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_2
 
          <!-- Lorum -->
 
-        <h1 class="ons-u-fs-xl" style="margin-bottom: 10px; padding-top: 10px;">People directory (3081)</h1>
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 10px; padding-top: 10px;">People directory (2674)</h1>
 
         <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px; margin-bottom: 20px;">
-            <label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">Search for people &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filter table view by </label>
+            <label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">
+                Search for people 
+                <!--
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                Filter table view by 
+                -->
+            </label>
             <div class="ons-field ons-grid--flex ons-search">
                 <span class="ons-grid--flex ons-search">
                     <div class="ons-search-component">
-                    <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input" style="background: #ffffff;" placeholder="Search by name or AR number">
+                    <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input" style="background: #ffffff; width: 500px;" placeholder="Search by name or AR number">
                     <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
                         <span class="ons-btn__inner">
                         <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
@@ -54,6 +60,7 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_2
                     </button>
                     </div>
                 </span>
+                <!--
                 <span style="padding-right: 60px;"></span>
                 <select id="select" name="select" class="ons-input ons-input--select">
                     <option value="1" selected disabled>All</option>
@@ -62,13 +69,86 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_2
                     <option value="4">Other accredited researchers (113)</option>
                     <option value="5">Non-accredited reviewers (89)</option>
                 </select>
-                <span style="padding-right: 60px;"></span>
+                -->
+                <span style="padding-right: 40px;"></span>
+                <span style="margin-top:5px;">
+                    <a style="color: #206095;" class="text_container" id="show">View filters</a>
+                </span>
+
+                <!-- Reveal more filters -->
+
+                <div class="menu ons-btn-group" style="display: none;margin-top: 20px;">
+                    <span style="padding-bottom: 10px;"><strong>Filter table by</strong></span>
+                    <span style="padding-right: 800px;"></span>
+                    <select id="select" name="select" class="ons-input ons-input--select">
+                        <option value="1" selected disabled>Example 1</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                    </select>
+                    <span style="padding-right: 20px;"></span>
+                    <select id="select" name="select" class="ons-input ons-input--select">
+                        <option value="1" selected disabled>Example 2</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                    </select>
+                    <span style="padding-right: 20px;"></span>
+                    <select id="select" name="select" class="ons-input ons-input--select">
+                        <option value="1" selected disabled>Example 3</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                    </select>
+
+                    <br><br>
+
+                    <select id="select" name="select" class="ons-input ons-input--select">
+                        <option value="1" selected disabled>Example 4</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                    </select>
+                    <span style="padding-right: 20px;"></span>
+                    <select id="select" name="select" class="ons-input ons-input--select">
+                        <option value="1" selected disabled>Example 5</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                    </select>
+                    <span style="padding-right: 20px;"></span>
+                    <select id="select" name="select" class="ons-input ons-input--select">
+                        <option value="1" selected disabled>Example 6</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                    </select>
+                </div>
+            
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+                <script>
+                    $(document).ready(function(){
+                        $('#show').click(function() {
+                        $('.menu').toggle("slide");
+                        });
+                    });
+                </script>
+
+                <!-- Enf of more filters -->
+
+
+
+
+                
+                <!--
                 <span class="ons-checkboxes__item ons-checkboxes__item--no-border" style="margin-top:5px;">
                     <span class="ons-checkbox  ons-checkbox--no-border">
                         <input type="checkbox" id="data" class="ons-checkbox__input ons-js-checkbox" value="data">
                         <label class=" ons-checkbox__label " for="data" id="data-label">Display people in projects only</label>
                     </span>
                 </span>
+                -->
             </div> 
         </div>
 
@@ -100,7 +180,7 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_2
             <tbody class="ons-table__body">
                 <tr class="ons-table__row">
                     <td class="ons-table__cell" name="cell-name">
-                        <a href="#0" style="color: #206095;">Miles Coward</a>
+                        <a href="directory_profile_miles_a.html" style="color: #206095;">Miles Coward</a>
                     </td>
                     <td class="ons-table__cell">
                         1582
@@ -120,7 +200,7 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_2
                 </tr>
                 <tr class="ons-table__row">
                     <td class="ons-table__cell" name="cell-name">
-                        <a href="#0" style="color: #206095;">Carla Bompiare</a>
+                        <a href="directory_profile_sonia_a.html" style="color: #206095;">Sonia Turkey</a>
                     </td>
                     <td class="ons-table__cell">
                         1632
@@ -129,13 +209,13 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_2
                         Government researcher
                     </td>
                     <td class="ons-table__cell">
-                        Defra
+                        HMRC
                     </td>
                     <td class="ons-table__cell">
                         Government
                     </td>
                     <td class="ons-table__cell">
-                        1
+                        2
                     </td>
                 </tr>
                 <tr class="ons-table__row">
@@ -289,7 +369,7 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_2
                         Non-accredited reviewer
                     </td>
                     <td class="ons-table__cell">
-                        ONS
+                        Defra
                     </td>
                     <td class="ons-table__cell">
                         Government
