@@ -1,0 +1,368 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 0px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="my_projects.html">My IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="project_1.html">HMRC Pension Scheme</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">Change requests</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+         <!-- Lorum -->
+
+        <!--
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 0px; padding-top: 10px;">
+         Miles Smith
+        </h1>
+        -->
+
+        <div class="ons-grid">
+
+            <!-- 2/3 column starts here -->
+
+            <div class="ons-grid__col ons-col-12@m ons-u-mt-l ons-u-mb-l" style="margin-top: 50px!important;">
+                <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                    <h1 class="ons-u-fs-xl" style="margin-bottom: 20px; padding-top: 0px;">HMRC Pension Scheme's project change requests</h1>
+
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px; margin-bottom: 20px;">
+                        <label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">Search for requests &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filter table view by </label>
+                        <div class="ons-field ons-grid--flex ons-search">
+                            <span class="ons-grid--flex ons-search">
+                                <div class="ons-search-component">
+                                <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input" style="background: #ffffff;" placeholder="Search by type or task ID">
+                                <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
+                                    <span class="ons-btn__inner">
+                                    <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
+                                        <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0 0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z" />
+                                    </svg>
+                                    <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-u-vh">Search</span></span>
+                                    </span>
+                                </button>
+                                </div>
+                            </span>
+                            <span style="padding-right: 60px;"></span>
+                            <select id="select" name="select" class="ons-input ons-input--select">
+                                <option value="1" selected disabled>All</option>
+                                <option value="2">Approved (4)</option>
+                                <option value="3">In progress (4)</option>
+                                <option value="4">rejected (1)</option>
+                            </select>
+                            <span style="padding-right: 60px;"></span>
+                            <!--
+                            <span class="ons-checkboxes__item ons-checkboxes__item--no-border" style="margin-top:5px;">
+                                <span class="ons-checkbox  ons-checkbox--no-border">
+                                    <input type="checkbox" id="data" class="ons-checkbox__input ons-js-checkbox" value="data">
+                                    <label class=" ons-checkbox__label " for="data" id="data-label">Display people in projects only</label>
+                                </span>
+                            </span>
+                            -->
+                        </div> 
+                    </div>
+
+                    <!-- Profile -->
+                    
+                    <table class="ons-table ons-table--responsive">
+                        <thead class="ons-table__head">
+                        <tr class="ons-table__row">
+                            <th scope="col" class="ons-table__header" width="550">
+                                <span>Type of request</span>
+                            </th>
+                            <th scope="col" class="ons-table__header" width="150">
+                                <span>Task ID</span>
+                            </th>
+                            <th scope="col" class="ons-table__header" width="640">
+                                <span>Details</span>
+                            </th>
+                            <th scope="col" class="ons-table__header" width="200">
+                                <span>Requester</span>
+                            </th>
+                            <th scope="col" class="ons-table__header" width="180">
+                                <span>Request on</span>
+                            </th>
+                            <th scope="col" class="ons-table__header" width="200">
+                                <span>Status</span>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody class="ons-table__body">
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Change project purpose
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">3476</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Lorum ipsum est colabra sentrarum...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Miles Coward</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                29/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                <span class='ons-status ons-status--pending'>In progress</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Add data products
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">5678</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Aliquan at dolore sempre astias...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Miles Coward</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                25/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                <span class='ons-status ons-status--pending'>In progress</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Change variables of data products	
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">3751</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Ceasar romanus dolore et pensara...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Sonia Turkey</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                21/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                <span class='ons-status ons-status--pending'>In progress</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Remove project team members
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">8903</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Pendulas sequelas simultaneas est...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Miles Coward</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                16/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                <span class='ons-status ons-status--pending'>In progress</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Add project team members
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">7634</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Consensuas solubre vitora sumus...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Sonia Turkey</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                15/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                <span class='ons-status ons-status--success'>Approved</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Add project team members
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">6712</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Calumnias provocas senatus est...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Sonia Turkey</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                11/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                 <span class='ons-status ons-status--error'>Rejected</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Add project team members
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">9042</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Ceasar romanus dolore pendulas et...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Miles Coward</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                10/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                 <span class='ons-status ons-status--success'>Approved</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Request additional analytical tools
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">5234</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Supra solana dolore aliquam singlare...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Miles Coward</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                07/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                 <span class='ons-status ons-status--success'>Approved</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row">
+                            <td class="ons-table__cell">
+                                Add data products
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">7465</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                Excalibutas dogmas latinas continuas...
+                            </td>
+                            <td class="ons-table__cell">
+                                <a href="#0" style="color: #206095;">Miles Coward</a>
+                            </td>
+                            <td class="ons-table__cell">
+                                04/03/22
+                            </td>
+                            <td class="ons-table__cell" data-sort-value="0">
+                                 <span class='ons-status ons-status--success'>Approved</span>
+                            </td>
+                        </tr>
+                        <tr class="ons-table__row"></tr>
+                        </tbody>
+                    </table>
+
+                    <a href="#0" style="margin-bottom: 0px;">
+                        <button type="button" class="ons-btn ons-btn--small" style="margin-bottom: 0px;margin-top: 10px;margin-right:0px;">
+                        <span class="ons-btn__inner">
+                            <span class="ons-btn__text">Request a change</span>
+                        </span>
+                        </button>
+                    </a>
+
+                </main>
+            </div>
+            
+            <!-- 2/3 column finish here -->
+
+            <!--
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 112px!important;">
+                
+                <div class="ons-panel ons-panel--branded" style="background: #e7f1f8;padding-bottom: 10px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">tbd </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 17px;padding-top: 20px;margin-bottom: 10px;">Request a change</h3>
+                    <div class="ons-panel__body" style="padding-top: 0px;">
+                      <ul class="ons-list ons-list--bare">
+                        <li class="ons-list__item">
+                          Lorum ipsum colabra est senatus roman caesar colaboras dolori sempre.
+                        </li>
+                      </ul>
+                      <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:10px;margin-top: 10px;">
+                          <span class="ons-btn__inner"><span class="ons-btn__text">Request a change</span>
+                          </span>
+                      </button>
+                    </div>
+                </div> 
+
+            </div>
+
+            -->
+
+        </div>
+
+        <!-- Main finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
