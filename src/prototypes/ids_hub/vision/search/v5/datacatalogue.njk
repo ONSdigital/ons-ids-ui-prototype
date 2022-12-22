@@ -18,7 +18,79 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
 
         <div class="ons-grid">
             Customised page template
-            <div class="ons-grid__col ons-col-8@m">           
+            <div class="ons-grid__col ons-col-8@m">    
+                  <div class="ons-adv-filter__actions">
+                            <button type="button" class="ons-btn ons-btn ons-btn--small ons-js-adv-filter__show">
+                              <span class="ons-btn__inner"><span class="ons-btn__text">Show (<span class="ons-js-adv-filter__show-results">7</span> results)</span>
+                              </span>
+                            </button>
+                            <button type="button" class="ons-btn ons-btn--small ons-btn--secondary ons-js-adv-filter__close">
+                              <span class="ons-btn__inner"><span class="ons-btn__text">Close</span>
+                              </span>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="ons-grid__col ons-col-8@m">
+                      <div class="ons-adv-filter__results-options">
+                        <div class="ons-adv-filter__results-count">
+                          <span class="ons-js-adv-filter__results-count">9</span> results of 7
+                        </div>
+                        <div class="ons-adv-filter__results-sort">
+                          <label class="ons-label" for="sort">Sort by</label>
+                          <select class="ons-input ons-input--select" id="sort" name="sort" aria-controls="adv-filter-gallery" data-sort="true">
+                            <option value="index" data-sort-number="true">Latest</option>
+                            <option value="index" data-sort-order="desc" data-sort-number="true">Oldest</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--list -->
+                      <ul id="adv-filter-gallery" class="ons-document-list ons-adv-filter__gallery ons-js-adv-filter__gallery" data-filter-animation="off">
+                        <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
+                         
+                          <div class="ons-document-list__item-content">
+                            <div class="ons-document-list__item-header">
+                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                                <a href= "#0">Annual Survey of Hours and Earnings (ASHE)
+                                  <span class="ons-u-vh">  
+                                  </span>
+                                </a>
+                              </h2>
+                              <ul class="ons-document-list__item-metadata ons-u-mb-xs">
+                                <li class="ons-document-list__item-attribute ons-u-mr-no">
+                                  <span>Hours and Earnings</span>
+                                </li>
+                                <li class="ons-document-list__item-attribute" aria-hidden="true">
+                                 
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="ons-document-list__item-description">De-identified data on hours worked and earnings foremployees by sex, full-time and part-time, and postcode level geography, 1990 to 2020.</div>
+                          </div>
+                        </li>
+                        <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="2">
+                          
+                          <div class="ons-document-list__item-content">
+                            <div class="ons-document-list__item-header">
+                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                                <a href="#0">BBC News Sentiment Analysis
+                                  <span class="ons-u-vh">
+                                  BBC, Sentiment Analysis
+                                  </span></a>
+                              </h2>
+                              <ul class="ons-document-list__item-metadata ons-u-mb-xs">
+                                <li class="ons-document-list__item-attribute ons-u-mr-no">
+                                  <span>BBC,</span>
+                                </li>
+                                <li class="ons-document-list__item-attribute" aria-hidden="true"> 
+                                   Sentiment Analysis
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="ons-document-list__item-description">BBC News regional text analysis, January 2019 to October 2021.</div>
+                          </div>
+                        </li>       
 <!--Customised page template start --> 
             <!-- <div><h1>Data catalogue</h1> </div> -->  
         <!-- Search -->
@@ -39,220 +111,22 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
             </div>
           </span>
         </div>
-
-          <!-- search end -->
-         <!-- Autosuggest 
-
-         <div class="ons-grid ons-grid--gutterless">
-          <div class="ons-grid__col ons-col-8@m">
-            <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
-              <div class="ons-field"> 
-
-         -->
-              <!-- <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Current name of country</label> -->
-                   <!-- <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">Enter your own answer or select from suggestions</span> -->
-        <!-- 
-
-                <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" />
-              </div>
-              <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
-                <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
-                <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
-              </div>
-              <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
-              <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
-            </div>
-          </div>
-        </div>
-
-        -->
-            <!-- data catalogue start // Ons DS at [News: https://ons-design-system.netlify.app/patterns/news/] -->          
-
-        <!--Multiple suggestions Nunjucks 
-        {% from "components/autosuggest/_macro.njk" import onsAutosuggest %}
-
-<div class="ons-grid ons-grid--gutterless">
-    <div class="ons-grid__col ons-col-8@m">
-
-        {{ onsAutosuggest({
-            "id": "country-of-birth",
-            "label": {
-                "text": "Data Catalogue",
-                "id": "country-of-birth-label",
-                "description": "Enter a specific data or select from suggestions. You can enter data."
-            },
-            "autocomplete": "off",
-            "instructions": "Use up and down keys to navigate suggestions once you\'ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.",
-            "ariaYouHaveSelected": "You have selected",
-            "ariaMinChars": "Enter 3 or more characters for suggestions.",
-            "ariaOneResult": "There is one suggestion available.",
-            "ariaNResults": "There are {n} suggestions available.",
-            "ariaLimitedResults": "Results have been limited to 10 suggestions. Type more characters to improve your search",
-            "moreResults": "Continue entering to improve suggestions",
-            "resultsTitle": "Suggestions",
-            "resultsTitleId": "country-of-birth-suggestions",
-            "allowMultiple": true,
-            "autosuggestData": "/examples/data/country-of-birth.json",
-            "noResults": "No suggestions found. You can enter your own answer",
-            "typeMore": "Continue entering to get suggestions"
-        }) }}
-    </div>
-</div>
-        Multiple suggestions Nunjucks end -->
             </div>
 
             <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l">
-              <aside class="ons-page__aside">
-               
-                    
-                       <!-- Accordion start 
-                    <div id="accordion" class="ons-accordion">
-  <button type="button" class="ons-btn ons-js-accordion-all ons-u-mb-s ons-u-d-no ons-btn--secondary ons-btn--small" data-close-all="Hide all" data-group="accordion">
-    <span class="ons-btn__inner ons-js-accordion-all-inner"><span class="ons-btn__text">Show all</span>
-    </span>
-  </button>
-  <details id="accordion-1" class="ons-details ons-js-details ons-details--accordion" data-group="accordion">
-    <summary class="ons-details__heading ons-js-details-heading">
-      <h2 class="ons-details__title">Total retail turnover</h2>
-      <span class="ons-details__icon">
-        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
-        </svg>
-      </span>
-    </summary>
-    <div id="accordion-1-content" class="ons-details__content ons-js-details-content">
-      <h3 class="ons-u-fs-r">Include:</h3>
-      <ul class="ons-list">
-        <li class="ons-list__item">VAT</li>
-        <li class="ons-list__item">internet sales</li>
-        <li class="ons-list__item">retail sales from outlets in Great Britain to <a href="#">customers abroad</a></li>
-      </ul>
-      <h3 class="ons-u-fs-r">Exclude:</h3>
-      <ul class="ons-list">
-        <li class="ons-list__item">revenue from mobile phone network commission and top-up</li>
-        <li class="ons-list__item">sales from catering facilities used by customers</li>
-        <li class="ons-list__item">lottery sales and commission from lottery sales</li>
-        <li class="ons-list__item">sales of car accessories and motor vehicles</li>
-        <li class="ons-list__item">NHS receipts</li>
-        <li class="ons-list__item">automotive fuel</li>
-      </ul>
-    </div>
-  </details>
-  <details id="accordion-2" class="ons-details ons-js-details ons-details--accordion" data-group="accordion">
-    <summary class="ons-details__heading ons-js-details-heading">
-      <h2 class="ons-details__title">Food sales</h2>
-      <span class="ons-details__icon">
-        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
-        </svg>
-      </span>
-    </summary>
-    <div id="accordion-2-content" class="ons-details__content ons-js-details-content">
-      <h3 class="ons-u-fs-r">Include:</h3>
-      <ul class="ons-list">
-        <li class="ons-list__item">all fresh food</li>
-        <li class="ons-list__item">other food for human consumption (except chocolate and sugar confectionery)</li>
-        <li class="ons-list__item">soft drinks</li>
-      </ul>
-      <h3 class="ons-u-fs-r">Exclude:</h3>
-      <ul class="ons-list">
-        <li class="ons-list__item">sales from catering facilities used by customers</li>
-      </ul>
-    </div>
-  </details>
-  <details id="accordion-3" class="ons-details ons-js-details ons-details--accordion" data-group="accordion">
-    <summary class="ons-details__heading ons-js-details-heading">
-      <h2 class="ons-details__title">Alcohol, confectionery, soft drinks and tobacco sales</h2>
-      <span class="ons-details__icon">
-        <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
-        </svg>
-      </span>
-    </summary>
-    <div id="accordion-3-content" class="ons-details__content ons-js-details-content">
-      <h3 class="ons-u-fs-r">Include:</h3>
-      <ul class="ons-list">
-        <li class="ons-list__item">chocolate and sugar confectionery</li>
-        <li class="ons-list__item">tobacco and smokers’ requisites</li>
-      </ul>
-    </div>
-  </details>
-</div>
-
-                       Accordion ends-->
-                         <!--Accordion NJ
-                       {% from "components/accordion/_macro.njk" import onsAccordion %}
-                        {{
-                            onsAccordion({
-                                "id": "accordion",
-                                "allButton": {
-                                    "open": "Show all",
-                                    "close": "Hide all"
-                                },
-                                "itemsList": [
-                                    {
-                                        "title": "Total retail turnover",
-                                        "content": "<h3 class=\"ons-u-fs-r\">Include:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">VAT</li><li class=\"ons-list__item\">internet sales</li><li class=\"ons-list__item\">retail sales from outlets in Great Britain to <a href=\"#\">customers abroad</a></li></ul><h3 class=\"ons-u-fs-r\">Exclude:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">revenue from mobile phone network commission and top-up</li><li class=\"ons-list__item\">sales from catering facilities used by customers</li><li class=\"ons-list__item\">lottery sales and commission from lottery sales</li><li class=\"ons-list__item\">sales of car accessories and motor vehicles</li><li class=\"ons-list__item\">NHS receipts</li><li class=\"ons-list__item\">automotive fuel</li></ul>"
-                                    },
-                                    {
-                                        "title": "Food sales",
-                                        "content": "<h3 class=\"ons-u-fs-r\">Include:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">all fresh food</li><li class=\"ons-list__item\">other food for human consumption (except chocolate and sugar confectionery)</li><li class=\"ons-list__item\">soft drinks</li></ul><h3 class=\"ons-u-fs-r\">Exclude:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">sales from catering facilities used by customers</li></ul>"
-                                    },
-                                    {
-                                        "title": "Alcohol, confectionery, soft drinks and tobacco sales",
-                                        "content": "<h3 class=\"ons-u-fs-r\">Include:</h3><ul class=\"ons-list\"><li class=\"ons-list__item\">chocolate and sugar confectionery</li><li class=\"ons-list__item\">tobacco and smokers’ requisites</li></ul>"
-                                    }
-                                ]
-                            })
-                        }}
-                        -->
+             
+              <aside class="ons-page__aside"> 
+        <!-- Accordion -->           
          <div id="accordion" class="ons-accordion">
-        
-            
-            
-
-            
-
-            
-
-    
-    
-        
-    
-
-    
-    
-        
-    
-
-    
-    
-        
-    
-
-    
-
     <button type="button" class="ons-btn ons-js-accordion-all ons-u-mb-s ons-btn--secondary ons-btn--small" data-close-all="Hide all" data-group="accordion" data-ga-label="Hide all" aria-expanded="false">
-        <span class="ons-btn__inner ons-js-accordion-all-inner">Show all</span>
-        
-        
-        
+        <span class="ons-btn__inner ons-js-accordion-all-inner">Show all</span>          
     </button>
-
-        
-        
-            
+         
     <details id="accordion-1" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
         <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
                 
                 <h2 class="ons-collapsible__title">Total retail turnover</h2>
                 <span class="ons-collapsible__icon">
-                    
-                    
-
-    
-
-    
     
         <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
             <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
@@ -263,21 +137,13 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
         <div id="accordion-1-content" class="ons-collapsible__content ons-js-collapsible-content">
             <h3 class="ons-u-fs-r">Include:</h3><ul class="ons-list"><li class="ons-list__item">VAT</li><li class="ons-list__item">internet sales</li><li class="ons-list__item">retail sales from outlets in Great Britain to <a href="#">customers abroad</a></li></ul><h3 class="ons-u-fs-r">Exclude:</h3><ul class="ons-list"><li class="ons-list__item">revenue from mobile phone network commission and top-up</li><li class="ons-list__item">sales from catering facilities used by customers</li><li class="ons-list__item">lottery sales and commission from lottery sales</li><li class="ons-list__item">sales of car accessories and motor vehicles</li><li class="ons-list__item">NHS receipts</li><li class="ons-list__item">automotive fuel</li></ul>
         </div>
-    </details>
-
-        
+    </details> 
             
     <details id="accordion-2" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
         <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
                 
                 <h2 class="ons-collapsible__title">Food sales</h2>
                 <span class="ons-collapsible__icon">
-                    
-                    
-
-    
-
-    
     
         <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
             <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
@@ -289,20 +155,12 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
             <h3 class="ons-u-fs-r">Include:</h3><ul class="ons-list"><li class="ons-list__item">all fresh food</li><li class="ons-list__item">other food for human consumption (except chocolate and sugar confectionery)</li><li class="ons-list__item">soft drinks</li></ul><h3 class="ons-u-fs-r">Exclude:</h3><ul class="ons-list"><li class="ons-list__item">sales from catering facilities used by customers</li></ul>
         </div>
     </details>
-
-        
-            
+  
     <details id="accordion-3" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
         <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
                 
                 <h2 class="ons-collapsible__title">Alcohol, confectionery, soft drinks and tobacco sales</h2>
-                <span class="ons-collapsible__icon">
-                    
-                    
-
-    
-
-    
+                <span class="ons-collapsible__icon">    
     
         <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
             <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
