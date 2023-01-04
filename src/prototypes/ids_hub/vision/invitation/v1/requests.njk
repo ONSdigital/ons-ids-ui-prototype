@@ -70,7 +70,7 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                     <h1 class="ons-u-fs-xl" style="margin-bottom: 20px; padding-top: 0px;">HMRC Pension Scheme's project change requests</h1>
 
                     <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px; margin-bottom: 20px;">
-                        <label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">Search for requests &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filter table view by </label>
+                        <label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">Search for requests &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Filter table by </label>
                         <div class="ons-field ons-grid--flex ons-search">
                             <span class="ons-grid--flex ons-search">
                                 <div class="ons-search-component">
@@ -87,12 +87,25 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                             </span>
                             <span style="padding-right: 60px;"></span>
                             <select id="select" name="select" class="ons-input ons-input--select">
-                                <option value="1" selected disabled>All</option>
+                                <option value="1" selected disabled>All type of request</option>
+                                <option value="2">Add data products (2)</option>
+                                <option value="3">Add project team members (4)</option>
+                                <option value="4">Other (1)</option>
+                                <option value="4">Other (1)</option>
+                                <option value="4">Other (1)</option>
+                                <option value="4">Other (1)</option>
+                                <option value="4">Other (1)</option>
+                                <option value="4">Other (1)</option>
+                                <option value="4">Other (1)</option>
+                                <option value="4">Other (1)</option>
+                            </select>
+                            <span style="padding-right: 10px;"></span>
+                            <select id="select" name="select" class="ons-input ons-input--select">
+                                <option value="1" selected disabled>All status</option>
                                 <option value="2">Approved (4)</option>
                                 <option value="3">In progress (4)</option>
                                 <option value="4">rejected (1)</option>
                             </select>
-                            <span style="padding-right: 60px;"></span>
                             <!--
                             <span class="ons-checkboxes__item ons-checkboxes__item--no-border" style="margin-top:5px;">
                                 <span class="ons-checkbox  ons-checkbox--no-border">
@@ -109,11 +122,11 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                     <table class="ons-table ons-table--responsive">
                         <thead class="ons-table__head">
                         <tr class="ons-table__row">
+                            <th scope="col" class="ons-table__header" width="100">
+                                <span>ID</span>
+                            </th>
                             <th scope="col" class="ons-table__header" width="550">
                                 <span>Type of request</span>
-                            </th>
-                            <th scope="col" class="ons-table__header" width="150">
-                                <span>Task ID</span>
                             </th>
                             <th scope="col" class="ons-table__header" width="640">
                                 <span>Details</span>
@@ -132,10 +145,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         <tbody class="ons-table__body">
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Change project purpose
+                                <a href="#0" style="color: #206095;">3476</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">3476</a>
+                                Change project purpose
                             </td>
                             <td class="ons-table__cell">
                                 Lorum ipsum est colabra sentrarum...
@@ -152,10 +165,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         </tr>
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Add data products
+                                <a href="#0" style="color: #206095;">5678</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">5678</a>
+                                Add data products
                             </td>
                             <td class="ons-table__cell">
                                 Aliquan at dolore sempre astias...
@@ -172,10 +185,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         </tr>
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Change variables of data products	
+                                <a href="#0" style="color: #206095;">3751</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">3751</a>
+                                Change variables of data products	
                             </td>
                             <td class="ons-table__cell">
                                 Ceasar romanus dolore et pensara...
@@ -192,10 +205,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         </tr>
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Remove project team members
+                                <a href="#0" style="color: #206095;">8903</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">8903</a>
+                                Remove project team members
                             </td>
                             <td class="ons-table__cell">
                                 Pendulas sequelas simultaneas est...
@@ -212,10 +225,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         </tr>
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Add project team members
+                                <a href="#0" style="color: #206095;">7634</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">7634</a>
+                                Add project team members
                             </td>
                             <td class="ons-table__cell">
                                 Consensuas solubre vitora sumus...
@@ -232,10 +245,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         </tr>
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Add project team members
+                                <a href="#0" style="color: #206095;">6712</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">6712</a>
+                                Add project team members
                             </td>
                             <td class="ons-table__cell">
                                 Calumnias provocas senatus est...
@@ -252,10 +265,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         </tr>
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Add project team members
+                                <a href="#0" style="color: #206095;">9042</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">9042</a>
+                                Add project team members
                             </td>
                             <td class="ons-table__cell">
                                 Ceasar romanus dolore pendulas et...
@@ -272,10 +285,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         </tr>
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Request additional analytical tools
+                                <a href="#0" style="color: #206095;">5234</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">5234</a>
+                                Request additional analytical tools
                             </td>
                             <td class="ons-table__cell">
                                 Supra solana dolore aliquam singlare...
@@ -292,10 +305,10 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                         </tr>
                         <tr class="ons-table__row">
                             <td class="ons-table__cell">
-                                Add data products
+                                <a href="#0" style="color: #206095;">7465</a>
                             </td>
                             <td class="ons-table__cell">
-                                <a href="#0" style="color: #206095;">7465</a>
+                                Add data products
                             </td>
                             <td class="ons-table__cell">
                                 Excalibutas dogmas latinas continuas...
