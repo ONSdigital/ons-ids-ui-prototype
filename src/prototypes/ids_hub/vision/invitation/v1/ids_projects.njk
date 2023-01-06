@@ -1,0 +1,817 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/invitation/v1/views/_master_for_ids_projects
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 20px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+               <a class="ons-breadcrumb__link" href="#0">IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+         <!-- Tabs -->
+
+        <div style="padding-top: 20px;margin-bottom: 0px;">
+          <section class="ons-tabs" class="ons-tabs" style="margin-bottom: 0px;">
+            <h2 class="ons-tabs__title">Tabs</h2>
+            <ul class="ons-tabs__list">
+              <li id="tabId1Item" class="ons-tab__list-item"><a href="#tabId1" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: All IDS projects" data-ga-label="Show: All IDS projects">All IDS projects</a></li>
+              <li id="tabId2Item" class="ons-tab__list-item"><a href="#tabId2" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: My active projects" data-ga-label="Show: My active projects">My active projects</a></li>
+              <li id="tabId3Item" class="ons-tab__list-item"><a href="#tabId3" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: My archived projectss" data-ga-label="Show: My archived projects">My archived projects</a></li>
+            </ul>
+
+            <!-- Tab 1 -->
+
+            <section id="tabId1" class="ons-tabs__panel">
+              
+              <div class="ons-grid">
+
+                  <!-- 2/3 column starts here -->
+
+                  <div class="ons-grid__col ons-col-12@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+                      <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                      <!-- Projects and Boards -->
+
+                        <h3 class="ons-u-fs-l" style="margin-bottom: 30px; padding-top: 20px;">
+                            All IDS projects
+                        </h3>
+                    
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px; margin-bottom: 20px;">
+                            <label class="ons-label ons-u-pb-xxs ons-u-mb-no" for="search-field">
+                                Search for projects 
+                                <!--
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                Filter table view by 
+                                -->
+                            </label>
+                            <div class="ons-field ons-grid--flex ons-search">
+                                <span class="ons-grid--flex ons-search">
+                                    <div class="ons-search-component">
+                                    <input type="search" id="search-field" class="ons-input ons-input--text ons-input-type__input ons-search__input" style="background: #ffffff; width: 500px;" placeholder="Search by project name or description">
+                                    <button type="submit" class="ons-btn ons-search__btn ons-u-mt-xs@xxs@s ons-btn--small">
+                                        <span class="ons-btn__inner">
+                                        <svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
+                                            <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0 0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z" />
+                                        </svg>
+                                        <span class="ons-btn__text ons-u-vh@xxs@s"><span class="ons-u-vh">Search</span></span>
+                                        </span>
+                                    </button>
+                                    </div>
+                                </span>
+                                <!--
+                                <span style="padding-right: 60px;"></span>
+                                <select id="select" name="select" class="ons-input ons-input--select">
+                                    <option value="1" selected disabled>All</option>
+                                    <option value="2">Accredited government researchers (2134)</option>
+                                    <option value="3">Accredited academia researchers (745)</option>
+                                    <option value="4">Other accredited researchers (113)</option>
+                                    <option value="5">Non-accredited reviewers (89)</option>
+                                </select>
+                                -->
+                                <span style="padding-right: 40px;"></span>
+                                <span style="margin-top:5px;">
+                                    <a style="color: #206095;" class="text_container" id="show">Show/hide filters</a>
+                                </span>
+
+                                <!-- Reveal more filters -->
+
+                                <div class="menu ons-btn-group" style="display: none;margin-top: 20px;">
+                                    <style>
+                                        .ons-btn-group {
+                                        margin-bottom: 0.5rem !important;
+                                        }
+                                    </style>
+                                    <span style="padding-bottom: 10px;"><strong>Filter table by</strong></span>
+                                    <span style="padding-right: 800px;"></span>
+                                    <select id="select" name="select" class="ons-input ons-input--select">
+                                        <option value="1" selected disabled>Example 1</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                    </select>
+                                    <span style="padding-right: 20px;"></span>
+                                    <select id="select" name="select" class="ons-input ons-input--select">
+                                        <option value="1" selected disabled>Example 2</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                    </select>
+                                    <span style="padding-right: 20px;"></span>
+                                    <select id="select" name="select" class="ons-input ons-input--select">
+                                        <option value="1" selected disabled>Example 3</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                    </select>
+                                    <br><br>
+                                    <select id="select" name="select" class="ons-input ons-input--select">
+                                        <option value="1" selected disabled>Example 4</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                    </select>
+                                    <span style="padding-right: 20px;"></span>
+                                    <select id="select" name="select" class="ons-input ons-input--select">
+                                        <option value="1" selected disabled>Example 5</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                    </select>
+                                    <span style="padding-right: 20px;"></span>
+                                    <select id="select" name="select" class="ons-input ons-input--select">
+                                        <option value="1" selected disabled>Example 6</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                    </select>
+                                    <span style="padding-right: 1200px;"></span>
+                                    <div class="ons-btn-group" style="margin-bottom: 0px!important;margin-top:20px;">
+                                        <a href="directory_option_a_filtered.html" style="margin-bottom: 0px;">
+                                            <button type="button" class="ons-btn ons-btn--small" style="margin-bottom: 0px;margin-top: 10px;margin-right:0px;">
+                                            <span class="ons-btn__inner">
+                                                <span class="ons-btn__text">Apply filters</span>
+                                            </span>
+                                            </button>
+                                        </a>
+                                        <a href="#0" style="margin-bottom: 0px;">
+                                            <button type="button" class="ons-btn ons-btn--secondary ons-btn--small" style="margin-bottom: 0px;margin-top: 10px;">
+                                            <span class="ons-btn__inner"><span class="ons-btn__text">Clear filters</span></span>
+                                            </button>
+                                        </a>
+                                        </div>
+                                </div>
+                            
+                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+                                <script>
+                                    $(document).ready(function(){
+                                        $('#show').click(function() {
+                                        $('.menu').toggle("slide");
+                                        });
+                                    });
+                                </script>
+
+                                <!-- Enf of more filters -->
+
+                                <!--
+                                <span class="ons-checkboxes__item ons-checkboxes__item--no-border" style="margin-top:5px;">
+                                    <span class="ons-checkbox  ons-checkbox--no-border">
+                                        <input type="checkbox" id="data" class="ons-checkbox__input ons-js-checkbox" value="data">
+                                        <label class=" ons-checkbox__label " for="data" id="data-label">Display people in projects only</label>
+                                    </span>
+                                </span>
+                                -->
+                            </div> 
+                        </div>
+
+                        <!-- People -->
+
+                        <span><strong>Showing 1 to 10 of 682 results</strong></span>
+
+                        <table id="basic-table" class="ons-table" style="margin-top: 5px;">
+                            <thead class="ons-table__head">
+                                <tr class="ons-table__row">
+                                    <th scope="col" class="ons-table__header" width="400">
+                                        <span>Project name</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="240">
+                                        <span>Project Lead</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="150">
+                                        <span>Sector</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="270">
+                                        <span>Ownership</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="110">
+                                        <span>Members</span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="90">
+                                        <span>Domain </span>
+                                    </th>
+                                    <th scope="col" class="ons-table__header" width="130">
+                                        <span>Status</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="ons-table__body">
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_1" style="color: #206095;">HMRC Pension Scheme</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Miles Coward</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Government 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        HMRC
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        7
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PRIVATE</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;<strong>IN PROGRESS</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_2" style="color: #206095;">European Inmigration Programme</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Laura Johnson-Sans</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Government 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Cabinet Office
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        4
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PUBLIC</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #0f8243; vertical-align: middle; padding:2px;">&nbsp;<strong>COMPLETED</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_3" style="color: #206095;">Crop National Projections</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Arthur Cumberland</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Academia 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        University of Croydon
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        12
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PUBLIC</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #0f8243; vertical-align: middle; padding:2px;">&nbsp;<strong>COMPLETED</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_3" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        1
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PRIVATE</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;<strong>IN PROGRESS</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_3" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        1
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PRIVATE</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;<strong>IN PROGRESS</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_3" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        1
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PRIVATE</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;<strong>IN PROGRESS</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_3" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        1
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PRIVATE</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;<strong>IN PROGRESS</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_3" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        1
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PRIVATE</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;<strong>IN PROGRESS</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_3" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        1
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PRIVATE</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;<strong>IN PROGRESS</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td class="ons-table__cell" name="cell-name">
+                                        <a href="project_profile_3" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <a href="#0" style="color: #206095;">Lorum</a>
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum 
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        Lorum
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        1
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;<strong>PRIVATE</strong>&nbsp;</span>
+                        
+                                    </td>
+                                    <td class="ons-table__cell">
+                                        <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;<strong>IN PROGRESS</strong>&nbsp;</span>
+                                    </td>
+                                </tr>
+                                <tr class="ons-table__row">
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <nav class="ons-pagination " aria-label="Pagination (Page 5 of 35)">
+                            <!--<div class="ons-pagination__position">Page 1 of 135</div>-->
+                            <ul class="ons-pagination__items">
+                                <!--
+                                <li class="ons-pagination__item ons-pagination__item--previous">
+                                <a href="#0" class="ons-pagination__link" rel="prev" aria-label="Go to the previous page (Page 4)">Previous</a>
+                                </li>
+                                -->
+                                <li class="ons-pagination__item" style="padding-right:20px;">Page 1 of 68</li>
+                                <li class="ons-pagination__item ons-pagination__item--current" style="padding-left:10px;">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to the first page (Page 1)">1</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 2">2</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 3">3</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 4" rel="prev">4</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-current="true" aria-label="Current page (Page 5 of 35)">5</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 6" rel="next">6</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 7">7</a>
+                                </li>
+                                <li class="ons-pagination__item ons-pagination__item--gap">&hellip;</li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to the last page (Page 35)">68</a>
+                                </li>
+                                <li class="ons-pagination__item ons-pagination__item--next">
+                                <a href="#0" class="ons-pagination__link" rel="next" aria-label="Go to the next page (Page 6)">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!--
+                        <nav class="ons-pagination " aria-label="Pagination (Page 5 of 35)">
+                            <div class="ons-pagination__position">Page 1 of 135</div>
+                            <ul class="ons-pagination__items">
+                                <li class="ons-pagination__item ons-pagination__item--current">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to the first page (Page 1)">1</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 2">2</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 3">3</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 4" rel="prev">4</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-current="true" aria-label="Current page (Page 5 of 35)">5</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 6" rel="next">6</a>
+                                </li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to page 7">7</a>
+                                </li>
+                                <li class="ons-pagination__item ons-pagination__item--gap">&hellip;</li>
+                                <li class="ons-pagination__item">
+                                <a href="#0" class="ons-pagination__link" aria-label="Go to the last page (Page 35)">135</a>
+                                </li>
+                                <li class="ons-pagination__item ons-pagination__item--next">
+                                <a href="#0" class="ons-pagination__link" rel="next" aria-label="Go to the next page (Page 6)">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        -->
+
+                        
+                      <!-- No more widgets -->
+
+                      </main>
+                  </div>
+
+                  <!-- 2/3 column finish here -->
+
+                  <!-- Side column start here-->
+
+                  <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+
+                      <!-- Widget 1 -->
+
+
+
+                      <!-- No more widgets -->
+
+                  </div>
+
+                  <!-- Side column finish here -->
+
+              </div>
+
+            </section>
+
+
+
+            <!-- Tab 2 -->
+
+            <section id="tabId2" class="ons-tabs__panel">
+              
+              <div class="ons-grid">
+
+                  <!-- 2/3 column starts here -->
+
+                  <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+                      <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                      <!-- Projects and Boards -->
+
+                        <h3 class="ons-u-fs-l" style="margin-bottom: 30px; padding-top: 20px;">
+                            My active projects
+                        </h3>
+                    
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;">
+                            <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 2 days a go</span>
+                            <br>
+                            <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                                <a href="project_1.html" style="text-decoration: none;color: #000000;">HMRC Pension Scheme</a>
+                                &nbsp;
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PROJECT LEAD&nbsp;</span>
+                            </h3>
+                            <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                                The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.
+                                In this research project, using...</span>
+                            <br>
+                            <ul class="ons-list" style="padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project start and end dates:</strong> 22 January 2022 - 16 December 2022
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project Lead:</strong> Miles Coward
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Government (HMRC)
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project members:</strong> 7
+                                </li>
+                            </ul>
+                            <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <a href="project_1.html" class="ons-list__link">View project details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                            <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 3 days a go</span>
+                            <br>
+                            <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                                <a href="project_2.html" style="text-decoration: none;color: #000000;">DWP Workplace Pension</a>
+                                &nbsp;
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ANALYST&nbsp;</span>
+                            </h3>
+                            <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                                The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                            <br>
+                            <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project dates:</strong> 14 March 2022 - 25 February 2023
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project Lead:</strong> Susan Hopkins
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Cross government (DWP, HMRC and DHSC)
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project members:</strong> 11
+                                </li>
+                            </ul>
+                            <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <a href="project_2.html" class="ons-list__link">View project details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                            <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 4 days a go</span>
+                            <br>
+                            <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                                <a href="project_3.html" style="text-decoration: none;color: #000000;">Cabinet Office Pension Plans</a>
+                                &nbsp;
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ANALYST&nbsp;</span>
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PEER REVIEWER&nbsp;</span>
+                            </h3>
+                            <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                            The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                            <br>
+                            <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project dates:</strong> 22 June 2022 - 30 October 2023
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project Lead:</strong> Alison Drinkwater
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Government (Cabinet Office)
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project members:</strong> 5
+                                </li>
+                            </ul>
+                            <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <a href="project_3.html" class="ons-list__link">View project details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                            <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 5 days a go</span>
+                            <br>
+                            <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                                <a href="project_4.html" style="text-decoration: none;color: #000000;">Office of National Statistics Pension Scheme</a>
+                                &nbsp;
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PEER REVIEWER&nbsp;</span>
+                            </h3>
+                            <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                            The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                            <br>
+                            <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project dates:</strong> 08 September 2022 - 15 December 2023
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project Lead:</strong> James Watts
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Government (ONS)
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project members:</strong> 8
+                                </li>
+                            </ul>
+                            <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <a href="project_4.html" class="ons-list__link">View project details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                        <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 7 days a go</span>
+                        <br>
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="project_5.html" style="text-decoration: none;color: #000000;">HMRC Multi-Pension Programme</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ENHANCE ANALYST&nbsp;</span>
+                        </h3>
+                        <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                           The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                        <br>
+                        <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project dates:</strong> 14 October 2022 - 22 November 2023
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project Lead:</strong> Jeremy Drinkwater
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project ownership:</strong> Government (HMRC)
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project members:</strong> 4
+                            </li>
+                        </ul>
+                        <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_5.html" class="ons-list__link">View project details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                      <!-- No more widgets -->
+
+                      </main>
+                  </div>
+
+                  <!-- 2/3 column finish here -->
+
+                  <!-- Side column start here-->
+
+                  <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+
+                      <!-- Widget 1 -->
+
+
+
+                      <!-- No more widgets -->
+
+                  </div>
+
+                  <!-- Side column finish here -->
+
+              </div>
+
+            </section>
+
+
+
+            <!-- Tab 3 -->
+
+            <section id="tabId3" class="ons-tabs__panel">
+
+                <!-- Widget 1 -->
+
+                <h3 class="ons-u-fs-l" style="margin-bottom: 20px; padding-top: 20px;">
+                    My archived projects 
+                </h3>
+
+                Lorum ipsum colabra senatus romano pensare dolori sempre et olicuas contare.
+
+                <br>
+                <br>
+
+                <a href:"#0">Link</a>
+
+                <br>
+                <br>
+                <br>
+
+                <!-- No more widgets -->
+
+            </section>
+
+          </section>
+        </div>
+
+        <!-- Tabs finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
