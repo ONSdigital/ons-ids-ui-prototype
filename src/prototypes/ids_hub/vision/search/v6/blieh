@@ -36,375 +36,11 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
         </div>
         
         <br>
-        <br>
             
         <div class="ons-grid">
-                    <!-- Start of right sidebar column -->
-          <div class="ons-grid__col ons-col-4@m">
-            <aside class="ons-page__aside"> 
-
-              <!-- Accordion -->           
-              <div id="accordion" class="ons-accordion" style="background: #f8f0fd; padding: 20px;">
-                
-                <button type="button" class="ons-btn ons-js-accordion-all ons-u-mb-s ons-btn--secondary ons-btn--small" data-close-all="Hide all" data-group="accordion" data-ga-label="Hide all" aria-expanded="false">
-                  <span class="ons-btn__inner ons-js-accordion-all-inner">Show all</span>          
-                </button>
-
-                <!--Start filter 1 here-->         
-                <details id="accordion-1" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
-
-                  <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
-                    <h2 class="ons-collapsible__title">Theme <div class="ons-u-fs-s">1 selected</div> </h2>
-                      
-                    <span class="ons-collapsible__icon">
-                      <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-                          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                      </svg>       
-                    </span>
-                  </summary>
-
-                  <div id="accordion-1-content" class="ons-collapsible__content ons-js-collapsible-content">
-                    
-                    
-                    <div class="ons-field">
-                      <label class="ons-label" for="select" >Topic</label>
-                      <select id="select" name="select" class="ons-input ons-input--select">
-                        <option value="" selected>Data</option>
-                        <option value="1">General</option>
-                        <option value="people-who-live-here">People who live here</option>
-                        <option value="visitors">Visitors</option>
-                        <option value="household-accommodation">Household and accommodation</option>
-                        <option value="personal-details">Personal details</option>
-                        <option value="health">Health</option>
-                        <option value="qualifications">Qualifications</option>
-                        <option value="employment">Employment</option>
-                      </select>
-                    </div>
-                  
-                    <div class="ons-field ons-u-mb-l">
-                      <label class="ons-label" for="select">Sub-topic</label>
-                      <select id="select" name="select" class="ons-input ons-input--select">
-                        <option value="" selected disabled>All sub-topics</option>
-                        <option value="1">General</option>
-                        <option value="people-who-live-here">People who live here</option>
-                        <option value="visitors">Visitors</option>
-                        <option value="household-accommodation">Household and accommodation</option>
-                        <option value="personal-details">Personal details</option>
-                        <option value="health">Health</option>
-                        <option value="qualifications">Qualifications</option>
-                        <option value="employment">Employment</option>
-                      </select>
-                    </div>
-                    
-
-                  </div>
-    
-                </details> 
-                <!--end filter 1 here--> 
-
-                <!--Begin filter 2 here-->            
-                <details id="accordion-2" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
-
-                  <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
-                    <h2 class="ons-collapsible__title">Region coverage</h2>
-                    <span class="ons-collapsible__icon">    
-                      <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-                          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                      </svg>   
-                    </span>
-                  </summary>
-
-                  <div id="accordion-2-content" class="ons-collapsible__content ons-js-collapsible-content">
-
-                    <fieldset class="ons-fieldset ons-u-mt-s ons-u-mb-m">
-
-                      <!--Autosuggest starts here--> 
-                      <div class="ons-grid ons-grid--gutterless ons-u-mb-m">
-
-                        <div class="ons-grid__col ons-col-8@m">
-                          
-                          <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
-                            <div class="ons-field">
-                               <label class="ons-label">Search country name</label>
-                              <!-- for adding search in the autosugest field changed the 'for' class
-                              <label class="ons-label ons-label--placeholder" for="ons-js-autosuggest">Search</label> 
-                              
-                              -->
-                               <!-- for adding search option 2
-                              <label class="ons-label ons-u-pl-m ons-label--white ons-label--placeholder" for="ons-site-search" id="ons-site-search-label">Search 2</label>
-                              -->
-                              <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" />
-                            </div>
-                            <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
-                              <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
-                              <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
-                            </div>
-                            <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
-                            <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
-                          </div>
-                        </div>
-
-                      </div>
-                      <!--Autosuggest end here--> 
-
-                      <!-- Begin Checkbox here -->
-                        <div class="ons-checkboxes__items">
-                          <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
-                            <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="booklet" class="ons-checkbox__input ons-js-checkbox" value="booklet">
-                              <label class=" ons-checkbox__label " for="booklet" id="booklet-label">  UK</label>
-                            </span>
-                          </span>
-                          <br>
-                          <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
-                            <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="logo" class="ons-checkbox__input ons-js-checkbox" value="logo">
-                              <label class=" ons-checkbox__label " for="logo" id="logo-label">Scotland</label>
-                            </span>
-                          </span>
-                          <br>
-                          <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
-                            <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
-                              <label class=" ons-checkbox__label " for="poster" id="poster-label">Northern Ireland</label>
-                            </span>
-                          </span>
-                          <br>
-                           <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
-                            <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
-                              <label class=" ons-checkbox__label " for="poster" id="poster-label">England</label>
-                            </span>
-                          </span>
-                          <br>
-                           <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
-                            <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
-                              <label class=" ons-checkbox__label " for="poster" id="poster-label">Wales</label>
-                            </span>
-                          </span>
-                        </div>
-                      <!-- end Checkbox here -->
-
-                    </fieldset>
-
-                  </div>
-                            
-                </details>
-                <!-- end of filter2 here-->
-
-                <!--Begin filter 3 here--> 
-                <details id="accordion-3" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
-                    <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel"> 
-                            <h2 class="ons-collapsible__title">Updated</h2>
-                            <span class="ons-collapsible__icon">    
-                              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-                                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                              </svg>   
-                            </span>
-                    </summary>
-
-                    <div id="accordion-3-content" class="ons-collapsible__content ons-js-collapsible-content">
-            
-                      <fieldset class="ons-fieldset ons-u-mt-s ons-u-mb-m">
-
-                        <div class="ons-grid ons-grid--gutterless">
-                          <!-- Begin Autosagest1 | updated after-->
-                          <div class="ons-grid__col ons-col-8@m">
-                                      <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
-                                        <div class="ons-field">
-                                          <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Updated after</label>
-                                            <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">For example, 2005 or 21/11/2014r</span>
-                                              <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" /></div>
-                                              <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
-                                                  <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
-                                                  <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
-                                              </div>
-                                            <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
-                                            <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
-                                        </div>
-                                      </div>
-                          </div>
-                          <!--end autosagest1-->
-
-                          <div class="ons-grid ons-grid--gutterless">
-                            
-                          <!-- Begin Autosagest2 | updated before-->
-                          <div class="ons-grid__col ons-col-8@m">
-                            <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
-                              <div class="ons-field">
-                                <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Updated before</label>
-                                <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">For example, 2005 or 21/11/2014</span>
-                                <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" />
-                              </div>
-                              <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
-                                <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
-                                <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
-                              </div>
-                              <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
-                              <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- end Autosagest2 -->
-                      </fieldset>
-
-                    </div>         
-        
-
-                </details>
-                  <!--end 3 filter here-->   
-                <!-- Begin filter4 -->
-                <details id="accordion-4" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
-
-                  <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
-                    <h2 class="ons-collapsible__title">Audience <div class="ons-u-fs-s">1 selected</div> </h2>
-                      
-                    <span class="ons-collapsible__icon">
-                      <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-                          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                      </svg>       
-                    </span>
-                  </summary>
-
-                  <div id="accordion-4-content" class="ons-collapsible__content ons-js-collapsible-content">
-        
-                          <!-- Audience -->
-                          <div class="ons-adv-filter__item ons-js-adv-filter__item" data-default-text="All audiences" data-multi-select-text="{n} filters selected">
-                            <fieldset class="ons-fieldset" aria-controls="adv-filter-gallery">
-                              <legend class="ons-fieldset__legend">Audience</legend>
-                              <div class="ons-adv-filter__selection">
-                                <span class="ons-u-vh">Active filters: </span>
-                                <span class="ons-u-fs-s ons-js-adv-filter__selection">All audiences</span>
-                              </div>
-                              <div class="ons-input-items">
-                                <p class="ons-checkboxes__label"></p>
-                                <div class="ons-checkboxes__items">
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="local-authorities" class="ons-checkbox__input ons-js-checkbox" value="local-authorities" data-filter="local-authorities">
-                                      <label class=" ons-checkbox__label " for="local-authorities" id="local-authorities-label">Local authorities</label>
-                                    </span>
-                                  </span>
-                                  <br>
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="community-groups" class="ons-checkbox__input ons-js-checkbox" value="community-groups" data-filter="community-groups">
-                                      <label class=" ons-checkbox__label " for="community-groups" id="community-groups-label">Community groups</label>
-                                    </span>
-                                  </span>
-                                  <br>
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="general-public" class="ons-checkbox__input ons-js-checkbox" value="general-public" data-filter="general-public">
-                                      <label class=" ons-checkbox__label " for="general-public" id="general-public-label">General public</label>
-                                    </span>
-                                  </span>
-                                  <br>
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="recruitment" class="ons-checkbox__input ons-js-checkbox" value="recruitment" data-filter="recruitment">
-                                      <label class=" ons-checkbox__label " for="recruitment" id="recruitment-label">Recruitment</label>
-                                    </span>
-                                  </span>
-                                </div>
-                              </div>
-                            </fieldset>
-                          </div> 
-                          <!-- Type -->
-                          <div class="ons-adv-filter__item ons-js-adv-filter__item" data-default-text="All types" data-multi-select-text="{n} filters selected">
-                            <fieldset class="ons-fieldset" aria-controls="adv-filter-gallery">
-                              <legend class="ons-fieldset__legend">Type</legend>
-                              <div class="ons-adv-filter__selection">
-                                <span class="ons-u-vh">Active filters: </span>
-                                <span class="ons-u-fs-s ons-js-adv-filter__selection">All types</span>
-                              </div>
-                              <div class="ons-input-items">
-                                <p class="ons-checkboxes__label"></p>
-                                <div class="ons-checkboxes__items">
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="booklet" class="ons-checkbox__input ons-js-checkbox" value="booklet" data-filter="booklet">
-                                      <label class=" ons-checkbox__label " for="booklet" id="booklet-label">Population</label>
-                                    </span>
-                                  </span>
-                                  <br>
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="logo" class="ons-checkbox__input ons-js-checkbox" value="logo" data-filter="logo">
-                                      <label class=" ons-checkbox__label " for="logo" id="logo-label">Health</label>
-                                    </span>
-                                  </span>
-                                  <br>
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster" data-filter="poster">
-                                      <label class=" ons-checkbox__label " for="poster" id="poster-label">Analytics and Surveys</label>
-                                    </span>
-                                  </span>
-                                </div>
-                              </div>
-                            </fieldset>
-                          </div>
-                          <!-- Languages -->
-                          <div class="ons-adv-filter__item ons-js-adv-filter__item" data-default-text="All languages" data-multi-select-text="{n} filters selected">
-                            <fieldset class="ons-fieldset" aria-controls="adv-filter-gallery">
-                              <legend class="ons-fieldset__legend">Language</legend>
-                              <div class="ons-adv-filter__selection">
-                                <span class="ons-u-vh">Active filters: </span>
-                                <span class="ons-u-fs-s ons-js-adv-filter__selection">All languages</span>
-                              </div>
-                              <div class="ons-input-items">
-                                <p class="ons-checkboxes__label"></p>
-                                <div class="ons-checkboxes__items">
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="english" class="ons-checkbox__input ons-js-checkbox" value="english" data-filter="english">
-                                      <label class=" ons-checkbox__label " for="english" id="english-label">English</label>
-                                    </span>
-                                  </span>
-                                  <br>
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="welsh" class="ons-checkbox__input ons-js-checkbox" value="welsh" data-filter="welsh">
-                                      <label class=" ons-checkbox__label " for="welsh" id="welsh-label">Welsh (Cymraeg)</label>
-                                    </span>
-                                  </span>
-                                  <br>
-                                  <span class="ons-checkboxes__item">
-                                    <span class="ons-checkbox ons-checkbox--toggle">
-                                      <input type="checkbox" id="irish" class="ons-checkbox__input ons-js-checkbox" value="irish" data-filter="irish">
-                                      <label class=" ons-checkbox__label " for="irish" id="irish-label">Irish (Gaeilge)</label>
-                                    </span>
-                                  </span>
-                                </div>
-                              </div>
-                            </fieldset>
-                          </div>
-                          <div class="ons-adv-filter__actions">
-                            <button type="button" class="ons-btn ons-btn ons-btn--small ons-js-adv-filter__show">
-                              <span class="ons-btn__inner"><span class="ons-btn__text">Show (<span class="ons-js-adv-filter__show-results">7</span> results)</span>
-                              </span>
-                            </button>
-                            <button type="button" class="ons-btn ons-btn--small ons-btn--secondary ons-js-adv-filter__close">
-                              <span class="ons-btn__inner"><span class="ons-btn__text">Close</span>
-                              </span>
-                            </button>
-                          </div>
-                      
-                    
-                  </div>
-
-                </details>    
-        
-              </div>
-
-            </aside>
-          </div>
-            
 
           <!-- Start of main column container -->
-          <div class="ons-grid__col ons-col-8@m" style="margin-top: 0px;">
+          <div class="ons-grid__col ons-col-8@m" style="margin-top: 20px;">
 
             <!-- Main column results and sort by -->
             <div class="ons-adv-filter__results-options">
@@ -596,9 +232,379 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
 
             </ul>
 
+
           </div>
  
+          <!-- Start of right sidebar column -->
+          <div class="ons-grid__col ons-col-4@m">
+            <aside class="ons-page__aside"> 
 
+              <!-- Accordion -->           
+              <div id="accordion" class="ons-accordion" style="background: #f8f0fd; padding: 20px;">
+                
+                <button type="button" class="ons-btn ons-js-accordion-all ons-u-mb-s ons-btn--secondary ons-btn--small" data-close-all="Hide all" data-group="accordion" data-ga-label="Hide all" aria-expanded="false">
+                  <span class="ons-btn__inner ons-js-accordion-all-inner">Show all</span>          
+                </button>
+
+                <!--Start filter 1 here-->         
+                <details id="accordion-1" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
+
+                  <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
+                    <h2 class="ons-collapsible__title">Theme <div class="ons-u-fs-s">1 selected</div> </h2>
+                      
+                    <span class="ons-collapsible__icon">
+                      <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                      </svg>       
+                    </span>
+                  </summary>
+
+                  <div id="accordion-1-content" class="ons-collapsible__content ons-js-collapsible-content">
+                    
+                    
+                    <div class="ons-field">
+                      <label class="ons-label" for="select" >Topic</label>
+                      <select id="select" name="select" class="ons-input ons-input--select">
+                        <option value="" selected>Data</option>
+                        <option value="1">General</option>
+                        <option value="people-who-live-here">People who live here</option>
+                        <option value="visitors">Visitors</option>
+                        <option value="household-accommodation">Household and accommodation</option>
+                        <option value="personal-details">Personal details</option>
+                        <option value="health">Health</option>
+                        <option value="qualifications">Qualifications</option>
+                        <option value="employment">Employment</option>
+                      </select>
+                    </div>
+                  
+                    <div class="ons-field ons-u-mb-l">
+                      <label class="ons-label" for="select">Sub-topic</label>
+                      <select id="select" name="select" class="ons-input ons-input--select">
+                        <option value="" selected disabled>All sub-topics</option>
+                        <option value="1">General</option>
+                        <option value="people-who-live-here">People who live here</option>
+                        <option value="visitors">Visitors</option>
+                        <option value="household-accommodation">Household and accommodation</option>
+                        <option value="personal-details">Personal details</option>
+                        <option value="health">Health</option>
+                        <option value="qualifications">Qualifications</option>
+                        <option value="employment">Employment</option>
+                      </select>
+                    </div>
+                    
+
+                  </div>
+    
+                </details> 
+                <!--end filter 1 here--> 
+
+                <!--Begin filter 2 here-->            
+                <details id="accordion-2" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
+
+                  <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
+                    <h2 class="ons-collapsible__title">Region coverage</h2>
+                    <span class="ons-collapsible__icon">    
+                      <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                      </svg>   
+                    </span>
+                  </summary>
+
+                  <div id="accordion-2-content" class="ons-collapsible__content ons-js-collapsible-content">
+
+                    <fieldset class="ons-fieldset ons-u-mt-s ons-u-mb-m">
+
+                      <!--Autosuggest starts here--> 
+                      <div class="ons-grid ons-grid--gutterless ons-u-mb-m">
+
+                        <div class="ons-grid__col ons-col-8@m">
+                          
+                          <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
+                            <div class="ons-field">
+                               <label class="ons-label">Search country name</label>
+                              <!-- for adding search in the autosugest field changed the 'for' class
+                              <label class="ons-label ons-label--placeholder" for="ons-js-autosuggest">Search</label> 
+                              
+                              -->
+                               <!-- for adding search option 2
+                              <label class="ons-label ons-u-pl-m ons-label--white ons-label--placeholder" for="ons-site-search" id="ons-site-search-label">Search 2</label>
+                              -->
+                              <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" />
+                            </div>
+                            <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
+                              <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
+                              <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
+                            </div>
+                            <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
+                            <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!--Autosuggest end here--> 
+
+                      <!-- Begin Checkbox here -->
+                        <div class="ons-checkboxes__items">
+                          <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
+                            <span class="ons-checkbox  ons-checkbox--no-border">
+                              <input type="checkbox" id="booklet" class="ons-checkbox__input ons-js-checkbox" value="booklet">
+                              <label class=" ons-checkbox__label " for="booklet" id="booklet-label">  UK</label>
+                            </span>
+                          </span>
+                          <br>
+                          <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
+                            <span class="ons-checkbox  ons-checkbox--no-border">
+                              <input type="checkbox" id="logo" class="ons-checkbox__input ons-js-checkbox" value="logo">
+                              <label class=" ons-checkbox__label " for="logo" id="logo-label">Scotland</label>
+                            </span>
+                          </span>
+                          <br>
+                          <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
+                            <span class="ons-checkbox  ons-checkbox--no-border">
+                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
+                              <label class=" ons-checkbox__label " for="poster" id="poster-label">Northern Ireland</label>
+                            </span>
+                          </span>
+                          <br>
+                           <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
+                            <span class="ons-checkbox  ons-checkbox--no-border">
+                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
+                              <label class=" ons-checkbox__label " for="poster" id="poster-label">England</label>
+                            </span>
+                          </span>
+                          <br>
+                           <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
+                            <span class="ons-checkbox  ons-checkbox--no-border">
+                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
+                              <label class=" ons-checkbox__label " for="poster" id="poster-label">Wales</label>
+                            </span>
+                          </span>
+                        </div>
+                      <!-- end Checkbox here -->
+
+                    </fieldset>
+
+                  </div>
+                            
+                </details>
+                <!-- end of filter2 here-->
+
+                <!--Begin filter 3 here--> 
+                <details id="accordion-3" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
+                    <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel"> 
+                            <h2 class="ons-collapsible__title">Updated</h2>
+                            <span class="ons-collapsible__icon">    
+                              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                              </svg>   
+                            </span>
+                    </summary>
+
+                    <id="accordion-3-content" class="ons-collapsible__content ons-js-collapsible-content">
+            
+                    <fieldset class="ons-fieldset ons-u-mt-s ons-u-mb-m">
+
+                      <div class="ons-grid ons-grid--gutterless">
+                         <!-- Begin Autosagest1 | updated after-->
+                        <div class="ons-grid__col ons-col-8@m">
+                                    <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
+                                      <div class="ons-field">
+                                         <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Updated after</label>
+                                          <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">For example, 2005 or 21/11/2014r</span>
+                                            <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" /></div>
+                                            <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
+                                                <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
+                                                <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
+                                            </div>
+                                          <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
+                                          <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
+                                      </div>
+                                    </div>
+                        </div>
+                        <!--end autosagest1-->
+
+                        <div class="ons-grid ons-grid--gutterless">
+                          
+                        <!-- Begin Autosagest2 | updated before-->
+                        <div class="ons-grid__col ons-col-8@m">
+                          <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
+                            <div class="ons-field">
+                              <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Updated before</label>
+                              <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">For example, 2005 or 21/11/2014</span>
+                              <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" />
+                            </div>
+                            <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
+                              <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
+                              <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
+                            </div>
+                            <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
+                            <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end Autosagest2 -->
+                    </fieldset>
+                    </fieldset>
+                         <!--Start filter 3 here-->         
+                <details id="accordion-1" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
+
+                  <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
+                    <h2 class="ons-collapsible__title">Audience <div class="ons-u-fs-s">1 selected</div> </h2>
+                      
+                    <span class="ons-collapsible__icon">
+                      <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                          <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                      </svg>       
+                    </span>
+                  </summary>
+
+                  <div id="accordion-1-content" class="ons-collapsible__content ons-js-collapsible-content">
+                    
+                          <!-- Audience -->
+                          <div class="ons-adv-filter__item ons-js-adv-filter__item" data-default-text="All audiences" data-multi-select-text="{n} filters selected">
+                            <fieldset class="ons-fieldset" aria-controls="adv-filter-gallery">
+                              <legend class="ons-fieldset__legend">Audience</legend>
+                              <div class="ons-adv-filter__selection">
+                                <span class="ons-u-vh">Active filters: </span>
+                                <span class="ons-u-fs-s ons-js-adv-filter__selection">All audiences</span>
+                              </div>
+                              <div class="ons-input-items">
+                                <p class="ons-checkboxes__label"></p>
+                                <div class="ons-checkboxes__items">
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="local-authorities" class="ons-checkbox__input ons-js-checkbox" value="local-authorities" data-filter="local-authorities">
+                                      <label class=" ons-checkbox__label " for="local-authorities" id="local-authorities-label">Local authorities</label>
+                                    </span>
+                                  </span>
+                                  <br>
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="community-groups" class="ons-checkbox__input ons-js-checkbox" value="community-groups" data-filter="community-groups">
+                                      <label class=" ons-checkbox__label " for="community-groups" id="community-groups-label">Community groups</label>
+                                    </span>
+                                  </span>
+                                  <br>
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="general-public" class="ons-checkbox__input ons-js-checkbox" value="general-public" data-filter="general-public">
+                                      <label class=" ons-checkbox__label " for="general-public" id="general-public-label">General public</label>
+                                    </span>
+                                  </span>
+                                  <br>
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="recruitment" class="ons-checkbox__input ons-js-checkbox" value="recruitment" data-filter="recruitment">
+                                      <label class=" ons-checkbox__label " for="recruitment" id="recruitment-label">Recruitment</label>
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div> 
+                          <!-- Type -->
+                          <div class="ons-adv-filter__item ons-js-adv-filter__item" data-default-text="All types" data-multi-select-text="{n} filters selected">
+                            <fieldset class="ons-fieldset" aria-controls="adv-filter-gallery">
+                              <legend class="ons-fieldset__legend">Type</legend>
+                              <div class="ons-adv-filter__selection">
+                                <span class="ons-u-vh">Active filters: </span>
+                                <span class="ons-u-fs-s ons-js-adv-filter__selection">All types</span>
+                              </div>
+                              <div class="ons-input-items">
+                                <p class="ons-checkboxes__label"></p>
+                                <div class="ons-checkboxes__items">
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="booklet" class="ons-checkbox__input ons-js-checkbox" value="booklet" data-filter="booklet">
+                                      <label class=" ons-checkbox__label " for="booklet" id="booklet-label">Population</label>
+                                    </span>
+                                  </span>
+                                  <br>
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="logo" class="ons-checkbox__input ons-js-checkbox" value="logo" data-filter="logo">
+                                      <label class=" ons-checkbox__label " for="logo" id="logo-label">Health</label>
+                                    </span>
+                                  </span>
+                                  <br>
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster" data-filter="poster">
+                                      <label class=" ons-checkbox__label " for="poster" id="poster-label">Analytics and Surveys</label>
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+                          <!-- Languages -->
+                          <div class="ons-adv-filter__item ons-js-adv-filter__item" data-default-text="All languages" data-multi-select-text="{n} filters selected">
+                            <fieldset class="ons-fieldset" aria-controls="adv-filter-gallery">
+                              <legend class="ons-fieldset__legend">Language</legend>
+                              <div class="ons-adv-filter__selection">
+                                <span class="ons-u-vh">Active filters: </span>
+                                <span class="ons-u-fs-s ons-js-adv-filter__selection">All languages</span>
+                              </div>
+                              <div class="ons-input-items">
+                                <p class="ons-checkboxes__label"></p>
+                                <div class="ons-checkboxes__items">
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="english" class="ons-checkbox__input ons-js-checkbox" value="english" data-filter="english">
+                                      <label class=" ons-checkbox__label " for="english" id="english-label">English</label>
+                                    </span>
+                                  </span>
+                                  <br>
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="welsh" class="ons-checkbox__input ons-js-checkbox" value="welsh" data-filter="welsh">
+                                      <label class=" ons-checkbox__label " for="welsh" id="welsh-label">Welsh (Cymraeg)</label>
+                                    </span>
+                                  </span>
+                                  <br>
+                                  <span class="ons-checkboxes__item">
+                                    <span class="ons-checkbox ons-checkbox--toggle">
+                                      <input type="checkbox" id="irish" class="ons-checkbox__input ons-js-checkbox" value="irish" data-filter="irish">
+                                      <label class=" ons-checkbox__label " for="irish" id="irish-label">Irish (Gaeilge)</label>
+                                    </span>
+                                  </span>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+                          <div class="ons-adv-filter__actions">
+                            <button type="button" class="ons-btn ons-btn ons-btn--small ons-js-adv-filter__show">
+                              <span class="ons-btn__inner"><span class="ons-btn__text">Show (<span class="ons-js-adv-filter__show-results">7</span> results)</span>
+                              </span>
+                            </button>
+                            <button type="button" class="ons-btn ons-btn--small ons-btn--secondary ons-js-adv-filter__close">
+                              <span class="ons-btn__inner"><span class="ons-btn__text">Close</span>
+                              </span>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    
+                   
+
+                
+    
+                </details>    
+          
+
+
+                    </fieldset>
+
+                </details>
+                <!-- End filter3 -->
+
+        
+    </div>
+
+              </aside>
+            </div>
+            
 <!--Customised page template end --> 
 
 
