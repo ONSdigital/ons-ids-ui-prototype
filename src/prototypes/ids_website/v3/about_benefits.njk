@@ -1,0 +1,105 @@
+---
+group: Examples
+title: IDS Prototype
+layout: ids_website/v3/views/_master
+theme: ids
+---
+
+
+{% block pageContent %} 
+
+    {% from "components/header/_macro.njk" import onsHeader %}
+    
+    <div class="ons-page__container ons-container">
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
+            <ol class="ons-breadcrumb__items ons-u-fs-s">
+                <li class="ons-breadcrumb__item" id="breadcrumb-1">
+                    <a class="ons-breadcrumb__link" href="website_landingpage.html">Home</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+                <li class="ons-breadcrumb__item" id="breadcrumb-2">
+                    <a class="ons-breadcrumb__link" href="#0">About the service</a> 
+                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                    </svg>
+                </li>
+            </ol>
+        </nav>
+        <div class="ons-grid">
+            <div class="ons-grid__col ons-col-8@m">
+                <main id="main-content" class="ons-page__main">
+                    <h1 class="ons-u-mb-l">
+                        <!--<span class="ons-u-fs-m ons-u-db ons-u-mb-xs ons-u-lighter">About the Integrated Data Service</span>-->
+                        <span class="ons-u-vh">: </span>
+                        <span class="ons-u-fs-xxl ons-u-db">Benefits</span>
+                    </h1>
+                    <aside class="ons-toc-container" role="complementary">
+                        <a class="ons-skip-link" href="#section-content">Skip to guide content</a>
+                        <nav class="ons-toc" aria-label="Table of contents">
+                            <h2 class="ons-toc__title ons-u-fs-r--b ons-u-mb-s">Contents</h2>
+                            <ol class="ons-list ons-u-mb-m ons-list--dashed">
+                                <li class="ons-list__item">
+                                    <a href="about_overview.html" class="ons-list__link">Overview</a>
+                                </li>
+                                <li class="ons-list__item">
+                                    <a href="about_who.html" class="ons-list__link">Who can access</a>
+                                </li>
+                                <li class="ons-list__item">
+                                    <a href="about_how.html" class="ons-list__link">How to access</a>
+                                </li>
+                                <li class="ons-list__item" aria-current="true">
+                                    Benefits
+                                </li>
+                                <li class="ons-list__item">
+                                    <a href="about_partnerships.html" class="ons-list__link">Our partnerships</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </aside>
+                    <div id="section-content">
+                        <div class="ons-page__body">
+                            <p>The Integrated Data Service (IDS) seeks to transform government’s use of data to drive efficiency and improve public services by providing the following benefits:</p>
+                            <ul>
+                                <li>helping inform targeted policy interventions by enabling decision-making through rapid analysis of data and evidence</li>
+                                <li>informing complex policy such as quality of life, jobs and growth, improved educational outcomes and reduced levels of crime</li>
+                                <li>offering social benefits through better statistical and analytical outputs</li>
+                                <li>helping achieve value for money in identifying, acquiring, accessing, and processing data</li>
+                                <li>reducing analytical platform and resource costs</li>
+                                <li>increased culture of analytical collaboration that builds trust in statistics</li>
+                                <li>offering users friction-free access to a variety of rich data sources</li>
+                                <li>offering cloud hosting, virtualisation, and flexible data access</li>
+                                <li>bringing together diverse datasets such as Offenders, Health, and Economic data to inform the prioritisation of services</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ons-u-mt-xl">
+                        <nav class="ons-content-pagination" aria-label="Guide pagination">
+                            <ul class="ons-content-pagination__list">
+                                <li class="ons-content-pagination__item">
+                                    <a href="about_how.html" class="ons-content-pagination__link" rel="prev">
+                                        <span class="ons-content-pagination__link-title">
+                                            <svg class="ons-svg-icon ons-svg-icon--m" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                                                <path d="M6.4.2.3 6.4c-.2.2-.2.4 0 .6l6.2 5.8c.2.2.4.1.6 0l.8-.9c.2-.2.1-.4 0-.6l-4-3.7h12.5c.2 0 .4-.2.4-.4V6c0-.2-.2-.4-.4-.4H3.8l4-4c.2-.1.2-.4.1-.5L7 .2c-.1-.1-.4-.1-.6 0z"></path>
+                                            </svg> 
+                                            <span class="ons-content-pagination__link-text">Previous </span>
+                                        </span>
+                                        <span class="ons-content-pagination__link-divider ons-u-vh">page in this guide is:</span> 
+                                        <span class="ons-content-pagination__link-label">How to access</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+{% include "../../../includes/footer_website.html" %}
+            
+{% endblock %}

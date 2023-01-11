@@ -1,0 +1,80 @@
+{% extends "layout/_template.njk" %}
+
+{% set pageConfig = {
+
+    "theme": "ids",
+    "header": {
+        "logoHref": '/',
+        "titleLogoHref": pageInfo.rootPath + '#0'
+    },
+    "title": "Prototype example",
+    "breadcrumbs": {
+        "ariaLabel": 'Breadcrumbs',
+        "itemsList": [
+            {
+                "linkClasses": 'js-previous' if prevPage else '',
+                "url": pageInfo.rootPath + "/" + prevPage + '.html',
+                "text": 'Previous'
+            }
+        ]
+    }
+} %}
+
+{% block head %}
+    <link rel="stylesheet" href="/prototypes/hub/styles.css" />
+{% endblock %}
+
+{% block preMain %}
+{% endblock %}
+
+{% block header %}
+
+    {% from "components/header/_macro.njk" import onsHeader %}
+
+    {{
+        onsHeader({
+            "title": 'ONS Service',
+            "variants": 'neutral',
+            "noMasthead": true,
+            "orgLogoHref": '#0',
+            "titleLogo": 'ids-logo-en',
+            "titleLogoMobile": 'ids-logo-en-mobile',
+            "titleLogoClasses": 'ons-u-mt-s ons-u-mb-m',
+            "titleLogoMobileClasses": 'ons-u-mt-xs ons-u-mb-s',
+            "titleLogoHref": '/',
+            "titleLogoAlt": 'Integrated Data Service',
+            "navigation": {
+                "id": 'main-nav',
+                "ariaLabel": 'Main menu',
+                "currentPath": '#website-1',
+                "currentPageTitle": 'Design system',
+                "itemsList": [
+                    {
+                        "title": 'Home',
+                        "url": '#website-1'
+                    },
+                    {
+                        "title": 'About the service',
+                        "url": '#website-2'
+                    },
+                    {
+                        "title": 'Keeping data secure',
+                        "url": '#website-3'
+                    }
+                ],
+                "toggleNavigationButton": {
+                    "text": 'Menu',
+                    "ariaLabel": 'Toggle main menu'
+                }
+            }
+        })
+    }}
+
+{% endblock %}
+
+{% block main %}
+{% endblock %}
+
+{% block bodyEnd %}
+    <script src="/prototypes/ids_website/index.js"></script>
+{% endblock %}
