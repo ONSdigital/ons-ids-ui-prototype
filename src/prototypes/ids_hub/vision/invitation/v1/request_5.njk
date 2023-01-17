@@ -1,0 +1,162 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 0px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="ids_projects.html">IDS projects</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="project_1.html">HMRC Pension Scheme</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+              <a class="ons-breadcrumb__link" href="#0">Request a change</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Notifications -->
+
+        <!--
+        <div class="ons-panel ons-panel--info ons-panel--no-title" style="margin-top: 30px;">
+            <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+            <div class="ons-panel__body">
+                You are about to request a change to RAS for project <strong>HMRC Pension Scheme</strong>. <a href="#0">View requests guidance</a>
+            </div>
+        </div>
+        -->
+
+         <!-- Lorum -->
+
+        <!--
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 0px; padding-top: 10px;">
+         Miles Smith
+        </h1>
+        -->
+
+        <div class="ons-grid">
+
+            <!-- 2/3 column starts here -->
+
+            <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 40px!important;">
+                <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                    <!-- Profile -->
+
+                    <!--
+                    <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;HMRC Pension Scheme&nbsp;</span>
+                    -->
+
+                    <!--
+                    <h3 class="ons-u-fs-m" style="margin-bottom: 0px; padding-top: 5px;color:#777777; font-weight: 400;">
+                        HMRC Pension Scheme
+                    </h3>
+                    -->
+
+                    <h3 class="ons-u-fs-l" style="margin-bottom: 20px!important; padding-top: 10px;">
+                        Explain why you want to add this person to the project
+                    </h3>
+
+                    <div class="ons-field">
+                        <!--<label class="ons-label ons-label--with-description" aria-describedby="description-hint" for="textarea">Please provide some feedback</label>-->
+                        <span id="description-hint" class="ons-label__description  ons-input--with-description" style="font-size: 18px;">Enter as many details as possible to allow RAS to assess your change request. </span>
+                        <textarea id="textarea" class="ons-input ons-input--textarea   " name="feedback" rows="8"></textarea>
+                    </div>
+
+                    <div class="ons-btn-group">
+                        <a href="request_6.html" style="margin-top: 30px; margin-right: 10px;">
+                            <button type="button" class="ons-btn ons-btn--small">
+                                <span class="ons-btn__inner"><span class="ons-btn__text">Continue</span>
+                                </span>
+                            </button>
+                        </a>
+                        <a href="project_1.html" style="color: #206095;">Cancel request change</a>
+                    </div>
+                    
+                    
+                </main>
+            </div>
+            
+            <!-- 2/3 column finish here -->
+
+            <!-- Side column -->
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 30px!important;">
+
+                <!-- Side content start here -->
+
+                <!-- Useful information -->
+
+                <!--
+                <div class="ons-panel ons-panel--branded" style="background: #f5f5f6;padding-bottom: 10px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Useful information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 17px;padding-top: 20px;margin-bottom: 10px;">Useful information</h3>
+                    <div class="ons-panel__body" style="padding-top: 0px;">
+                      <ul class="ons-list ons-list--bare">
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link">Adding members in projects</a>
+                        </li>
+                        <li class="ons-list__item">
+                         <a href="#0" class="ons-external-link">Removing members from projects</a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link">RAS change requests</a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="#0" class="ons-external-link">Other</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div> 
+                -->
+
+            </div>
+
+            <!-- Side column finish here -->
+
+        </div>
+
+        <!-- Main finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
