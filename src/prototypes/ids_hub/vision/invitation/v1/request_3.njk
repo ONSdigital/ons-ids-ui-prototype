@@ -84,71 +84,76 @@ layout: ids_hub/vision/invitation/v1/views/_master_for_project_pages
                     </h3>
                     -->
 
-                    <h3 class="ons-u-fs-l" style="margin-bottom: 10px!important; padding-top: 10px;">
-                        Selected people 
+                    <h3 class="ons-u-fs-l" style="margin-bottom: 20px!important; padding-top: 10px;">
+                        Select role in project 
                     </h3>
 
-                    <table id="basic-table" class="ons-table" style="margin-bottom: 0px;">
-                        <!--
-                        <caption class="ons-table__caption">A basic table with a caption</caption>
-                        -->
-                        <thead class="ons-table__head">
-                            <tr class="ons-table__row">
-                                <th scope="col" class="ons-table__header">
-                                    <span>Person</span>
-                                </th>
-                                <th scope="col" class="ons-table__header">
-                                    <span>Accreditation</span>
-                                </th>
-                                <th scope="col" class="ons-table__header">
-                                    <span>Organisation</span>
-                                </th>
-                                <th scope="col" class="ons-table__header">
-                                    <span>Sector</span>
-                                </th>
-                                <th scope="col" class="ons-table__header">
-                                    <span> </span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="ons-table__body">
-                            <tr class="ons-table__row">
-                                <td class="ons-table__cell" name="cell-name">
-                                    Peter Kawoski
-                                </td>
-                                <td class="ons-table__cell">
-                                    Academia researcher
-                                </td>
-                                <td class="ons-table__cell">
-                                    University of Croydon
-                                </td>
-                                <td class="ons-table__cell">
-                                    Academia
-                                </td>
-                                <td class="ons-table__cell">
-                                    <a href="#0" style="color: #206095;">Remove</a>
-                                </td>
-                            </tr>
-                            <tr class="ons-table__row">
-                                <td class="ons-table__cell" name="cell-name" colspan="5"> </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <!--
+                    <span id="description-hint" class="ons-label__description  ons-input--with-description">Only one elegible role can be selected.</span>
+                    -->
 
-                    <div class="ons-btn-group" style="margin-bottom: 0px!important;">
-                        <a href="#0" style="margin-top: 10px; margin-right: 10px;">
-                            <button type="button" class="ons-btn ons-btn--secondary ons-btn--small">
-                                <span class="ons-btn__inner"><span class="ons-btn__text">Add more people</span>
+                    <fieldset class="ons-fieldset">
+                        <div class="ons-radios__items">
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="post" class="ons-radio__input ons-js-radio" value="post" name="contact" disabled>
+                                    <label class=" ons-radio__label " for="post" id="post-label">Project Lead</label>
                                 </span>
-                            </button>
-                        </a>
-                        <!--
-                        <a href="#0" style="color: #206095;">Add more people</a>
-                        -->
-                    </div>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="email" class="ons-radio__input ons-js-radio" value="email" name="contact" disabled>
+                                    <label class=" ons-radio__label " for="email" id="email-label">Deputy Project Lead</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="email" class="ons-radio__input ons-js-radio" value="email" name="contact">
+                                    <label class=" ons-radio__label " for="email" id="email-label">Analyst</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="email" class="ons-radio__input ons-js-radio" value="email" name="contact" disabled>
+                                    <label class=" ons-radio__label " for="email" id="email-label">Enhanced Analyst</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="email" class="ons-radio__input ons-js-radio" value="email" name="contact">
+                                    <label class=" ons-radio__label " for="email" id="email-label">Peer Reviewer</label>
+                                </span>
+                            </span>
+                            <br>
+                            <span class="ons-radios__item ons-radios__item--no-border">
+                                <span class="ons-radio ons-radio--no-border">
+                                    <input type="radio" id="phone" class="ons-radio__input ons-js-radio ons-js-other" value="phone" name="contact" aria-controls="phone-other-wrap" aria-haspopup="true">
+                                    <label class=" ons-radio__label " for="phone" id="phone-label">Other</label>
+                                    <span class="ons-radio__other" id="phone-other-wrap">
+                                    <fieldset id="phone-time" class="ons-fieldset ons-js-other-fieldset-radio">
+                                        <legend class="ons-fieldset__legend  ons-u-mb-xs"><span class="ons-fieldset__legend-title ons-u-pb-no">Enter role</span></legend>
+                                        <div class="ons-radios__items">
+                                        <span class="ons-radios__item ons-radios__item--no-border">
+                                            <span class="ons-radio ons-radio--no-border">
+                                            <input type="text" id="text" class="ons-input ons-input--text ons-input-type__input" />
+                                            </span>
+                                        </span>
+                                        </div>
+                                    </fieldset>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </fieldset>
+
+                    <br>
 
                     <div class="ons-btn-group">
-                        <a href="request_4.html" style="margin-top: 10px; margin-right: 10px;">
+                        <a href="request_4.html" style="margin-top: 30px; margin-right: 10px;">
                             <button type="button" class="ons-btn ons-btn--small">
                                 <span class="ons-btn__inner"><span class="ons-btn__text">Continue</span>
                                 </span>
