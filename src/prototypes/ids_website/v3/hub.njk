@@ -5,82 +5,79 @@ layout: ids_website/v3/views/_master
 theme: ids
 ---
 
+{% block pageContent %}
 
-{% block pageContent %} 
-    
-
-    <div class="ons-page__container ons-container">
-        <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
-            <ol class="ons-breadcrumb__items ons-u-fs-s">
-                <li class="ons-breadcrumb__item" id="breadcrumb-1">
-                    <a class="ons-breadcrumb__link" href="/">Home</a> 
-                    <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-                        <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                    </svg>
+  <div class="ons-page__container ons-container">
+    <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
+      <ol class="ons-breadcrumb__items ons-u-fs-s">
+        <li class="ons-breadcrumb__item" id="breadcrumb-1">
+          <a class="ons-breadcrumb__link" href="/">Home</a>
+          <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+            <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+          </svg>
+        </li>
+      </ol>
+    </nav>
+    <div class="ons-grid">
+      <div class="ons-grid__col ons-col-8@m">
+        <main id="main-content" class="ons-page__main">
+          <h1 class="ons-u-mb-l">
+            <span class="ons-u-fs-xxl ons-u-db">IDS Hub</span>
+            <span class="ons-u-vh">: Overview</span>
+          </h1>
+          <aside class="ons-toc-container" role="complementary">
+            <a class="ons-skip-link" href="#section-content">Skip to guide content</a>
+            <nav class="ons-toc" aria-label="Table of contents">
+              <h2 class="ons-toc__title ons-u-fs-r--b ons-u-mb-s">Contents</h2>
+              <ol class="ons-list ons-u-mb-m ons-list--dashed">
+                <li class="ons-list__item" aria-current="true">Overview</li>
+                <li class="ons-list__item">
+                  <a href="hub_signin.html" class="ons-list__link">Sign in</a>
                 </li>
-            </ol>
-        </nav>
-        <div class="ons-grid">
-            <div class="ons-grid__col ons-col-8@m">
-                <main id="main-content" class="ons-page__main">
-                    <h1 class="ons-u-mb-l">
-                        <span class="ons-u-fs-xxl ons-u-db">IDS Hub</span>
-                        <span class="ons-u-vh">: Overview</span>
-                    </h1>
-                    <aside class="ons-toc-container" role="complementary">
-                        <a class="ons-skip-link" href="#section-content">Skip to guide content</a>
-                        <nav class="ons-toc" aria-label="Table of contents">
-                            <h2 class="ons-toc__title ons-u-fs-r--b ons-u-mb-s">Contents</h2>
-                            <ol class="ons-list ons-u-mb-m ons-list--dashed">
-                                <li class="ons-list__item" aria-current="true">Overview</li>
-                                <li class="ons-list__item">
-                                    <a href="hub_signin.html" class="ons-list__link">Sign in</a>
-                                </li>
-                                <li class="ons-list__item">
-                                    <a href="#0" class="ons-list__link">Password resets</a>
-                                </li>
-                                <li class="ons-list__item">
-                                    <a href="#0" class="ons-list__link">Multi-Factor Authentication (MFA) setup</a>
-                                </li>
-                                <li class="ons-list__item">
-                                    <a href="#0" class="ons-list__link">Help</a>
-                                </li>
-                            </ol>
-                        </nav>
-                    </aside>
-                    <div id="section-content">
-                        <div class="ons-page__body">
-                            <p>The Integrated Data Service (IDS) Hub is a secure authenticated platform for authorised users.</p>
-                            <p>From here, users can access links and integrations to the full range of products and services they have been authorised to access within IDS.</p>
-                            <p>It is now operating in a beta phase, with plans to expand into the main self-service management and collaboration space for users of the service.</p>
-                        </div>
-                    </div>
-                    <div class="ons-u-mt-xl">
-                        <nav class="ons-content-pagination" aria-label="Guide pagination">
-                            <ul class="ons-content-pagination__list">
-                                <li class="ons-content-pagination__item">
-                                    <a href="hub_signin.html" class="ons-content-pagination__link" rel="next">
-                                        <span class="ons-content-pagination__link-title">
-                                            <svg class="ons-svg-icon ons-svg-icon--m" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
-                                                <path d="m10 .2-.9.9c-.1.1-.1.4 0 .5l4 4H.6c-.2 0-.4.2-.4.4v1.2c0 .2.2.4.4.4h12.5l-3.9 3.7c-.2.2-.2.4 0 .6l.8.9c.2.2.4.2.6 0L16.8 7c.2-.2.2-.4 0-.6L10.7.3c-.3-.2-.5-.2-.7-.1z"></path>
-                                            </svg> 
-                                            <span class="ons-content-pagination__link-text">Next </span>
-                                        </span>
-                                        <span class="ons-content-pagination__link-divider ons-u-vh">page in this guide is:</span> 
-                                        <span class="ons-content-pagination__link-label">Sign in</span>
-                                    </a>
-                                    </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </main>
+                <li class="ons-list__item">
+                  <a href="#0" class="ons-list__link">Password resets</a>
+                </li>
+                <li class="ons-list__item">
+                  <a href="#0" class="ons-list__link">Multi-Factor Authentication (MFA) setup</a>
+                </li>
+                <li class="ons-list__item">
+                  <a href="#0" class="ons-list__link">Help</a>
+                </li>
+              </ol>
+            </nav>
+          </aside>
+          <div id="section-content">
+            <div class="ons-page__body">
+              <p>The Integrated Data Service (IDS) Hub is a secure authenticated platform for authorised users.</p>
+              <p>From here, users can access links and integrations to the full range of products and services they have been authorised to access within IDS.</p>
+              <p>It is now operating in a beta phase, with plans to expand into the main self-service management and collaboration space for users of the service.</p>
             </div>
-        </div>
+          </div>
+          <div class="ons-u-mt-xl">
+            <nav class="ons-content-pagination" aria-label="Guide pagination">
+              <ul class="ons-content-pagination__list">
+                <li class="ons-content-pagination__item">
+                  <a href="hub_signin.html" class="ons-content-pagination__link" rel="next">
+                    <span class="ons-content-pagination__link-title">
+                      <svg class="ons-svg-icon ons-svg-icon--m" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                        <path d="m10 .2-.9.9c-.1.1-.1.4 0 .5l4 4H.6c-.2 0-.4.2-.4.4v1.2c0 .2.2.4.4.4h12.5l-3.9 3.7c-.2.2-.2.4 0 .6l.8.9c.2.2.4.2.6 0L16.8 7c.2-.2.2-.4 0-.6L10.7.3c-.3-.2-.5-.2-.7-.1z"></path>
+                      </svg>
+                      <span class="ons-content-pagination__link-text">Next </span>
+                    </span>
+                    <span class="ons-content-pagination__link-divider ons-u-vh">page in this guide is:</span>
+                    <span class="ons-content-pagination__link-label">Sign in</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+      </div>
     </div>
+  </div>
 
-    <br>
+  <br>
 
-{% include "../../../includes/footer_website.html" %}
-            
- 
+  {% include "../../../includes/footer_website.html" %}
+
 {% endblock %}
