@@ -1,26 +1,26 @@
 {% from "components/lists/_macro.njk" import onsList %}
 
-{% set pageConfig = { 
-    "title": "IDS Hub Prototypes"
+{% set pageConfig = {
+  "title": "IDS Hub Prototypes"
 } %}
-{% block pageContent %}  
-    
-<!-- Body starts here -->    
+{% block pageContent %}
 
-<div class="ons-page__container ons-container ">
-  <div class="ons-grid">
-    <div class="ons-grid__col ons-col-12@m">
-      <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom: 0px;">
+  <!-- Body starts here -->
 
-        {% include "../../includes/back_home.html" %}
+  <div class="ons-page__container ons-container ">
+    <div class="ons-grid">
+      <div class="ons-grid__col ons-col-12@m">
+        <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom: 0px;">
 
-        <br>
+          {% include "../../includes/back_home.html" %}
 
-        <!-- Content starts here -->
+          <br>
 
-        <table class="ons-table ons-table--responsive">
-          <h2 style="margin-bottom: 5px;">Development prototypes</h2>
-          <thead class="ons-table__head">
+          <!-- Content starts here -->
+
+          <table class="ons-table ons-table--responsive">
+            <h2 style="margin-bottom: 5px;">Development prototypes</h2>
+            <thead class="ons-table__head">
               <tr class="ons-table__row">
                 <th scope="col" class="ons-table__header" width="410">
                   <span>Description</span>
@@ -35,81 +35,93 @@
                   <span>Versions</span>
                 </th>
               </tr>
-          </thead>
-          <tbody class="ons-table__body">
+            </thead>
+            <tbody class="ons-table__body">
               <tr class="ons-table__row">
-              <td class="ons-table__cell" data-th="Description">
+                <td class="ons-table__cell" data-th="Description">
                 March Development Prototype
               </td>
-              <td class="ons-table__cell" data-th="Sprint">
+                <td class="ons-table__cell" data-th="Sprint">
                 Sprint 8
               </td>
-              <td class="ons-table__cell" data-th="End date">
+                <td class="ons-table__cell" data-th="End date">
                 20 Jan 22
               </td>
-              <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="developers/sprint_8/v1/dashboard_a.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
-              </td>
-            </tr>
-            <tr class="ons-table__row">
-              <td class="ons-table__cell" data-th="Description">
+                <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="developers/sprint_8/v1/dashboard_a.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
+                </td>
+              </tr>
+              <tr class="ons-table__row">
+                <td class="ons-table__cell" data-th="Description">
                 FPB Green Prototype
               </td>
-              <td class="ons-table__cell" data-th="Sprint">
+                <td class="ons-table__cell" data-th="Sprint">
                 Sprint 7
               </td>
-              <td class="ons-table__cell" data-th="End date">
+                <td class="ons-table__cell" data-th="End date">
                 12 Dec 22
               </td>
-              <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="developers/sprint_7/v3/dashboard.html" style="text-decoration: none;color:#FFFFFF">v3</a></span>
-                <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="developers/sprint_7/v2/dashboard.html" style="text-decoration: none;color:#FFFFFF">v2</a></span>
-                <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="developers/sprint_7/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
-              </td>
-            </tr>
-            <tr class="ons-table__row">
-              <td class="ons-table__cell" data-th="Description">
+                <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="developers/sprint_7/v3/dashboard.html" style="text-decoration: none;color:#FFFFFF">v3</a>
+                  </span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="developers/sprint_7/v2/dashboard.html" style="text-decoration: none;color:#FFFFFF">v2</a>
+                  </span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="developers/sprint_7/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
+                </td>
+              </tr>
+              <tr class="ons-table__row">
+                <td class="ons-table__cell" data-th="Description">
                 Add project landing page with some components from vision
               </td>
-              <td class="ons-table__cell" data-th="Sprint">
+                <td class="ons-table__cell" data-th="Sprint">
                 Sprint 6
               </td>
-              <td class="ons-table__cell" data-th="End date">
+                <td class="ons-table__cell" data-th="End date">
                 05 Oct 22
               </td>
-              <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="developers/sprint_6/v1/signin.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
-              </td>
-            </tr>
-            <tr class="ons-table__row">
-              <td class="ons-table__cell" data-th="Description">
+                <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="developers/sprint_6/v1/signin.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
+                </td>
+              </tr>
+              <tr class="ons-table__row">
+                <td class="ons-table__cell" data-th="Description">
                 Existing hub landing page with new brand
               </td>
-              <td class="ons-table__cell" data-th="Sprint">
+                <td class="ons-table__cell" data-th="Sprint">
                 Sprint 5
               </td>
-              <td class="ons-table__cell" data-th="End date">
+                <td class="ons-table__cell" data-th="End date">
                 30 Sep 22
               </td>
-              <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="developers/sprint_5/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
-              </td>
-            </tr>
-          </tbody>
-        </table> 
-  
-        <br>
- 
-        <table class="ons-table ons-table--responsive">
-          <h2 style="margin-bottom: 5px;">Vision prototypes</h2>
-          <thead class="ons-table__head">
+                <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="developers/sprint_5/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br>
+
+          <table class="ons-table ons-table--responsive">
+            <h2 style="margin-bottom: 5px;">Vision prototypes</h2>
+            <thead class="ons-table__head">
               <tr class="ons-table__row">
                 <th scope="col" class="ons-table__header" width="410">
                   <span>Description</span>
                 </th>
                 <th scope="col" class="ons-table__header" width="70">
                   <span>Sprint</span>
-                </th> 
+                </th>
                 <th scope="col" class="ons-table__header" width="120">
                   <span>Last change</span>
                 </th>
@@ -117,11 +129,25 @@
                   <span>Versions</span>
                 </th>
               </tr>
-          </thead>
-          <tbody class="ons-table__body">
-               <tr class="ons-table__row">
-
-                
+            </thead>
+            <tbody class="ons-table__body">
+              <tr class="ons-table__row">
+                <td class="ons-table__cell" data-th="Description">
+                  Updated vision with multi-roles + Directory + Join project
+                </td>
+                <td class="ons-table__cell" data-th="Sprint">
+                  -
+                </td>
+                <td class="ons-table__cell" data-th="End date">
+                  20 Jan 23
+                </td>
+                <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/invitation/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
+                </td>
+              </tr>
+              <tr class="ons-table__row">
                 <td class="ons-table__cell" data-th="Description">
                   Data catalogue (filters on the right)
                 </td>
@@ -132,10 +158,12 @@
                   18 Jan 23
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/search/v5/datacatalogue.html" style="text-decoration: none;color:#FFFFFF">v2</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/search/v5/datacatalogue.html" style="text-decoration: none;color:#FFFFFF">v2</a>
+                  </span>
                 </td>
-            </tr>
-             <tr class="ons-table__row">
+              </tr>
+              <tr class="ons-table__row">
                 <td class="ons-table__cell" data-th="Description">
                   Data catalogue
                 </td>
@@ -146,24 +174,12 @@
                   18 Jan 23
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/search/v6/datacatalogue.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/search/v6/datacatalogue.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
-            </tr>
-            <tr class="ons-table__row">
-                <td class="ons-table__cell" data-th="Description">
-                  Updated vision with multi-roles + Directory + Join project
-                </td>
-                <td class="ons-table__cell" data-th="Sprint">
-                  -
-                </td>
-                <td class="ons-table__cell" data-th="End date">
-                  06 Jan 23
-                </td>
-                <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/invitation/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
-                </td>
-            </tr>
-            <tr class="ons-table__row">
+              </tr>
+              <tr class="ons-table__row">
                 <td class="ons-table__cell" data-th="Description">
                   Updated vision with multi-roles + Directory 
                 </td>
@@ -174,10 +190,12 @@
                   08 Dec 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/directory/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/directory/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
-            </tr>
-            <tr class="ons-table__row">
+              </tr>
+              <tr class="ons-table__row">
                 <td class="ons-table__cell" data-th="Description">
                   Updated vision with multi-roles (matching code with dev version)
                 </td>
@@ -188,10 +206,12 @@
                   29 Nov 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/updated/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/updated/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
-            </tr>
-            <tr class="ons-table__row">
+              </tr>
+              <tr class="ons-table__row">
                 <td class="ons-table__cell" data-th="Description">
                  Search 
                 </td>
@@ -202,13 +222,21 @@
                   21 Nov 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions" style="padding-left:0px;">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/search/v4/dashboard.html" style="text-decoration: none;color:#FFFFFF">v4</a></span>
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/search/v3/dashboard.html" style="text-decoration: none;color:#FFFFFF">v3</a></span>
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/search/v2/dashboard.html" style="text-decoration: none;color:#FFFFFF">v2</a></span>
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/search/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/search/v4/dashboard.html" style="text-decoration: none;color:#FFFFFF">v4</a>
+                  </span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/search/v3/dashboard.html" style="text-decoration: none;color:#FFFFFF">v3</a>
+                  </span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/search/v2/dashboard.html" style="text-decoration: none;color:#FFFFFF">v2</a>
+                  </span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/search/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
-            </tr>
-            <tr class="ons-table__row">
+              </tr>
+              <tr class="ons-table__row">
                 <td class="ons-table__cell" data-th="Description">
                   Multi-role scenario (Project Lead, Analyst & Reviewer)
                 </td>
@@ -219,10 +247,12 @@
                   09 Nov 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="multirole/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="multirole/v1/dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
-            </tr>
-            <tr class="ons-table__row">
+              </tr>
+              <tr class="ons-table__row">
                 <td class="ons-table__cell" data-th="Description">
                   Hub dashboard - Scenario 1: Access to the hub for first time
                 </td>
@@ -233,8 +263,12 @@
                   22 Sep 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/v2/scenario_1_website.html" style="text-decoration: none;color:#FFFFFF">v2</a></span>
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/v1/scenario_1_website.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/v2/scenario_1_website.html" style="text-decoration: none;color:#FFFFFF">v2</a>
+                  </span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/v1/scenario_1_website.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
               </tr>
               <tr class="ons-table__row">
@@ -248,8 +282,12 @@
                   22 Sep 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/v2/scenario_2_website.html" style="text-decoration: none;color:#FFFFFF">v2</a></span>
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/v1/scenario_2_website.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/v2/scenario_2_website.html" style="text-decoration: none;color:#FFFFFF">v2</a>
+                  </span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/v1/scenario_2_website.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
               </tr>
               <tr class="ons-table__row">
@@ -263,8 +301,12 @@
                   06 Oct 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/v2/scenario_3_website.html" style="text-decoration: none;color:#FFFFFF">v2</a></span>
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/v1/scenario_3_website.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/v2/scenario_3_website.html" style="text-decoration: none;color:#FFFFFF">v2</a>
+                  </span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/v1/scenario_3_website.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
               </tr>
               <tr class="ons-table__row">
@@ -278,7 +320,9 @@
                   25 Aug 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/v1/projects_visualisation_in_dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/v1/projects_visualisation_in_dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
               </tr>
               <tr class="ons-table__row">
@@ -292,7 +336,9 @@
                   22 Jul 22
                 </td>
                 <td class="ons-table__cell ons-table__cell--numeric" data-th="Versions">
-                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;"><a href="vision/concept/hub_dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a></span>
+                  <span style="background-color:#206095;padding: 5px 8px 5px 8px ;">
+                    <a href="vision/concept/hub_dashboard.html" style="text-decoration: none;color:#FFFFFF">v1</a>
+                  </span>
                 </td>
               </tr>
               <!--
@@ -313,23 +359,21 @@
                 </td>
               </tr>
               -->
-          </tbody>
-        </table>
+            </tbody>
+          </table>
 
-        <br>
-        <br>
-        <br>
-        <br>
+          <br>
+          <br>
+          <br>
+          <br>
 
+          <!-- Content ends here -->
 
-        <!-- Content ends here -->
-
-      </main>
+        </main>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Body finish here -->
+  <!-- Body finish here -->
 
 {% endblock %}
-
