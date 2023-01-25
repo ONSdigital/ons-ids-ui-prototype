@@ -20,4 +20,4 @@ indent_size = 2
 
 # Templates
 [*.pug,*.jade,*.njk]
-indent_size = 4
+indent_size = 2
