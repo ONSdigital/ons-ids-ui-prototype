@@ -1,0 +1,779 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/invitation/v1/views/_master_for_ids_projects
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 20px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Title -->
+
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 10px; padding-top: 10px;">IDS projects</h1>
+
+         <!-- Tabs -->
+
+        <div style="padding-top: 20px;margin-bottom: 0px;">
+          <section class="ons-tabs" class="ons-tabs" style="margin-bottom: 0px;">
+            <h2 class="ons-tabs__title">Tabs</h2>
+            <ul class="ons-tabs__list">
+              <li id="tabId1Item" class="ons-tab__list-item"><a href="#tabId1" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: All IDS projects" data-ga-label="Show: All IDS projects">All IDS projects</a></li>
+              <li id="tabId2Item" class="ons-tab__list-item"><a href="#tabId2" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: My active projects" data-ga-label="Show: My active projects">My active projects</a></li>
+              <li id="tabId3Item" class="ons-tab__list-item"><a href="#tabId3" class="ons-tab" data-ga="click" data-ga-category="tabs" data-ga-action="Show: My archived projectss" data-ga-label="Show: My archived projects">My archived projects</a></li>
+            </ul>
+
+            <!-- Tab 1 -->
+
+            <section id="tabId1" class="ons-tabs__panel">
+              
+              <div class="ons-grid">
+
+                  <!-- 2/3 column starts here -->
+
+                  <div class="ons-grid__col ons-col-12@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+                      <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                      <!-- Projects and Boards -->
+
+                        <span><a href="ids_projects" style="color: #206095;">View all IDS projects</a></span>
+
+                        <br><br>
+
+                        <div class="ons-pl-grid-col" style="margin-top:0px!important;">
+                            <div class="ons-card" aria-describedBy="text1" style="background: #f5f5f6;padding: 20px;">
+                                <h3 class="ons-u-fs-l" style="margin-bottom: 20px;">
+                                    <a href="#0" style="text-decoration: none;color: #000000;">HMRC Pension Scheme</a>
+                                    &nbsp;
+                                    <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PRIVATE&nbsp;</span>
+                                    <span style="color: #ffffff; font-size: 14px; background-color: #fa6401; vertical-align: middle; padding:2px;">&nbsp;IN PROGRESS&nbsp;</span>
+                                </h3>
+                                <div style="padding-top:0px;">
+                                    <span><strong>Project summary:</strong></span>
+                                </div>
+                                <div style="padding-top: 5px;">
+                                    <span>
+                                        Examining the long term outcomes of pension choices.
+                                    </span>
+                                </div>
+                                <div style="padding-top:20px;">
+                                    <span><strong>Project purpose:</strong></span>
+                                </div>
+                                <div style="padding-top: 5px;">
+                                    <span>
+                                    The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.<br>
+                                    In this research project, using longitudinal data, we are going to look at how various groups in the UK population accumulate and structure their pension over time. We will look at people from different regions, gender, ethnicity, urban and rural areas, educational background, marital status to observe how much contribution they accumulate in state pension, private pension pots as well as in the HMRC Pension Scheme. We will analyse the outcomes  and potential correlations with their life expectancy, health outcomes, housing circumstances and level of economic activity before and after their retirement age. Based on the findings we will create publications that will aim to help people to make better choices and to inform policy decision makers on this field.
+                                    </span>
+                                </div>
+                                <div style="padding-top: 20px;">
+                                    <span><strong>Project tags:</strong> Pension, HMRC, Scheme, Contributions and workplace.</span>
+                                </div>
+                                <div style="padding-top: 20px;">
+                                    <span><strong>Project summary:</strong></span>
+                                </div>
+                                <div class="row" style="padding-top:0px;">
+                                    <div class="column" style="float: left;width: 50%;margin-right: 30px;">
+                                        <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;margin-bottom: 0px;">
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Project status:</strong> Active
+                                        </li>
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Project ownership:</strong> Government (HMRC)
+                                        </li>
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Project Lead:</strong> <a href="directory_profile_miles.html" style="color: #206095;">Miles Coward</a>
+                                        </li>
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Deputy Project Lead:</strong> <a href="directory_profile_sonia.html" style="color: #206095;">Sonia Turkey</a>
+                                        </li>
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Project members:</strong> 7
+                                        </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <ul class="ons-list" style="padding-top: 5px;padding-left: 18px;">
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Project start date:</strong> 22 January 2022 
+                                        </li>
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Project end date:</strong> 16 December 2022
+                                        </li>
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Data products in project:</strong> <a href="#0" style="color: #206095;">4</a>
+                                        </li>
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Pre-published work:</strong> 2
+                                        </li>
+                                        <li class="ons-list__item" style="margin-bottom: 0px;">
+                                            <strong>Published reports:</strong> 0
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <table class="ons-table ons-table--responsive">
+                                    <thead class="ons-table__head">
+                                    <tr class="ons-table__row">
+                                        <th scope="col" class="ons-table__header" width="460">
+                                            <span>Project members</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="200">
+                                            <span>AR number</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="500">
+                                            <span>Role</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="700">
+                                            <span>Organisation</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="200">
+                                            <span>Start date</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="200">
+                                            <span>End date</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="330">
+                                            <span>Status</span>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="ons-table__body">
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="members_miles.html" style="color: #206095;">Miles Coward</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            3476
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Project Lead 
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            HMRC
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            14/02/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Sonia Turkey</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            8024
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Deputy Project Lead 
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            HMRC
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            14/02/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Clair Johnson</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            1183
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Analyst
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            HMRC
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            15/02/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Tom Ellis</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            2731
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Analyst
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            HMRC
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            17/02/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">William Willet</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            3692
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Enhanced Analyst
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            HMRC
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            18/02/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Tara Long</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            3180
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Peer Reviewer
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            HMRC
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            22/03/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Steve Everton</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            6205
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Peer Reviewer
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Department Work & Pension
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            04/04/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                        
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--pending'>Inactive</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Sarah Clark</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            2472
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Analyst
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            HMRC
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            22/03/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            18/09/21
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--dead'>Left</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Laura O'connor</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            5023
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Enhanced Analyst
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            HMRC
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            22/03/21
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            23/10/21
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--dead'>Left</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row"></tr>
+                                    </tbody>
+                                </table>
+
+                                <br>
+
+                                <table class="ons-table ons-table--responsive">
+                                    <thead class="ons-table__head">
+                                    <tr class="ons-table__row">
+                                        <th scope="col" class="ons-table__header" width="900">
+                                            <span>Project data products</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="200">
+                                            <span>Acronym</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="200">
+                                            <span>ID number</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="200">
+                                            <span>Variables</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="300">
+                                            <span>Location</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="200">
+                                            <span>Start date</span>
+                                        </th>
+                                        <th scope="col" class="ons-table__header" width="230">
+                                            <span>Status</span>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="ons-table__body">
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Annual Survey of Hours and Earnings</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            ASHE
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">5428</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            5
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            England
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            14/02/21
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--pending'>Requested</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Death estimates</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            -
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">8241</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            3
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            England & Wales
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            25/03/21
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Birth estimates</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            -
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">9036</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            4
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            Scotland
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            14/02/21
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row">
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">Statistical population dataset</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            -
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            <a href="#0" style="color: #206095;">2754</a>
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            2
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            England
+                                        </td>
+                                        <td class="ons-table__cell">
+                                            14/02/21
+                                        </td>
+                                        <td class="ons-table__cell" data-sort-value="0">
+                                            <span class='ons-status ons-status--success'>Active</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="ons-table__row"></tr>
+                                    </tbody>
+                                </table>
+
+
+
+                            </div>
+                        </div>
+                    
+                        
+                        
+
+
+
+                        
+                      <!-- No more widgets -->
+
+                      </main>
+                  </div>
+
+                  <!-- 2/3 column finish here -->
+
+                  <!-- Side column start here-->
+
+                  <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+
+                      <!-- Widget 1 -->
+
+
+
+                      <!-- No more widgets -->
+
+                  </div>
+
+                  <!-- Side column finish here -->
+
+              </div>
+
+            </section>
+
+
+
+            <!-- Tab 2 -->
+
+            <section id="tabId2" class="ons-tabs__panel">
+              
+              <div class="ons-grid">
+
+                  <!-- 2/3 column starts here -->
+
+                  <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+                      <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                      <!-- Projects and Boards -->
+
+                        <h3 class="ons-u-fs-l" style="margin-bottom: 30px; padding-top: 20px;">
+                            My active projects
+                        </h3>
+                    
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;">
+                            <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 2 days a go</span>
+                            <br>
+                            <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                                <a href="project_1.html" style="text-decoration: none;color: #000000;">HMRC Pension Scheme</a>
+                                &nbsp;
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PROJECT LEAD&nbsp;</span>
+                            </h3>
+                            <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                                The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.
+                                In this research project, using...</span>
+                            <br>
+                            <ul class="ons-list" style="padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project start and end dates:</strong> 22 January 2022 - 16 December 2022
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project Lead:</strong> Miles Coward
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Government (HMRC)
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project members:</strong> 7
+                                </li>
+                            </ul>
+                            <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <a href="project_1.html" class="ons-list__link">View project details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                            <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 3 days a go</span>
+                            <br>
+                            <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                                <a href="project_2.html" style="text-decoration: none;color: #000000;">DWP Workplace Pension</a>
+                                &nbsp;
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ANALYST&nbsp;</span>
+                            </h3>
+                            <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                                The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                            <br>
+                            <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project dates:</strong> 14 March 2022 - 25 February 2023
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project Lead:</strong> Susan Hopkins
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Cross government (DWP, HMRC and DHSC)
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project members:</strong> 11
+                                </li>
+                            </ul>
+                            <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <a href="project_2.html" class="ons-list__link">View project details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                            <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 4 days a go</span>
+                            <br>
+                            <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                                <a href="project_3.html" style="text-decoration: none;color: #000000;">Cabinet Office Pension Plans</a>
+                                &nbsp;
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ANALYST&nbsp;</span>
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PEER REVIEWER&nbsp;</span>
+                            </h3>
+                            <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                            The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                            <br>
+                            <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project dates:</strong> 22 June 2022 - 30 October 2023
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project Lead:</strong> Alison Drinkwater
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Government (Cabinet Office)
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project members:</strong> 5
+                                </li>
+                            </ul>
+                            <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <a href="project_3.html" class="ons-list__link">View project details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                            <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 5 days a go</span>
+                            <br>
+                            <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                                <a href="project_4.html" style="text-decoration: none;color: #000000;">Office of National Statistics Pension Scheme</a>
+                                &nbsp;
+                                <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;PEER REVIEWER&nbsp;</span>
+                            </h3>
+                            <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                            The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                            <br>
+                            <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project dates:</strong> 08 September 2022 - 15 December 2023
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project Lead:</strong> James Watts
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project ownership:</strong> Government (ONS)
+                                </li>
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <strong>Project members:</strong> 8
+                                </li>
+                            </ul>
+                            <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                                <li class="ons-list__item" style="margin-bottom: 0px;">
+                                    <a href="project_4.html" class="ons-list__link">View project details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;margin-top: 20px;">
+                        <span style="font-size:14px;">ACTIVE PROJECT </span><span style="font-size:14px;color: #888888;text-align: right;padding-left:518px;">Last access: 7 days a go</span>
+                        <br>
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            <a href="project_5.html" style="text-decoration: none;color: #000000;">HMRC Multi-Pension Programme</a>
+                            &nbsp;
+                            <span style="color: #ffffff; font-size: 14px; background-color: #1f84d8; vertical-align: middle; padding:2px;">&nbsp;ENHANCE ANALYST&nbsp;</span>
+                        </h3>
+                        <span style="padding-top:10px;margin-bottom:20px;padding-bottom:10px;">
+                           The choices people make over their lifetime in terms of pensions contributions have got profound effects on their quality of life after retirement.</span>
+                        <br>
+                        <ul class="ons-list" style=";padding-top: 10px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project dates:</strong> 14 October 2022 - 22 November 2023
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project Lead:</strong> Jeremy Drinkwater
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project ownership:</strong> Government (HMRC)
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <strong>Project members:</strong> 4
+                            </li>
+                        </ul>
+                        <ul class="ons-list ons-list--bare" style="padding-left: 5px;margin-bottom: 5px">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_5.html" class="ons-list__link">View project details</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                      <!-- No more widgets -->
+
+                      </main>
+                  </div>
+
+                  <!-- 2/3 column finish here -->
+
+                  <!-- Side column start here-->
+
+                  <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 0px!important;">
+
+                      <!-- Widget 1 -->
+
+
+
+                      <!-- No more widgets -->
+
+                  </div>
+
+                  <!-- Side column finish here -->
+
+              </div>
+
+            </section>
+
+
+
+            <!-- Tab 3 -->
+
+            <section id="tabId3" class="ons-tabs__panel">
+
+                <!-- Widget 1 -->
+
+                <h3 class="ons-u-fs-l" style="margin-bottom: 20px; padding-top: 20px;">
+                    My archived projects 
+                </h3>
+
+                Lorum ipsum colabra senatus romano pensare dolori sempre et olicuas contare.
+
+                <br>
+                <br>
+
+                <a href:"#0">Link</a>
+
+                <br>
+                <br>
+                <br>
+
+                <!-- No more widgets -->
+
+            </section>
+
+          </section>
+        </div>
+
+        <!-- Tabs finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}

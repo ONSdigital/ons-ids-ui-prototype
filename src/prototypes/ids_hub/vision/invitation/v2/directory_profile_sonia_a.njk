@@ -1,0 +1,219 @@
+---
+group: Hub
+title: Hub Prototypes
+layout: ids_hub/vision/invitation/v1/views/_master_for_directory_page_option_a
+---
+
+{% from "components/button/_macro.njk" import onsButton %}
+
+{% block pageContent %}
+    
+<!-- Body starts here -->
+
+<div class="ons-page__container ons-container ons-container--wide">
+    <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
+
+        <!-- Full column starts here -->
+
+        <!-- Breadcrumbs -->
+
+        <nav class="ons-breadcrumb" aria-label="Breadcrumbs" style="padding-bottom: 20px;padding-top:0px;">
+          <ol class="ons-breadcrumb__items ons-u-fs-s">
+            <li class="ons-breadcrumb__item" id="breadcrumb-1">
+              <a class="ons-breadcrumb__link" href="dashboard.html">Dashboard</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+            <li class="ons-breadcrumb__item" id="breadcrumb-2">
+               <a class="ons-breadcrumb__link" href="directory_option_a.html">People directory</a>
+              <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="#0" focusable="false" fill="currentColor">
+                <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+
+         <!-- Lorum -->
+
+        <!--
+        <h1 class="ons-u-fs-xl" style="margin-bottom: 0px; padding-top: 10px;">
+         Miles Smith
+        </h1>
+        -->
+
+        <div class="ons-grid">
+
+            <!-- 2/3 column starts here -->
+
+            <div class="ons-grid__col ons-col-8@m ons-u-mt-l ons-u-mb-l" style="margin-top: 50px!important;">
+                <main id="main-content" class="ons-page__main" style="margin-top: 0px;margin-bottom:0px;">
+
+                    <!-- Profile -->
+                    
+                    <div class="ons-panel ons-panel--branded" style="padding: 20px;background: #f5f5f6;">
+                        <h3 class="ons-u-fs-l" style="padding-top: 0px;margin-bottom: 10px;">
+                            Sonia Turkey
+                            <br>
+                            <span class="ons-u-fs-m"><strong> Data Analyst from HMRC</strong></span>
+                        </h3>
+                        <div style="padding-top: 10px;">
+                            <span><strong>AR number: 8024</strong></span>
+                        </div>
+                        <div style="padding-top: 20px;">
+                            <span><strong>Profile:</strong><br>Aliquam dolore pensare sempre et vincula supra maturas est senatus solitas pensare dolori provocas, colabra suposes sentra acumulas totalia et caesar senatus sumus per sempre. Conotas salutas et pillare dolori atendas santuario.</span>
+                        </div>
+                        <div style="padding-top: 20px;">
+                            <span><strong>Qualifications:</strong><br>Cumbrias aliquam corsa.</span>
+                        </div>
+                        <div style="padding-top: 20px;">
+                            <span><strong>Research expertice:</strong><br>Lorum, Cumbrias, Aliquam, Corsa, Colabra, Supra, Dolore, Vinculas.</span>
+                        </div>
+                        <div style="padding-top: 20px;">
+                            <span><strong>Participation in research forums:</strong> 0</span>
+                        </div>
+                        <div style="padding-top: 20px;">
+                            <span><strong>Participation in IDS projects:</strong> 3</span>
+                        </div>
+                        <div style="padding-top: 20px;padding-bottom: 5px;">
+                            <span><strong>Participation in active IDS projects:</strong> </span>
+                        </div>
+                        <!--
+                        <ul class="ons-list" style=";padding-top: 0px;padding-left: 20px;margin-bottom: 10px;">
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_1.html" class="ons-list__link">HMRC Pension Scheme</a>
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_2.html" class="ons-list__link">DWP Workplace Pension</a>
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_3.html" class="ons-list__link">Cabinet Office Pension Plans</a>
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_4.html" class="ons-list__link">Office of National Statistics Pension Scheme</a>
+                            </li>
+                            <li class="ons-list__item" style="margin-bottom: 0px;">
+                                <a href="project_5.html" class="ons-list__link">HMRC Multi-Pension Programme</a>
+                            </li>
+                        </ul>
+                        -->
+
+                        <!--
+                        <a href="project_1.html">HMRC Pension Scheme</a> (Deputy Project Lead)
+                        <br>
+                        <a href="#0">HMRC Pension Task Team</a> (Analyst)
+                        <br>
+
+                        -->
+
+                        <table class="ons-table ons-table--responsive">
+                            <thead class="ons-table__head">
+                            <tr class="ons-table__row">
+                                <th scope="col" class="ons-table__header" width="400">
+                                    <span>Project</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="170">
+                                    <span>Organisation</span>
+                                </th>
+                                <th scope="col" class="ons-table__header" width="250">
+                                    <span>Role</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="ons-table__body">
+                            <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                   <a href="project_1.html">HMRC Pension Scheme</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                    HMRC
+                                </td>
+                                <td class="ons-table__cell">
+                                    Deputy Project Lead
+                                </td>
+                            </tr>
+                            <tr class="ons-table__row">
+                                <td class="ons-table__cell">
+                                  <a href="#0">HMRC Pension Task Team</a>
+                                </td>
+                                <td class="ons-table__cell">
+                                    HMRC
+                                </td>
+                                <td class="ons-table__cell">
+                                    Analyst
+                                </td>
+                            </tr>
+                            <tr class="ons-table__row"></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="ons-panel ons-panel--branded ons-panel--no-title" style="background: #fde8dd; border-color: #e77023;padding-top:20px;padding-bottom:20px;margin-top: 30px;margin-bottom: 5px;">
+                            <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                            <div class="ons-panel__body">
+                                This researcher do not want to be invited in research projects at the moment.
+                            </div>
+                        </div>
+
+                        <!--
+                        <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:20px;margin-top: 30px;">
+                            <span class="ons-btn__inner"><span class="ons-btn__text">Invite to a project</span>
+                            </span>
+                        </button>
+                        -->
+
+                    </div>                      
+
+                </main>
+            </div>
+            
+            <!-- 2/3 column finish here -->
+
+            <!-- Side column -->
+
+            <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l" style="margin-top: 50px!important;">
+
+                <!-- Side content start here -->
+
+                <!-- Contact details -->
+
+                <div class="ons-panel ons-panel--branded" style="background: #e7f1f8;padding-bottom: 10px;">
+                    <span class="ons-panel__assistive-text ons-u-vh">Important information: </span>
+                    <h3 class="ons-u-fs-l" style="padding-left: 17px;padding-top: 20px;margin-bottom: 10px;">Contact details</h3>
+                    <div class="ons-panel__body" style="padding-top: 0px;">
+                      <ul class="ons-list ons-list--bare">
+                        <li class="ons-list__item">
+                          <strong>Email:</strong> Not available
+                        </li>
+                        <li class="ons-list__item">
+                          <strong>Work phone:</strong> Not available</a>
+                        </li>
+                        <li class="ons-list__item">
+                          <strong>Mobile:</strong> Not available</a>
+                        </li>
+                      </ul>
+                      <button type="button" class="ons-btn ons-btn--small" style="margin-bottom:0px;margin-top: 10px;">
+                          <span class="ons-btn__inner"><span class="ons-btn__text">Send message</span>
+                          </span>
+                      </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Side column finish here -->
+
+        </div>
+
+        <!-- Main finish here -->
+
+    </main>
+</div>
+
+<!-- Body finish here -->
+
+
+<!-- Body finish here -->
+
+{% include "../../../../../includes/footer_hub_wide.html" %}
+
+{% endblock %}
