@@ -9,14 +9,13 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
 {% block pageContent %}
 
 
-
 <!-- Begin Body here -->
 
 <div class="ons-page__container ons-container ons-container--wide">
 
     <main id="main-content" class="ons-page__main" style="margin-top: 20px;margin-bottom:100px;">
       <br>
-        <h1 id="fieldset-legend-title" class="ons-fieldset__legend-title">Search data</h1>
+        <h2 id="fieldset-legend-title" class="ons-fieldset__legend-title">Search data</h2>
        <!-- Begin Search -->
         <div class="ons-field">
           <label class="ons-label ons-label--placeholder" for="search-field">Search the data catalogue </label>
@@ -46,7 +45,7 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
 
               <!-- Accordion -->           
               <div id="accordion" class="ons-accordion" style="background: #f8f0fd; padding: 20px;">
-                <h1 id="fieldset-legend-title" class="ons-fieldset__legend-title">Filters </h1>
+                <h2 id="fieldset-legend-title" class="ons-fieldset__legend-title">Filters </h2>
                 <button type="button" class="ons-btn ons-js-accordion-all ons-u-mb-s ons-btn--secondary ons-btn--small" data-close-all="Hide all" data-group="accordion" data-ga-label="Hide all" aria-expanded="false">
                   <span class="ons-btn__inner ons-js-accordion-all-inner">Show all</span>          
                 </button>
@@ -55,7 +54,7 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                 <details id="accordion-1" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
 
                   <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
-                    <h2 class="ons-collapsible__title">Theme <div class="ons-u-fs-s">Selected: Data</div> </h2>
+                    <h3 class="ons-collapsible__title">Theme <div class="ons-u-fs-s">Selected: Data</div> </h3>
                       
                     <span class="ons-collapsible__icon">
                       <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
@@ -65,39 +64,37 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                   </summary>
 
                   <div id="accordion-1-content" class="ons-collapsible__content ons-js-collapsible-content">
+                    <fieldset class="ons-fieldset"> 
+                      <div class="ons-field">
+                        <label class="ons-label" for="topic" >Topic</label>
+                        <select id="topic" name="topic" class="ons-input ons-input--select">
+                          <option value="" selected>Data</option>
+                          <option value="1">General</option>
+                          <option value="people-who-live-here">People who live here</option>
+                          <option value="visitors">Visitors</option>
+                          <option value="household-accommodation">Household and accommodation</option>
+                          <option value="personal-details">Personal details</option>
+                          <option value="health">Health</option>
+                          <option value="qualifications">Qualifications</option>
+                          <option value="employment">Employment</option>
+                        </select>
+                      </div>
                     
-                    
-                    <div class="ons-field">
-                      <label class="ons-label" for="topic" >Topic</label>
-                      <select id="topic" name="topic" class="ons-input ons-input--select">
-                        <option value="" selected>Data</option>
-                        <option value="1">General</option>
-                        <option value="people-who-live-here">People who live here</option>
-                        <option value="visitors">Visitors</option>
-                        <option value="household-accommodation">Household and accommodation</option>
-                        <option value="personal-details">Personal details</option>
-                        <option value="health">Health</option>
-                        <option value="qualifications">Qualifications</option>
-                        <option value="employment">Employment</option>
-                      </select>
-                    </div>
-                  
-                    <div class="ons-field ons-u-mb-l">
-                      <label class="ons-label" for="sub-topic">Sub-topic</label>
-                      <select id="sub-topic" name="sub-topic" class="ons-input ons-input--select">
-                        <option value="" selected disabled>All sub-topics</option>
-                        <option value="1">General</option>
-                        <option value="people-who-live-here">People who live here</option>
-                        <option value="visitors">Visitors</option>
-                        <option value="household-accommodation">Household and accommodation</option>
-                        <option value="personal-details">Personal details</option>
-                        <option value="health">Health</option>
-                        <option value="qualifications">Qualifications</option>
-                        <option value="employment">Employment</option>
-                      </select>
-                    </div>
-                    
-
+                      <div class="ons-field ons-u-mb-l">
+                        <label class="ons-label" for="sub-topic">Sub-topic</label>
+                        <select id="sub-topic" name="sub-topic" class="ons-input ons-input--select">
+                          <option value="" selected disabled>All sub-topics</option>
+                          <option value="1">General</option>
+                          <option value="people-who-live-here">People who live here</option>
+                          <option value="visitors">Visitors</option>
+                          <option value="household-accommodation">Household and accommodation</option>
+                          <option value="personal-details">Personal details</option>
+                          <option value="health">Health</option>
+                          <option value="qualifications">Qualifications</option>
+                          <option value="employment">Employment</option>
+                        </select>
+                      </div>                   
+                    </fieldset>
                   </div>
     
                 </details> 
@@ -105,9 +102,8 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
 
                 <!--Begin filter 2 here-->            
                 <details id="accordion-2" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
-
                   <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
-                    <h2 class="ons-collapsible__title">Region coverage</h2>
+                    <h3 class="ons-collapsible__title">Region coverage</h3>
                     <span class="ons-collapsible__icon">    
                       <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
                           <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
@@ -116,14 +112,11 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                   </summary>
 
                   <div id="accordion-2-content" class="ons-collapsible__content ons-js-collapsible-content">
-
                     <fieldset class="ons-fieldset ons-u-mb-m">
-
                       <!--Autosuggest starts here--> 
                       <div class="ons-grid ons-grid--gutterless ons-u-mb-m">
 
                         <div class="ons-grid__col ons-col-8@m">
-                          
                           <div id="country-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
                             <div class="ons-field">
                                <label class="ons-label" for="country">Search country name</label>
@@ -152,36 +145,36 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                         <div class="ons-checkboxes__items">
                           <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
                             <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="booklet" class="ons-checkbox__input ons-js-checkbox" value="booklet">
-                              <label class=" ons-checkbox__label " for="booklet" id="booklet-label">  UK</label>
+                              <input type="checkbox" id="uk" class="ons-checkbox__input ons-js-checkbox" value="booklet">
+                              <label class=" ons-checkbox__label " for="uk" id="uk-label">UK</label>
                             </span>
                           </span>
                           <br>
                           <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
                             <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="logo" class="ons-checkbox__input ons-js-checkbox" value="logo">
-                              <label class=" ons-checkbox__label " for="logo" id="logo-label">Scotland</label>
+                              <input type="checkbox" id="scotland" class="ons-checkbox__input ons-js-checkbox" value="logo">
+                              <label class=" ons-checkbox__label " for="scotland" id="scotland-label">Scotland</label>
                             </span>
                           </span>
                           <br>
                           <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
                             <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
-                              <label class=" ons-checkbox__label " for="poster" id="poster-label">Northern Ireland</label>
+                              <input type="checkbox" id="northern-ireland" class="ons-checkbox__input ons-js-checkbox" value="poster">
+                              <label class=" ons-checkbox__label " for="northern-ireland" id="northern-ireland-label">Northern Ireland</label>
                             </span>
                           </span>
                           <br>
                            <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
                             <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
-                              <label class=" ons-checkbox__label " for="poster" id="poster-label">England</label>
+                              <input type="checkbox" id="england" class="ons-checkbox__input ons-js-checkbox" value="poster">
+                              <label class=" ons-checkbox__label " for="england" id="england-label">England</label>
                             </span>
                           </span>
                           <br>
                            <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
                             <span class="ons-checkbox  ons-checkbox--no-border">
-                              <input type="checkbox" id="poster" class="ons-checkbox__input ons-js-checkbox" value="poster">
-                              <label class=" ons-checkbox__label " for="poster" id="poster-label">Wales</label>
+                              <input type="checkbox" id="wales" class="ons-checkbox__input ons-js-checkbox" value="poster">
+                              <label class=" ons-checkbox__label " for="wales" id="wales-label">Wales</label>
                             </span>
                           </span>
                         </div>
@@ -197,7 +190,7 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                 <!--Begin filter 3 here--> 
                 <details id="accordion-3" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
                     <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel"> 
-                            <h2 class="ons-collapsible__title">Updated</h2>
+                            <h3 class="ons-collapsible__title">Updated</h3>
                             <span class="ons-collapsible__icon">    
                               <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
                                 <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
@@ -212,19 +205,19 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                         <div class="ons-grid ons-grid--gutterless">
                           <!-- Begin Autosagest1 | updated after-->
                           <div class="ons-grid__col ons-col-8@m">
-                                      <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
-                                        <div class="ons-field">
-                                          <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Updated after</label>
-                                            <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">For example, 2005 or 21/11/2014</span>
-                                              <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" /></div>
-                                              <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
-                                                  <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
-                                                  <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
-                                              </div>
-                                            <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
-                                            <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
-                                        </div>
-                                      </div>
+                            <div id="updated-after-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
+                              <div class="ons-field">
+                                <label class="ons-label ons-label--with-description" aria-describedby="updated-after-label-description-hint" for="updated-after" id="updated-after-label">Updated after</label>
+                                  <span id="updated-after-label-description-hint" class="ons-label__description  ons-input--with-description">For example, 2005 or 21/11/2014</span>
+                                    <input type="text" id="updated-after" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="updated-after-label-description-hint" /></div>
+                                    <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
+                                        <header id="updated-after-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
+                                        <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="updated-after-listbox" tabindex="-1"></ul>
+                                    </div>
+                                  <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="updated-after-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
+                                  <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
+                              </div>
+                            </div>
                           </div>
                           <!--end autosagest1-->
 
@@ -232,17 +225,17 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                             
                           <!-- Begin Autosagest2 | updated before-->
                           <div class="ons-grid__col ons-col-8@m">
-                            <div id="country-of-birth-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
+                            <div id="updated-before-container" class="ons-js-autosuggest   ons-autosuggest-input" data-instructions="Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures." data-aria-you-have-selected="You have selected" data-min-chars="" data-aria-min-chars="Enter 3 or more characters for suggestions." data-aria-one-result="There is one suggestion available." data-aria-n-results="There are {n} suggestions available." data-aria-limited-results="Results have been limited to 10 suggestions. Type more characters to improve your search" data-more-results="Continue entering to improve suggestions" data-results-title="Suggestions" data-no-results="No suggestions found. You can enter your own answer" data-type-more="Continue entering to get suggestions" data-autosuggest-data="/examples/data/country-of-birth.json">
                               <div class="ons-field ons-u-mt-s">
-                                <label class="ons-label ons-label--with-description" aria-describedby="country-of-birth-label-description-hint" for="country-of-birth" id="country-of-birth-label">Updated before</label>
-                                <span id="country-of-birth-label-description-hint" class="ons-label__description  ons-input--with-description">For example, 2005 or 21/11/2014</span>
-                                <input type="text" id="country-of-birth" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="country-of-birth-label-description-hint" />
+                                <label class="ons-label ons-label--with-description" aria-describedby="updated-before-label-description-hint" for="updated-before" id="updated-before-label">Updated before</label>
+                                <span id="updated-before-label-description-hint" class="ons-label__description  ons-input--with-description">For example, 2005 or 21/11/2014</span>
+                                <input type="text" id="updated-before" class="ons-input ons-input--text ons-input-type__input ons-js-autosuggest-input " autocomplete="off" aria-describedby="updated-before-label-description-hint" />
                               </div>
                               <div class="ons-autosuggest-input__results ons-js-autosuggest-results">
-                                <header id="country-of-birth-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
-                                <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="country-of-birth-listbox" tabindex="-1"></ul>
+                                <header id="updated-before-suggestions" class="ons-autosuggest-input__results-title ons-u-fs-s">Suggestions</header>
+                                <ul class="ons-autosuggest-input__listbox ons-js-autosuggest-listbox" title="Suggestions" role="listbox" id="updated-before-listbox" tabindex="-1"></ul>
                               </div>
-                              <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="country-of-birth-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
+                              <div class="ons-autosuggest-input__instructions ons-u-vh ons-js-autosuggest-instructions" id="updated-before-instructions" tabindex="-1">Use up and down keys to navigate suggestions once you&#39;ve typed more than two characters. Use the enter key to select a suggestion. Touch device users, explore by touch or with swipe gestures.</div>
                               <div class="ons-autosuggest-input__status ons-u-vh ons-js-autosuggest-aria-status" aria-live="assertive" role="status" tabindex="-1"></div>
                             </div>
                           </div>
@@ -259,7 +252,8 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                 <details id="accordion-4" class="ons-collapsible ons-js-collapsible ons-collapsible--accordion" data-group="accordion">
 
                   <summary class="ons-collapsible__heading ons-js-collapsible-heading" data-ga-action="Close panel">
-                    <h2 class="ons-collapsible__title">Audience <div class="ons-u-fs-s">Selected: Publications</div> </h2>
+                    
+                    <h3 class="ons-collapsible__title">Audience <div class="ons-u-fs-s">Selected: Publications</div> </h3>
                       
                     <span class="ons-collapsible__icon">
                       <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
@@ -271,8 +265,8 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                   <div id="accordion-4-content" class="ons-collapsible__content ons-js-collapsible-content">
         
                     <fieldset class="ons-fieldset ons-u-mb-s">
-                      <legend class="ons-fieldset__legend ons-u-vh"><span class="ons-fieldset__legend-title ons-u-pb-no">Content type</span></legend>
-                      <p class="ons-checkboxes__label ons-u-fw-b">Show only</p>
+                      <legend class="ons-fieldset__legend ons-u-pb-no">Show only</legend>
+                      
                       <div class="ons-checkboxes__items">
                         <span class="ons-checkboxes__item ons-checkboxes__item--no-border">
                           <span class="ons-checkbox  ons-checkbox--no-border">
@@ -363,10 +357,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                         <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">Annual Business Survey (ABS)
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s">From Office for National Statistics</p>
                             </div>
                             <div class="ons-document-list__item-description">Data covering the production, construction, distribution, and service industries. Provides high-level indicators of economic activity from January 2008 to December 2019, for local authority down to postcode geography.</div>
@@ -375,12 +369,12 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                         <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">Annual Survey of Hours and Earnings (ASHE)
                                   <span class="ons-u-vh">  
                                   </span>
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s">From Office for National Statistics</p>
                             </div>
                             <div class="ons-document-list__item-description">De-identified data on hours worked and earnings for UK employees by sex, full-time and part-time working, and postcode level geography, 1990 to 2020.</div>
@@ -390,10 +384,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                         <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="2">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">BBC News Sentiment Analysis
                                   </a>
-                              </h2>
+                              </h3>
                                   <p class="ons-u-fs-s">From Office for National Statistics and BBC</p>   
                             </div>
                             <div class="ons-document-list__item-description">De-identified BBC article data for quantitative analysis of sentiment, web scraped publicly from news articles from 1 January 2019 to 31 October 2021. Contains over 51,000 records to enable analysis of BBC news coverage and sentiment by subnational areas and categories.</div>
@@ -403,10 +397,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                           <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">Birth estimates
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s"> </p>
                             </div>
                             <div class="ons-document-list__item-description">Births registered in England and Wales by age, sex, and local authority, with disclosure control applied, 2012 to 2020. Includes sex of child and age of mother at time of birth.</div>
@@ -416,10 +410,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                          <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">Death estimates
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s"> </p>
                             </div>
                             <div class="ons-document-list__item-description">Deaths registered in England and Wales by age, sex, and local authority, with disclosure control applied, 2012 to 2020. Includes age at death, sex coded to male and female and count within each group.</div>
@@ -429,10 +423,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                         <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="3">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">Energy Performance Certificates(EPC) for domestic buildings
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s">From Department for Levelling Up, Housing and Communities and the Office for National Statistics</p>
                             </div>
                             <div class="ons-document-list__item-description">Open Data Energy Performance Certificates (EPCs) issued for domestic buildings constructed, sold or let since 2008. This data has been matched to the Office for National Statistics (ONS)’s address index matching service.</div>
@@ -443,10 +437,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                           <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">GP registration estimates
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s"> </p>
                             </div>
                             <div class="ons-document-list__item-description">Number of individuals registered on the NHS Patient Register, aggregated by age, sex, year and local authority, 2016 to 2020.</div>
@@ -457,10 +451,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                           <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">International Passenger Survey estimates
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s"> </p>
                             </div>
                             <div class="ons-document-list__item-description">Origin-destination matrix by local authorities in the UK, by age, sex, and year, 2011 to March 2020. Includes expected counts of moves into and out of each local authority in England and Wales (including moves to and from Scotland and Northern Ireland) and in and out of the UK.</div>
@@ -471,10 +465,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                           <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">Mid-year population estimates
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s"> </p>
                             </div>
                             <div class="ons-document-list__item-description">Mid-year population estimates by age, sex and local authority, 20 June 2012 to 30 June 2020.</div>
@@ -484,10 +478,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                          <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">Prison estimates
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s"> </p>
                             </div>
                             <div class="ons-document-list__item-description">Number of prisoners held in establishments in England and Wales sentenced to six months or more as of 30 June each year. Aggregated counts for prisoners by prison, age, and sex, by local authority 2011 to 2020.</div>
@@ -498,10 +492,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                           <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">Statistical population dataset
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s">From Office for National Statistics</p>
                             </div>
                             <div class="ons-document-list__item-description">Aggregated age and sex counts for population estimates by local authority and output area, 2011 to 2020. Sourced from Customer Information System, Higher Education Statistics Authority, English Schools Census and Welsh School Census, Personal Demographic Service, and Benefits and Income Database System</div>
@@ -511,10 +505,10 @@ layout: ids_hub/vision/search/v5/views/_master_for_datacatalogue_pages
                         <li class="ons-document-list__item ons-filter__item ons-js-filter__item" data-filter="poster english local-authorities community-groups recruitment" data-sort-index="1">
                           <div class="ons-document-list__item-content">
                             <div class="ons-document-list__item-header">
-                              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
+                              <h3 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-xs">
                                 <a href="data_ext_5.html">UK Regular Forces and Gurkhas estimates 2011 to 2020
                                 </a>
-                              </h2>
+                              </h3>
                               <p class="ons-u-fs-s"> </p>
                             </div>
                             <div class="ons-document-list__item-description">Aggregate age and sex counts for UK Regular Forces and Gurkhas, used in experimental modelling, 2011 to 2020.</div>
