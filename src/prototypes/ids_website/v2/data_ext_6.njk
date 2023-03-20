@@ -1,0 +1,121 @@
+---
+group: Examples
+title: IDS Prototype
+layout: ids_website/v2/views/_master
+theme: ids
+---
+
+{% block pageContent %}
+
+  <body>
+    <div class="ons-page__container ons-container ">
+      <nav class="ons-breadcrumb" aria-label="Breadcrumbs">
+        <ol class="ons-breadcrumb__items ons-u-fs-s">
+          <li class="ons-breadcrumb__item" id="breadcrumb-1">
+            <a class="ons-breadcrumb__link" href="website_landingpage.html">Home</a>
+            <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+              <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"/>
+            </svg>
+          </li>
+          <li class="ons-breadcrumb__item" id="breadcrumb-2">
+            <a class="ons-breadcrumb__link" href="data_5c.html">Available data</a>
+            <svg class="ons-svg-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor">
+              <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+            </svg>
+          </li>
+        </ol>
+      </nav>
+
+      <!--Start Grid -->
+      <div class="ons-grid">
+        <!-- Start of main -->
+        <main id="main-content" class="ons-page__main">
+
+          <div class="ons-container">
+            <h1 class="ons-u-fs-xxl">Annual Survey of Hours and Earnings (ASHE)</h1>
+            <div class="ons-grid">
+              <div class="ons-grid__col ons-col-7@m">
+                <div class="ons-page__body ons-u-mt-m">
+                  <p class="abstract" style="margin-bottom: 1.5rem; padding: 2rem; background-color: #f5f5f6;">
+                    The Annual Survey of Hours and Earnings, de-identified, provides information about the levels, distribution and make-up of earnings and hours paid for employees within the UK by sex, and full-time and part-time working from 1990 to 2020 down to postcode level geography.
+                  </p>
+                  <p>
+                      The Annual Survey of Hours and Earnings (ASHE) provides de- identified information about the levels, distribution and make-up of earnings and hours paid for employees by sex, and full-time and part- time working. Estimates are available for various breakdowns including industries, occupations, geographies and age groups within the UK. A number of geography are linkable including local authority districts and units, lower output areas and travel to work areas. ASHE is used to produce hours and earnings statistics for a range of weekly, annual and hourly measures. ASHE is the official source of estimates for the number of jobs paid below the national minimum wage and is also used to produce estimates of the proportions of jobs within workplace pension categories. This is currently available as individual years, including profiling information around the usage of variables across years and we are working towards making the longitudinal version available linked to geography.
+                  </p>
+                  <p>More information can be found on the <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/methodologies/annualsurveyofhoursandearningslowpayandannualsurveyofhoursandearningspensionresultsqmi" class="ons-external-link" target="_blank" rel="noopener">
+                      <span class="ons-external-link__text">survey (opens in a new tab)</span>
+                      <span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                          <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)"></path>
+                          <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)"></path>
+                        </svg>
+                      </span>
+                      <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>&nbsp;itself from the Office of National Statistics.<br>
+                  </p>
+                  <h2 class="ons-document-list__item-title ons-u-fs-r--b ons-u-mb-xs" id="keywords">Keywords:</h2>
+                  <p>Income, Pay and incentives, Earnings, ASHE, United Kingdom, Local Authority District, LSOA, MSOA, Region, LAU, NUTS, Postcode, TTWA, WPC, Employment and labour market</p>
+                </div>
+              </div>
+              <aside class="ons-grid__col ons-col-4@m ons-push-1@m">
+                <aside class="ons-related-content" aria-label="Related content">
+                  <div class="ons-related-content__section">
+                    <h2 class="ons-related-content__title ons-u-fs-r--b ons-u-mb-xs" id="about-this-data">About this data</h2>
+                    <div class="ons-related-content__content">
+                      <dl class="ons-metadata ons-metadata__list ons-grid ons-grid--gutterless ons-u-cf ons-u-mb-no">
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m">From:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">Office for National Statistics</dd>
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m">Theme:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">Society - Labour - Employment</dd>
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m ons-u-bt ons-u-mt-l ons-u-pt-m">Type of dataset:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">Survey</dd>
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m">Date covered:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">1 January 1999 to 1 January 2020</dd>
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m">Updated:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">Annually</dd>
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m">Region covered:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">England and Wales</dd>
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m">Lowest level of detail:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">Postcode</dd>
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m">Access rights:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">Restricted</dd>
+                        <dt class="ons-metadata__term ons-grid__col ons-col-12@m">Sensitivity:</dt>
+                        <dd class="ons-metadata__value ons-grid__col ons-col-12@m ons-u-mt-no">Medium</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="ons-related-content__section">
+                    <h2 class="ons-related-content__title ons-u-fs-r--b ons-u-mb-xs" id="links">Links:</h2>
+                    <div class="ons-related-content__content">
+                      <ul class="ons-list ons-list--bare">
+                        <li class="ons-list__item">
+                          <a href="/data" class="ons-list__link">Internal example</a>
+                        </li>
+                        <li class="ons-list__item">
+                          <a href="https://example.com" class="ons-external-link" target="_blank" rel="noopener">
+                            <span class="ons-external-link__text">External example</span>
+                            <span class="ons-external-link__icon">&nbsp;<svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                <path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)"></path>
+                                <path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)"></path>
+                              </svg>
+                            </span>
+                            <span class="ons-external-link__new-window-description ons-u-vh">(opens in a new tab)</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  {# <div class="ons-related-content__section">
+                    <h2 class="ons-related-content__title ons-u-fs-r--b ons-u-mb-xs" id="keywords">Keywords:</h2>
+                    <div class="ons-related-content__content">Income, Pay and incentives, Earnings, ASHE, United Kingdom, Local Authority District, LSOA, MSOA, Region, LAU, NUTS, Postcode, TTWA, WPC, Employment and labour market</div>
+                  </div> #}
+                </aside>
+              </aside>
+            </div>
+          </div>
+
+        </main>
+      </div>
+
+    </div>
+    <br>
+    {% include "../../../includes/footer_website.html" %}
+
+  {% endblock %}
